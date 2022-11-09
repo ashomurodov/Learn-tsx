@@ -13,20 +13,20 @@
 
 ## 2️⃣ HTML Basics
 
-       ✅ Introduction
-       ✅ what is HTML tag
-       ✅ The Head Section
+       ✅ Introduction 👍🏻
+       ✅ what is HTML tag 👍🏻
+       ✅ The Head Section 👍🏻
             🎁 ASCII    -   https://www.asciitable.com/
             🎁 UNICODE  -   https://unicode-table.com/
-       ✅ Text
-       ✅ Entities
-       ✅ File & folder paths
+       ✅ Text 👍🏻
+       ✅ Entities 👍🏻
+       ✅ File & folder paths 👍🏻
        ✅ Hyperlinks
-            🎁 Redirect new HTML file
-            🎁 Download
-            🎁 Go to section
-            🎁 mailto
-            🎁 tel
+            🎁 Redirect new HTML file 👍🏻
+            🎁 Download 👍🏻
+            🎁 Go to section 👍🏻
+            🎁 mailto 👍🏻
+            🎁 tel 👍🏻
        ✅ Video and Audio
             🎁 can i use
        ✅ Lists
