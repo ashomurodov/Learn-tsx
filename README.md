@@ -14,6 +14,7 @@
 ## 2️⃣ HTML Basics
 
        ✅ Introduction
+       ✅ what is HTML tag
        ✅ The Head Section
             🎁 ASCII    -   https://www.asciitable.com/
             🎁 UNICODE  -   https://unicode-table.com/
@@ -24,9 +25,21 @@
             🎁 Redirect new HTML file
             🎁 Download
             🎁 Go to section
+            🎁 mailto
+            🎁 tel
        ✅ Video and Audio
+            🎁 can i use
        ✅ Lists
+            🎁 ul
+            🎁 ol
+            🎁 li
        ✅ Tables
+            🎁 DRY -> Don't repeat yourself
+            🎁 tr
+            🎁 th
+            🎁 td
+            🎁 thead
+            🎁 tbody
 
 ### Links
 
