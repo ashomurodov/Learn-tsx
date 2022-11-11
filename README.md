@@ -16,6 +16,42 @@
             🎁 thead
             🎁 tbody
 
+## 2️⃣ Explain CSS Basics
+
+       ✅ Providing CSS
+       ✅ Normalizing CSS
+       ✅ Selectors
+       ✅ Colors
+       ✅ Gradients
+       ✅ Borders
+       ✅ Shadows
+
+## 3️⃣ Providing CSS && Providing priority
+
+       ✅ Inline
+       ✅ Internal
+       ✅ External
+
+## 4️⃣ Normalizing CSS
+
+       ✅ https://necolas.github.io/normalize.css/
+
+## 5️⃣ Basic Selectors
+
+       ✅ What is selector
+       ✅ TYPE
+       ✅ ID
+       ✅ CLASS
+       ✅ ATTRIBUTE
+       ✅ ALL ELEMENTS
+
+## 6️⃣ Relational Selectors
+
+       ✅ [ ] -> descendant selector
+       ✅ [>] -> child selector
+       ✅ [+] -> adjacent sibling selector
+       ✅ [~] -> adjacent sibling selector
+
 ### Links
 
 [Github Repo](https://github.com/arslonbekXX/pdp-g-8.git)
