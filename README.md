@@ -1,23 +1,6 @@
-# ---------- 11.11.22 ----------(3)
+# ---------- 14.11.22 ----------(4)
 
-## 1️⃣ HTML Basics
-
-       ✅ Video and Audio 👍🏻
-            🎁 can i use
-       ✅ Lists  👍🏻
-            🎁 ul
-            🎁 ol
-            🎁 li
-       ✅ Tables 👍🏻
-            🎁 DRY -> Don't repeat yourself 👍🏻
-            🎁 tr 👍🏻
-            🎁 th 👍🏻
-            🎁 td 👍🏻
-            🎁 thead 👍🏻
-            🎁 tbody 👍🏻
-            🎁 tfoot 👍🏻
-
-## 2️⃣ Explain CSS Basics
+## 1️⃣ Explain CSS Basics
 
        ✅ Providing CSS 👍🏻
        ✅ Normalizing CSS 👍🏻
@@ -27,17 +10,7 @@
        ✅ Borders
        ✅ Shadows
 
-## 3️⃣ Providing CSS && Providing priority
-
-       ✅ Inline 👍🏻
-       ✅ Internal 👍🏻
-       ✅ External 👍🏻
-
-## 4️⃣ Normalizing CSS
-
-       ✅ https://necolas.github.io/normalize.css/
-
-## 5️⃣ Basic Selectors
+## 2️⃣ Basic Selectors
 
        ✅ What is selector
        ✅ TYPE
@@ -46,7 +19,7 @@
        ✅ ATTRIBUTE
        ✅ ALL ELEMENTS
 
-## 6️⃣ Relational Selectors
+## 3️⃣ Relational Selectors
 
        ✅ [ ] -> descendant selector
        ✅ [>] -> child selector
