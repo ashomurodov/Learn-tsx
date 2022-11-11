@@ -2,24 +2,25 @@
 
 ## 1️⃣ HTML Basics
 
-       ✅ Video and Audio
+       ✅ Video and Audio 👍🏻
             🎁 can i use
-       ✅ Lists
+       ✅ Lists  👍🏻
             🎁 ul
             🎁 ol
             🎁 li
-       ✅ Tables
-            🎁 DRY -> Don't repeat yourself
-            🎁 tr
-            🎁 th
-            🎁 td
-            🎁 thead
-            🎁 tbody
+       ✅ Tables 👍🏻
+            🎁 DRY -> Don't repeat yourself 👍🏻
+            🎁 tr 👍🏻
+            🎁 th 👍🏻
+            🎁 td 👍🏻
+            🎁 thead 👍🏻
+            🎁 tbody 👍🏻
+            🎁 tfoot 👍🏻
 
 ## 2️⃣ Explain CSS Basics
 
-       ✅ Providing CSS
-       ✅ Normalizing CSS
+       ✅ Providing CSS 👍🏻
+       ✅ Normalizing CSS 👍🏻
        ✅ Selectors
        ✅ Colors
        ✅ Gradients
@@ -28,9 +29,9 @@
 
 ## 3️⃣ Providing CSS && Providing priority
 
-       ✅ Inline
-       ✅ Internal
-       ✅ External
+       ✅ Inline 👍🏻
+       ✅ Internal 👍🏻
+       ✅ External 👍🏻
 
 ## 4️⃣ Normalizing CSS
 
