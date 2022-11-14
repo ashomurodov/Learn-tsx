@@ -30,3 +30,11 @@ body {
 .boxes > div {
   background-color: blue;
 } */
+
+ol li:nth-child(odd) div div:nth-child(even) {
+  background-color: red;
+}
+
+ol li:nth-child(even) div div:nth-child(odd) {
+  background-color: yellow;
+}

@@ -22,7 +22,7 @@
 ## 3️⃣ Relational Selectors
 
        ✅ [ ] -> descendant selector 👍🏻
-       ✅ [>] -> child selector
+       ✅ [>] -> child selector 👍🏻
        ✅ [+] -> adjacent sibling selector
        ✅ [~] -> adjacent sibling selector
 
