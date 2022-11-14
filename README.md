@@ -12,16 +12,16 @@
 
 ## 2️⃣ Basic Selectors
 
-       ✅ What is selector
-       ✅ TYPE
-       ✅ ID
-       ✅ CLASS
-       ✅ ATTRIBUTE
-       ✅ ALL ELEMENTS
+       ✅ What is selector 👍🏻
+       ✅ TYPE 👍🏻
+       ✅ ID 👍🏻
+       ✅ CLASS 👍🏻
+       ✅ ATTRIBUTE 👍🏻
+       ✅ ALL ELEMENTS 👍🏻
 
 ## 3️⃣ Relational Selectors
 
-       ✅ [ ] -> descendant selector
+       ✅ [ ] -> descendant selector 👍🏻
        ✅ [>] -> child selector
        ✅ [+] -> adjacent sibling selector
        ✅ [~] -> adjacent sibling selector

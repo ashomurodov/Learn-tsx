@@ -1,0 +1,32 @@
+body {
+  /* display: grid;
+  place-items: center;
+  height: 100vh; */
+  margin: 0;
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+/* .boxes {
+  background-color: red;
+} */
+
+/* .boxes * {
+  background-color: yellow;
+} */
+
+/* .boxes ul li div {
+  background-color: blue;
+}
+.boxes ul li div a {
+  color: white;
+} */
+/*
+.boxes > div {
+  background-color: blue;
+} */

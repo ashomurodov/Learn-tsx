@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a[groupOfPdp="8"] {
+  color: yellow;
+}
+
+a[id="second"] {
+  color: yellow;
+}
+
+/* * {
+  box-sizing: border-box;
+  display: none;
+} */
+
+a {
+  color: green;
+}
