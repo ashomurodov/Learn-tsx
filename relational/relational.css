@@ -31,10 +31,21 @@ body {
   background-color: blue;
 } */
 
-ol li:nth-child(odd) div div:nth-child(even) {
+/* ol li:nth-child(odd) div div:nth-child(even) {
   background-color: red;
 }
 
 ol li:nth-child(even) div div:nth-child(odd) {
   background-color: yellow;
+} */
+
+.box {
+  margin: 10px;
+}
+
+ol li:nth-child(odd) .box:nth-child(odd) + * {
+  background-color: yellow;
+}
+ol li:nth-child(even) .box:nth-child(even) + div {
+  background-color: red;
 }
