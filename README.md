@@ -26,6 +26,34 @@
        ✅ [+] -> adjacent sibling selector
        ✅ [~] -> adjacent sibling selector
 
+## 4️⃣ Pseudo Class Selectors
+
+       ✅ :root
+       ✅ :empty
+       ✅ :first-child
+       ✅ :first-of-type
+       ✅ :last-child
+       ✅ :last-of-type
+       ✅ :nth-child(n)
+              🎁 odd(toq)
+              🎁 even(juft)
+       ✅ :nth-last-child(n)
+       ✅ :nth-of-type(n)
+       ✅ :nth-last-of-type(n)
+       ✅ :visited
+       ✅ :hover
+       ✅ :active
+       ✅ :focus
+       ✅ :not
+
+## 5️⃣ Pseudo-element Selectors
+
+         ✅ ::first-latter
+         ✅ ::first-line
+         ✅ ::selection
+         ✅ ::before
+         ✅ ::after
+
 ### Links
 
 [Github Repo](https://github.com/arslonbekXX/pdp-g-8.git)
