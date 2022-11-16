@@ -6,19 +6,5 @@ body {
 }
 
 h1 {
-  color: blue;
   font-size: 70px;
-}
-
-.first-menu {
-  color: red;
-}
-
-.first-menu {
-  color: green;
-  font-size: 100px;
-}
-
-.text-blue {
-  color: blue;
 }

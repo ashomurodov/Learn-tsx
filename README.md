@@ -1,4 +1,4 @@
-# ---------- 14.11.22 ----------(4)
+# ---------- 16.11.22 ----------(5)
 
 ## 1️⃣ Explain CSS Basics
 
@@ -10,23 +10,14 @@
        ✅ Borders
        ✅ Shadows
 
-## 2️⃣ Basic Selectors
-
-       ✅ What is selector 👍🏻
-       ✅ TYPE 👍🏻
-       ✅ ID 👍🏻
-       ✅ CLASS 👍🏻
-       ✅ ATTRIBUTE 👍🏻
-       ✅ ALL ELEMENTS 👍🏻
-
-## 3️⃣ Relational Selectors
+## 2️⃣ Relational Selectors
 
        ✅ [ ] -> descendant selector 👍🏻
        ✅ [>] -> child selector 👍🏻
        ✅ [+] -> adjacent sibling selector
        ✅ [~] -> adjacent sibling selector
 
-## 4️⃣ Pseudo Class Selectors
+## 3️⃣ Pseudo Class Selectors
 
        ✅ :root
        ✅ :empty
@@ -46,7 +37,7 @@
        ✅ :focus
        ✅ :not
 
-## 5️⃣ Pseudo-element Selectors
+## 4️⃣ Pseudo-element Selectors
 
          ✅ ::first-latter
          ✅ ::first-line
@@ -54,7 +45,14 @@
          ✅ ::before
          ✅ ::after
 
-### Links
+## 5️⃣ Selectors Specificity
 
-[Github Repo](https://github.com/arslonbekXX/pdp-g-8.git)
-[Figma](https://bit.ly/3hk8XWp)
+           ✅ Explain site -> https://css-tricks.com/specifics-on-css-specificity/
+           ✅ SITE -> https://specifishity.com/
+
+## 6️⃣ :not pseudo-class selector
+
+           ✅ :not(simple selector)
+           ✅ Negations may not be nested (ichma-ich negativlardan foydalanish mumkin emas) -> :not(:not) !
+           ✅ no specificity
+           ✅ not use pseudo-element selectors
