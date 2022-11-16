@@ -43,7 +43,7 @@ ol li:nth-child(even) div div:nth-child(odd) {
   margin: 10px;
 }
 
-ol li:nth-child(odd) .box:nth-child(odd) + * {
+ol li:nth-child(odd) .box:nth-child(odd) + span {
   background-color: yellow;
 }
 ol li:nth-child(even) .box:nth-child(even) + div {

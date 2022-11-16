@@ -14,16 +14,16 @@
 
        ✅ [ ] -> descendant selector 👍🏻
        ✅ [>] -> child selector 👍🏻
-       ✅ [+] -> adjacent sibling selector
-       ✅ [~] -> adjacent sibling selector
+       ✅ [+] -> adjacent sibling selector 👍🏻
+       ✅ [~] -> adjacent sibling selector 👍🏻
 
 ## 3️⃣ Pseudo Class Selectors
 
        ✅ :root
-       ✅ :empty
-       ✅ :first-child
+       ✅ :empty 👍🏻
+       ✅ :first-child 👍🏻
        ✅ :first-of-type
-       ✅ :last-child
+       ✅ :last-child 👍🏻
        ✅ :last-of-type
        ✅ :nth-child(n)
               🎁 odd(toq)

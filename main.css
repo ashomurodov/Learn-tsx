@@ -1,10 +1,33 @@
-body {
+/* li {
   background-color: #efed40;
-  display: grid;
-  height: 100vh;
-  place-items: center;
+} */
+
+/* span ~ * {
+  background-color: black;
+  color: white;
+} */
+
+/* span ~ li {
+  background-color: black;
+  color: white;
+
+
+} */
+
+/* div + p {
+  background-color: black;
+  color: white;
+} */
+
+/* .first {
+  background-color: yellow;
 }
 
-h1 {
-  font-size: 70px;
+#menu-second .menu-item-second {
+  background-color: black;
+  color: white;
+} */
+
+li :nth-child(3) {
+  background-color: #efed40;
 }
