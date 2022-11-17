@@ -1,4 +1,4 @@
-# ---------- 16.11.22 ----------(5)
+# ---------- 18.11.22 ----------(6)
 
 ## 1️⃣ Explain CSS Basics
 
@@ -10,14 +10,7 @@
        ✅ Borders
        ✅ Shadows
 
-## 2️⃣ Relational Selectors
-
-       ✅ [ ] -> descendant selector 👍🏻
-       ✅ [>] -> child selector 👍🏻
-       ✅ [+] -> adjacent sibling selector 👍🏻
-       ✅ [~] -> adjacent sibling selector 👍🏻
-
-## 3️⃣ Pseudo Class Selectors
+## 2️⃣ Pseudo Class Selectors
 
        ✅ :root
        ✅ :empty 👍🏻
