@@ -1,11 +1,39 @@
 body {
   height: 100vh;
   margin: 0;
-  display: grid;
-  place-items: center;
-  background-color: #efed40;
 }
 
 h1 {
   font-size: 80px;
 }
+
+/* p:first-of-type {
+  background-color: red;
+} */
+
+/* p:nth-child(5) {
+  background-color: green;
+} */
+
+/* li:nth-child(2n + 1) {
+  background-color: green;
+} */
+
+/* li:nth-child(2) {
+  background-color: unset;
+} */
+/*
+li:nth-child(3n):active {
+  background-color: green;
+}
+
+li:nth-child(5n):hover {
+  background-color: yellow;
+}
+li:nth-child(15n):hover:active {
+  background-color: blue;
+}
+
+li:active {
+  background-color: red;
+} */

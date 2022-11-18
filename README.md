@@ -12,18 +12,18 @@
 
 ## 2️⃣ Pseudo Class Selectors
 
-       ✅ :root
+       ✅ :root 👍🏻
        ✅ :empty 👍🏻
        ✅ :first-child 👍🏻
-       ✅ :first-of-type
+       ✅ :first-of-type 👍🏻
        ✅ :last-child 👍🏻
-       ✅ :nth-child(n)
+       ✅ :nth-child(n)  👍🏻
               🎁 odd(toq)
               🎁 even(juft)
-       ✅ :nth-last-child(n)
-       ✅ :hover
-       ✅ :active
-       ✅ :focus
+       ✅ :nth-last-child(n) 👍🏻
+       ✅ :hover 👍🏻
+       ✅ :active 👍🏻
+       ✅ :focus 👍🏻
        ✅ :not
 
 ## 3️⃣ Pseudo-element Selectors
