@@ -31,8 +31,6 @@
          ✅ ::first-latter
          ✅ ::first-line
          ✅ ::selection
-         ✅ ::before
-         ✅ ::after
 
 ## 4️⃣ Selectors Specificity
 
@@ -46,3 +44,10 @@
            ✅ Named colors
            ✅ RGB(Red, Green, Blue) | RGBA(Red, Green, Blue,Alfa)
            ✅ HEX
+
+## 7️⃣ Practice
+
+## SELF-STUDIES
+
+        ✅ ::before
+        ✅ ::after
