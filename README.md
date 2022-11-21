@@ -12,8 +12,8 @@
 
 ## Pseudo-element Selectors
 
-         ✅ ::first-latter
-         ✅ ::first-line
+         ✅ ::first-latter 👍🏻
+         ✅ ::first-line 👍🏻
          ✅ ::selection
 
 ## Selectors Specificity

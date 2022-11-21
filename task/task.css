@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+.boxes {
+  padding: 10px;
+  border: 1px solid;
+  width: max-content;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box-2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.box-4 {
+  width: 210px;
+  height: 100px;
+  background-color: green;
+  margin-right: 10px;
+}
+
+.box-5 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.box-6 {
+  width: 320px;
+  height: 100px;
+  background-color: blue;
+}
+
+.row {
+  display: flex;
+}
+
+.row:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
