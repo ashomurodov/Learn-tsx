@@ -1,20 +1,14 @@
-# ---------- 21.11.22 ----------(7)
+# ---------- 23.11.22 ----------(8)
 
 ## Explain CSS Basics
 
        ✅ Providing CSS 👍🏻
        ✅ Normalizing CSS 👍🏻
-       ✅ Selectors
+       ✅ Selectors 👍🏻
        ✅ Colors
        ✅ Gradients
        ✅ Borders
        ✅ Shadows
-
-## Pseudo-element Selectors
-
-         ✅ ::first-latter 👍🏻
-         ✅ ::first-line 👍🏻
-         ✅ ::selection
 
 ## Selectors Specificity
 

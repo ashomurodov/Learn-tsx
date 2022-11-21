@@ -1,25 +1,10 @@
 body {
   margin: 0;
-}
-
-/* h1 {
-  font-size: 80px;
-} */
-
-/* p .first {
-  font-size: 60px;
-} */
-/* p::first-letter {
-  font-size: 60px;
-} */
-/* p::first-line {
-  background-color: red;
-} */
-section.about *::selection {
-  background-color: #00b533;
-  color: #fff;
-}
-section.contact *::selection {
+  display: grid;
+  place-items: center;
   background-color: #efed40;
-  color: #000;
+}
+
+h1 {
+  font-size: 80px;
 }
