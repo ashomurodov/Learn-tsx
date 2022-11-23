@@ -10,18 +10,18 @@
        ✅ Borders
        ✅ Shadows
 
-## Selectors Specificity
+## Selectors Specificity 👍🏻
 
            ✅ Explain site -> https://css-tricks.com/specifics-on-css-specificity/
            ✅ SITE -> https://specifishity.com/
 
-## Inheritance
+## Inheritance 👍🏻
 
-## Colors
+## Colors 👍🏻
 
-           ✅ Named colors
-           ✅ RGB(Red, Green, Blue) | RGBA(Red, Green, Blue,Alfa)
-           ✅ HEX
+           ✅ Named colors 👍🏻
+           ✅ RGB(Red, Green, Blue) 👍🏻 | RGBA(Red, Green, Blue,Alfa) 👍🏻
+           ✅ HEX 👍🏻
 
 ## Practice
 
