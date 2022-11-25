@@ -6,29 +6,29 @@
        ✅ Normalizing CSS 👍🏻
        ✅ Selectors 👍🏻
        ✅ Colors 👍🏻
-       ✅ Gradients
-       ✅ Borders
+       ✅ Gradients 👍🏻
+       ✅ Borders 👍🏻
        ✅ Shadows
 
-## Gradients
+## Gradients 👍🏻
 
-       ✅ Linear-gradient
-       ✅ Radial-gradient
+       ✅ Linear-gradient 👍🏻
+       ✅ Radial-gradient 👍🏻
 
-## Borders
+## Borders 👍🏻
 
        ✅ border-width
        ✅ border-style
        ✅ border-color
        ✅ border
 
-## Shadows
+## Shadows 👍🏻
 
-       ✅ box-shadow
+       ✅ box-shadow 👍🏻
               🎁 outset shadow
               🎁 inset shadow
-       ✅ text-shadow
-       ✅ drop-shadow
+       ✅ text-shadow 👍🏻
+       ✅ drop-shadow 👍🏻
 
 ## Practice
 

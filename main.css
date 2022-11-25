@@ -1,11 +1,25 @@
 body {
   margin: 0;
-  background-color: #efed40;
-  display: grid;
+  /* display: grid;
   place-items: center;
-  height: 100vh;
+  height: 100vh; */
+  background-image: linear-gradient(to right, #fff 80%, blue 80%);
 }
 
-h1 {
-  font-size: 80px;
+.box {
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  font-size: 30px;
+  transition: 0.3s linear;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.box p {
+  text-shadow: 0px 5px 15px yellow;
+}
+
+.box:active {
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.35);
 }
