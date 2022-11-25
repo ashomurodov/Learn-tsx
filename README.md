@@ -10,6 +10,32 @@
        ✅ Borders
        ✅ Shadows
 
+## Gradients
+
+       ✅ Linear-gradient
+       ✅ Radial-gradient
+
+## Borders
+
+       ✅ border-width
+       ✅ border-style
+       ✅ border-color
+       ✅ border
+
+## Shadows
+
+       ✅ box-shadow
+              🎁 outset shadow
+              🎁 inset shadow
+       ✅ text-shadow
+       ✅ drop-shadow
+
 ## Practice
 
-## SELF-STUDIES
+## Explain new part (advanced)
+
+## Layout
+
+       ✅ Box Model
+       ✅ Sizing Elements
+       ✅ Overflowing
