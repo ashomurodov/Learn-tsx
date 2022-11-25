@@ -1,34 +1,8 @@
-# ---------- 25.11.22 ----------(9)
+# ---------- 28.11.22 ----------(10)
 
-## Explain CSS Basics
+## Explain CSS ADVANCED
 
-       ✅ Providing CSS 👍🏻
-       ✅ Normalizing CSS 👍🏻
-       ✅ Selectors 👍🏻
-       ✅ Colors 👍🏻
-       ✅ Gradients 👍🏻
-       ✅ Borders 👍🏻
-       ✅ Shadows
-
-## Gradients 👍🏻
-
-       ✅ Linear-gradient 👍🏻
-       ✅ Radial-gradient 👍🏻
-
-## Borders 👍🏻
-
-       ✅ border-width
-       ✅ border-style
-       ✅ border-color
-       ✅ border
-
-## Shadows 👍🏻
-
-       ✅ box-shadow 👍🏻
-              🎁 outset shadow
-              🎁 inset shadow
-       ✅ text-shadow 👍🏻
-       ✅ drop-shadow 👍🏻
+       ✅
 
 ## Practice
 
