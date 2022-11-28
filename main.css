@@ -1,22 +1,15 @@
 * {
   box-sizing: border-box;
 }
-/*
-:root {
-  --box-bg: #efed40;
-  --box-1-bg: red;
-  --box-2-bg: blue;
-  --box-3-bg: black;
-} */
 
 body {
-  width: 100%;
-  height: 500px;
   margin: 0;
+  display: grid;
+  place-items: center;
+  background-color: #efed40;
+  height: 100vh;
 }
 
-.box {
-  width: 50%;
-  height: 50%;
-  background-color: var(--bg);
+h1 {
+  font-size: 80px;
 }
