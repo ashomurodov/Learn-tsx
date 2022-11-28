@@ -9,17 +9,17 @@
        ✅ Transformations, Transitions, and Animations
        ✅ Writing Clean, Maintainable CSS
 
-## Repeat last lessons
+## Repeat last lessons 👍🏻
 
 ## Layout
 
-       ✅ Box Model
-       ✅ Sizing Elements
+       ✅ Box Model 👍🏻
+       ✅ Sizing Elements 👍🏻
             🔷 box-sizing
-                 🎁 content-box
-                 🎁 border-box
-       ✅ Block vs Inline vs Inline-block
-       ✅ Outline
+                 🎁 content-box 👍🏻
+                 🎁 border-box 👍🏻
+       ✅ Block vs Inline vs Inline-block 👍🏻
+       ✅ Outline 👍🏻
        ✅ Measurement Units
             🔷 absolute
                  🎁 px
