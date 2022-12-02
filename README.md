@@ -66,5 +66,6 @@
                 🎁 space-evenly
                 🎁 space-around
        ✅ Grid
+       ✅ Media Queries
 
 ## PRACTICE
