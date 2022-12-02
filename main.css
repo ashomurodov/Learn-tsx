@@ -2,35 +2,9 @@
   box-sizing: border-box;
 }
 
-/* :root {
-  font-size: 20px;
-} */
-
 body {
   margin: 0;
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg);
-  height: 50vh;
-  font-size: 80px;
-}
-
-.hero {
   height: 100vh;
-  background: linear-gradient(to right, #fff 80%, #800a7a 80%);
-  overflow: scroll;
+  display: grid;
+  place-items: center;
 }
-
-/* .boxes {
-  height: 50%;
-  background-color: red;
-}
-
-.box {
-  height: 100%;
-  background-color: #efed40;
-} */

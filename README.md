@@ -1,21 +1,7 @@
-# ---------- 02.12.22 ----------(12)
+# ---------- 05.12.22 ----------(13)
 
 ## Layout
 
-       ✅ Box Model 👍🏻
-       ✅ Sizing Elements 👍🏻
-            🔷 box-sizing
-                 🎁 content-box
-                 🎁 border-box
-       ✅ Block vs Inline vs Inline-block 👍🏻
-       ✅ Outline 👍🏻
-       ✅ Measurement Units
-            🔷 absolute
-                 🎁 px 👍🏻
-            🔷 relative
-                 🎁 % -> relative to size of the container 👍🏻
-                 🎁 [em👍🏻, rem👍🏻] -> relative to the font-size
-                 🎁 [vw, vh] -> relative to the viewport 👍🏻
        ✅ Positioning
             🔷 static 👍🏻
                  🎁 all element default position value 👍🏻
@@ -53,6 +39,7 @@
                 🎁 center
                 🎁 stretch
                 🎁 baseline
+
             🔷 justify-content
                 🎁 start
                 🎁 end
