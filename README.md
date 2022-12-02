@@ -2,22 +2,28 @@
 
 ## Layout
 
-       ✅ Box Model
-       ✅ Sizing Elements
+       ✅ Box Model 👍🏻
+       ✅ Sizing Elements 👍🏻
             🔷 box-sizing
                  🎁 content-box
                  🎁 border-box
-       ✅ Block vs Inline vs Inline-block
-       ✅ Outline
+       ✅ Block vs Inline vs Inline-block 👍🏻
+       ✅ Outline 👍🏻
        ✅ Measurement Units
-       ✅ Positioning
-            🔷 static
-                 🎁 all element default position value
-                 🎁 not working [top,right,bottom,left]
-                 🎁 element asosiy sathda qoladi
+            🔷 absolute
+                 🎁 px 👍🏻
             🔷 relative
-                 🎁 top & right & bottom & left
-                 🎁 z-index
+                 🎁 % -> relative to size of the container 👍🏻
+                 🎁 [em👍🏻, rem👍🏻] -> relative to the font-size
+                 🎁 [vw, vh] -> relative to the viewport 👍🏻
+       ✅ Positioning
+            🔷 static 👍🏻
+                 🎁 all element default position value 👍🏻
+                 🎁 not working [top,right,bottom,left] 👍🏻
+                 🎁 element asosiy sathda qoladi 👍🏻
+            🔷 relative
+                 🎁 top & right & bottom & left 👍🏻
+                 🎁 z-index 👍🏻
                  🎁 element asosiy sathda orni qoladi lekin z-index boyicha harakatlanishi mumkin
             🔷 absolute
                  🎁 element asosiy sathda qolmaydi, otasi(relative element)ga nisbatan harakatlanadi
