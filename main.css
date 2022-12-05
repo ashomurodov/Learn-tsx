@@ -9,3 +9,7 @@ body {
   place-items: center;
   background-color: #efed40;
 }
+
+h1 {
+  font-size: 80px;
+}
