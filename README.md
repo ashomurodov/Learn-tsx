@@ -18,46 +18,58 @@
             🔷 sticky
                  🎁 example : https://codepen.io/geoffgraham/pen/ybVzeX
        ✅ FlexBox
-            🔷 Properties for the Parent
-            🔷 flex-direction
-                🎁 row | row-reverse
-                🎁 column | column-reverse
-            🔷 flex-wrap
-                 🎁 nowrap
-                 🎁 wrap
-                 🎁 wrap-reverse
+          🏆 Properties for the Parent
+               🔷 flex-direction
+                    🎁 row | row-reverse
+                    🎁 column | column-reverse
+               🔷 flex-wrap
+                    🎁 nowrap
+                    🎁 wrap
+                    🎁 wrap-reverse
 
-            🔷 flex-flow
+               🔷 flex-flow
 
-            🔷 Axes
-                x-axes
-                y-axes
+               🔷 Axes
+                    x-axes
+                    y-axes
 
-            🔷 align-items
-                🎁 flex-start
-                🎁 flex-end
-                🎁 center
-                🎁 stretch
-                🎁 baseline
+               🔷 align-items
+                    🎁 flex-start
+                    🎁 flex-end
+                    🎁 center
+                    🎁 stretch
+                    🎁 baseline
 
-            🔷 justify-content
-                🎁 start
-                🎁 end
-                🎁 flex-start
-                🎁 flex-end
-                🎁 center
-                🎁 stretch
-                🎁 space-between
-                🎁 space-evenly
-                🎁 space-around
-            🔷 align-content
-                🎁 flex-start
-                🎁 flex-end
-                🎁 center
-                🎁 stretch
-                🎁 space-between
-                🎁 space-evenly
-                🎁 space-around
+               🔷 justify-content
+                    🎁 start
+                    🎁 end
+                    🎁 flex-start
+                    🎁 flex-end
+                    🎁 center
+                    🎁 stretch
+                    🎁 space-between
+                    🎁 space-evenly
+                    🎁 space-around
+               🔷 align-content
+                    🎁 flex-start
+                    🎁 flex-end
+                    🎁 center
+                    🎁 stretch
+                    🎁 space-between
+                    🎁 space-evenly
+                    🎁 space-around
+
+         🏆 Properties for the Children
+               🔷 order
+               🔷 flex-grow
+               🔷 flex-shrink
+               🔷 flex-basis
+               🔷 align-self
+                    🎁 flex-start
+                    🎁 flex-end
+                    🎁 center
+                    🎁 stretch
+                    🎁 baseline
        ✅ Grid
        ✅ Media Queries
 
