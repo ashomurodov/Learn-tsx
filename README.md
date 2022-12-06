@@ -3,45 +3,6 @@
 ## Layout
 
        ✅ FlexBox
-          🏆 Properties for the Parent
-               🔷 flex-direction 👍🏻
-                    🎁 row | row-reverse
-                    🎁 column | column-reverse
-               🔷 flex-wrap 👍🏻
-                    🎁 nowrap
-                    🎁 wrap
-                    🎁 wrap-reverse
-
-               🔷 flex-flow 👍🏻
-
-               🔷 Axes 👍🏻
-                    x-axes
-                    y-axes
-
-               🔷 align-items(y-axes) 👍🏻
-                    🎁 flex-start
-                    🎁 flex-end
-                    🎁 center
-                    🎁 stretch
-                    🎁 baseline
-
-               🔷 justify-content(x-axes) 👍🏻
-                    🎁 flex-start
-                    🎁 flex-end
-                    🎁 center
-                    🎁 space-between
-                    🎁 space-evenly
-                    🎁 space-around
-
-               🔷 align-content (x-axes control with y-axes) 👍🏻
-                    🎁 flex-start
-                    🎁 flex-end
-                    🎁 center
-                    🎁 stretch
-                    🎁 space-between
-                    🎁 space-evenly
-                    🎁 space-around
-
          🏆 Properties for the Children
                🔷 order
                🔷 flex-grow
@@ -53,7 +14,58 @@
                     🎁 center
                     🎁 stretch
                     🎁 baseline
+         🏆 https://flexboxfroggy.com/
        ✅ Grid
-       ✅ Media Queries
+          🏆 Important Terminology (Muhim terminlar)
+               🔷 Grid Container
+               🔷 Grid Line
+               🔷 Grid Track
+               🔷 Grid Area
+               🔷 Grid Item
+               🔷 Grid Cell
+               🔷 Grid Gap
+
+          🏆 Parent Properties
+               🔷 display
+                    🎁 grid
+
+               🔷 sizes units
+                    🎁 px
+                    🎁 auto
+                    🎁 %
+                    🎁 fr
+
+               🔷 grid-template-columns
+               🔷 grid-template-rows
+               🔷 grid-template: rows / columns
+               🔷 justify-items
+                    🎁 stretch
+                    🎁 start
+                    🎁 end
+                    🎁 center
+               🔷 align-items
+                    🎁 stretch
+                    🎁 start
+                    🎁 end
+                    🎁 center
+                    🎁 baseline
+               🔷 place-items
+               🔷 justify-content
+               🔷 align-content
+         🔷 Child Properties
+            ✅ grid-column       : <start-value> / <end-value> 👍🏻
+            ✅ grid-row          : <start-value> / <end-value> 👍🏻
+            ✅ grid-area         : <name> | row-start / column-start / row-end / column-end
+            ✅ justify-self 👍🏻
+            ✅ align-self 👍🏻
+            ✅ place-self 👍🏻      : align-self / [justify-self]
+
+      🔷 Sizing Functions
+            ✅ minmax
+            ✅ repeat 👍🏻
+                 🎁 auto-fill
+                 🎁 auto-fit
+
+## Media Queries
 
 ## PRACTICE
