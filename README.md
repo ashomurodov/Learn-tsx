@@ -1,4 +1,4 @@
-# ---------- 07.12.22 ----------(14)
+# ---------- 09.12.22 ----------(15)
 
 ## Layout
 
@@ -18,6 +18,8 @@
        ✅ Javascript
                🔷 data types
                🔷 using string and boolean
+               🔷 function
+               🔷 https://the-winter.github.io/codingjs
        ✅ Practice Sudoku
        ✅ Grid
           🏆 Important Terminology (Muhim terminlar)
@@ -71,5 +73,3 @@
                  🎁 auto-fit
 
 ## Media Queries
-
-## PRACTICE
