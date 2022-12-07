@@ -4,17 +4,17 @@
 
        ✅ FlexBox
          🏆 Properties for the Children
-               🔷 order
+               🔷 order 👍🏻
                🔷 flex-grow
                🔷 flex-shrink
                🔷 flex-basis
-               🔷 align-self
+               🔷 align-self 👍🏻
                     🎁 flex-start
                     🎁 flex-end
                     🎁 center
                     🎁 stretch
                     🎁 baseline
-         🏆 https://flexboxfroggy.com/
+         🏆 https://flexboxfroggy.com/ 👍🏻
        ✅ Javascript
                🔷 data types
                🔷 using string and boolean
