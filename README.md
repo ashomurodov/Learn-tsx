@@ -15,6 +15,10 @@
                     🎁 stretch
                     🎁 baseline
          🏆 https://flexboxfroggy.com/
+       ✅ Javascript
+               🔷 data types
+               🔷 using string and boolean
+       ✅ Practice Sudoku
        ✅ Grid
           🏆 Important Terminology (Muhim terminlar)
                🔷 Grid Container
