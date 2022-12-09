@@ -1,4 +1,4 @@
-# ---------- 09.12.22 ----------(15)
+# ---------- 12.12.22 ----------(16)
 
 ## Layout
 
@@ -7,11 +7,6 @@
                🔷 flex-grow
                🔷 flex-shrink
                🔷 flex-basis
-       ✅ Javascript 👍🏻
-               🔷 data types 👍🏻
-               🔷 using string and boolean 👍🏻
-               🔷 function 👍🏻
-               🔷 https://the-winter.github.io/codingjs 👍🏻
        ✅ Practice Sudoku
        ✅ Grid
           🏆 Important Terminology (Muhim terminlar)
