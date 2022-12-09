@@ -4,22 +4,14 @@
 
        ✅ FlexBox
          🏆 Properties for the Children
-               🔷 order 👍🏻
                🔷 flex-grow
                🔷 flex-shrink
                🔷 flex-basis
-               🔷 align-self 👍🏻
-                    🎁 flex-start
-                    🎁 flex-end
-                    🎁 center
-                    🎁 stretch
-                    🎁 baseline
-         🏆 https://flexboxfroggy.com/ 👍🏻
-       ✅ Javascript
-               🔷 data types
-               🔷 using string and boolean
-               🔷 function
-               🔷 https://the-winter.github.io/codingjs
+       ✅ Javascript 👍🏻
+               🔷 data types 👍🏻
+               🔷 using string and boolean 👍🏻
+               🔷 function 👍🏻
+               🔷 https://the-winter.github.io/codingjs 👍🏻
        ✅ Practice Sudoku
        ✅ Grid
           🏆 Important Terminology (Muhim terminlar)
