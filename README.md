@@ -1,21 +1,11 @@
-# ---------- 12.12.22 ----------(16)
+# ---------- 14.12.22 ----------(17)
 
 ## Checking Homeworks
 
 ## Layout
 
-       ✅ JavaScript coding.js 👍🏻
-       ✅ Practice Sudoku 👍🏻
+       ✅ JavaScript coding.js
        ✅ Grid
-          🏆 Important Terminology (Muhim terminlar)
-               🔷 Grid Container
-               🔷 Grid Line
-               🔷 Grid Track
-               🔷 Grid Area
-               🔷 Grid Item
-               🔷 Grid Cell
-               🔷 Grid Gap
-
           🏆 Parent Properties
                🔷 display
                     🎁 grid
