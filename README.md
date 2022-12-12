@@ -1,12 +1,10 @@
 # ---------- 12.12.22 ----------(16)
 
+## Checking Homeworks
+
 ## Layout
 
-       ✅ FlexBox
-         🏆 Properties for the Children
-               🔷 flex-grow
-               🔷 flex-shrink
-               🔷 flex-basis
+       ✅ JavaScript coding.js
        ✅ Practice Sudoku
        ✅ Grid
           🏆 Important Terminology (Muhim terminlar)
