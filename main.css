@@ -1,15 +1,56 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
+:root {
+	--size: 800px;
+}
 body {
-  margin: 0;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  background-color: #efed40;
+	margin: 0;
+	height: 100vh;
+	display: grid;
+	place-items: center;
 }
 
-h1 {
-  font-size: 80px;
+.sudoku {
+	width: var(--size);
+	height: var(--size);
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #344861;
+	gap: 3px;
+	border: 3px solid #344861;
+}
+
+.square {
+	width: calc(calc(var(--size) - 12px) / 3);
+	height: calc(calc(var(--size) - 12px) / 3);
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #eee;
+}
+
+.cell {
+	width: calc(calc(var(--size) - 12px) / 9);
+	height: calc(calc(var(--size) - 12px) / 9);
+	border: 0.5px solid #344861;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.cell:hover {
+	background-color: rgba(30, 143, 255, 0.533);
+	cursor: pointer;
+}
+
+* {
+	transition: 0.3s all linear;
+}
+@media (max-width: 600px) {
+	:root {
+		--size: 450px;
+	}
 }

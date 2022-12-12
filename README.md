@@ -4,8 +4,8 @@
 
 ## Layout
 
-       ✅ JavaScript coding.js
-       ✅ Practice Sudoku
+       ✅ JavaScript coding.js 👍🏻
+       ✅ Practice Sudoku 👍🏻
        ✅ Grid
           🏆 Important Terminology (Muhim terminlar)
                🔷 Grid Container
