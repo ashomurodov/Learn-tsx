@@ -7,39 +7,40 @@
        ✅ JavaScript coding.js
        ✅ Grid
           🏆 Parent Properties
-               🔷 display
+               🔷 display 👍🏻
                     🎁 grid
 
-               🔷 sizes units
+               🔷 sizes units 👍🏻
                     🎁 px
                     🎁 auto
                     🎁 %
                     🎁 fr
 
-               🔷 grid-template-columns
-               🔷 grid-template-rows
-               🔷 grid-template: rows / columns
-               🔷 justify-items
+               🔷 grid-template-columns 👍🏻
+               🔷 grid-template-rows 👍🏻
+               🔷 grid-template: rows / columns 👍🏻
+               🔷 justify-items 👍🏻
                     🎁 stretch
                     🎁 start
                     🎁 end
                     🎁 center
-               🔷 align-items
+               🔷 align-items 👍🏻
                     🎁 stretch
                     🎁 start
                     🎁 end
                     🎁 center
                     🎁 baseline
-               🔷 place-items
-               🔷 justify-content
-               🔷 align-content
+               🔷 place-items 👍🏻
+               🔷 justify-content 👍🏻
+               🔷 align-content 👍🏻
+               🔷 place-content 👍🏻
          🔷 Child Properties
-            ✅ grid-column       : <start-value> / <end-value> 👍🏻
-            ✅ grid-row          : <start-value> / <end-value> 👍🏻
+            ✅ grid-column       : <start-value> / <end-value>
+            ✅ grid-row          : <start-value> / <end-value>
             ✅ grid-area         : <name> | row-start / column-start / row-end / column-end
-            ✅ justify-self 👍🏻
-            ✅ align-self 👍🏻
-            ✅ place-self 👍🏻      : align-self / [justify-self]
+            ✅ justify-self
+            ✅ align-self
+            ✅ place-self       : align-self / [justify-self]
 
       🔷 Sizing Functions
             ✅ minmax
