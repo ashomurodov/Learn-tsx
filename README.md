@@ -1,40 +1,11 @@
-# ---------- 14.12.22 ----------(17)
+# ---------- 16.12.22 ----------(18)
 
 ## Checking Homeworks
 
 ## Layout
 
-       ✅ JavaScript coding.js
        ✅ Grid
-          🏆 Parent Properties
-               🔷 display 👍🏻
-                    🎁 grid
-
-               🔷 sizes units 👍🏻
-                    🎁 px
-                    🎁 auto
-                    🎁 %
-                    🎁 fr
-
-               🔷 grid-template-columns 👍🏻
-               🔷 grid-template-rows 👍🏻
-               🔷 grid-template: rows / columns 👍🏻
-               🔷 justify-items 👍🏻
-                    🎁 stretch
-                    🎁 start
-                    🎁 end
-                    🎁 center
-               🔷 align-items 👍🏻
-                    🎁 stretch
-                    🎁 start
-                    🎁 end
-                    🎁 center
-                    🎁 baseline
-               🔷 place-items 👍🏻
-               🔷 justify-content 👍🏻
-               🔷 align-content 👍🏻
-               🔷 place-content 👍🏻
-         🔷 Child Properties
+         🏆 Child Properties
             ✅ grid-column       : <start-value> / <end-value>
             ✅ grid-row          : <start-value> / <end-value>
             ✅ grid-area         : <name> | row-start / column-start / row-end / column-end
