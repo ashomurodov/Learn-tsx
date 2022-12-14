@@ -43,8 +43,13 @@
 
       🔷 Sizing Functions
             ✅ minmax
-            ✅ repeat 👍🏻
+            ✅ repeat
                  🎁 auto-fill
                  🎁 auto-fit
 
-## Media Queries
+## Links
+
+    ✅ https://css-tricks.com/snippets/css/complete-guide-grid/#aa-justify-items
+    ✅ https://learncssgrid.com/
+    ✅ https://cssreference.io/property/grid-auto-rows/
+    ✅ https://www.youtube.com/watch?v=Dz9BzY21Zks&list=PLQkVA6z3dFvbnBJetfYDAF3-cG_ubgdZR
