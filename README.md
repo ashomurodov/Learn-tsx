@@ -12,6 +12,7 @@
             ✅ justify-self
             ✅ align-self
             ✅ place-self       : align-self / [justify-self]
+            ✅ order
 
       🔷 Sizing Functions
             ✅ minmax
@@ -25,3 +26,4 @@
     ✅ https://learncssgrid.com/
     ✅ https://cssreference.io/property/grid-auto-rows/
     ✅ https://www.youtube.com/watch?v=Dz9BzY21Zks&list=PLQkVA6z3dFvbnBJetfYDAF3-cG_ubgdZR
+    ✅ https://cssgrid.io/
