@@ -7,64 +7,9 @@ body {
 	height: 100vh;
 	display: grid;
 	place-items: center;
+	background-color: #efed40;
 }
 
-.main {
-	width: 800px;
-	height: 96vh;
-	display: grid;
-	grid-template-columns: 3fr 6fr;
-	grid-template-rows: repeat(5, 1fr);
-	background-color: dodgerblue;
-	padding: 5px;
-	gap: 5px;
-	grid-template-areas:
-		"header header"
-		"sidebar sidebar"
-		"content-2 ."
-		"content-3 content-3"
-		"footer footer";
-}
-
-.bg {
-	background-color: #d417a8;
-	color: #fff;
-	font-size: 30px;
-	font-weight: bold;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-/* .header {
-	grid-column: 1 / 3;
-}
-
-.sidebar {
-	grid-row: 2 / 4;
-}
-
-#content,
-.footer {
-	grid-column: 1 / -1;
-} */
-
-.header {
-	grid-area: header;
-}
-.sidebar {
-	grid-area: sidebar;
-}
-
-.content-1 {
-	grid-area: content-1;
-}
-.content-2 {
-	grid-area: content-2;
-}
-.content-3 {
-	grid-area: content-3;
-}
-.footer {
-	grid-area: footer;
+h1 {
+	font-size: 80px;
 }
