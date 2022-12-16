@@ -6,13 +6,13 @@
 
        ✅ Grid
          🏆 Child Properties
-            ✅ grid-column       : <start-value> / <end-value>
-            ✅ grid-row          : <start-value> / <end-value>
-            ✅ grid-area         : <name> | row-start / column-start / row-end / column-end
-            ✅ justify-self
-            ✅ align-self
-            ✅ place-self       : align-self / [justify-self]
-            ✅ order
+            ✅ grid-column       : <start-value> / <end-value> 👍🏻
+            ✅ grid-row          : <start-value> / <end-value> 👍🏻
+            ✅ grid-area         : <name> | row-start / column-start / row-end / column-end 👍🏻
+            ✅ justify-self 👍🏻
+            ✅ align-self 👍🏻
+            ✅ place-self        : align-self / [justify-self] 👍🏻
+            ✅ order 👍🏻
 
       🔷 Sizing Functions
             ✅ minmax

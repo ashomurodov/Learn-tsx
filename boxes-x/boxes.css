@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--primary: #b528bc;
+	--white: #fff;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 80px);
+	background-image: linear-gradient(45deg, rgb(178, 4, 184), rgb(123, 0, 255));
+	gap: 5px;
+	padding: 5px;
+	color: #fff;
+	place-items: stretch;
+}
+
+.box {
+	background-color: #9aef40;
+	color: black;
+	padding: 0.5rem;
+	display: grid;
+	place-items: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.box1 {
+	order: 1;
+}
