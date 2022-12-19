@@ -4,16 +4,16 @@
 
 ## Grid auto
 
-      ✅ grid-auto-columns
-      ✅ grid-auto-rows
-      ✅ grid-auto-flow
+      ✅ grid-auto-columns 👍🏻
+      ✅ grid-auto-rows 👍🏻
+      ✅ grid-auto-flow 👍🏻
          🔷 column
          🔷 row
          🔷 dense
 
 ## Layout
 
-      ✅ Hiding Elements
+      ✅ Hiding Elements 👍🏻
          🔷 visibility
             🎁 visible (default)
             🎁 hidden
