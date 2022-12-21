@@ -1,0 +1,25 @@
+/* header */
+
+.header .boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: var(--size);
+	padding: calc(var(--size) / 2);
+}
+
+.header .box {
+	background-color: var(--secondary);
+	color: var(--text-primary);
+}
+
+/* @media (orientation: landscape) {
+	.boxes {
+		background-color: black;
+	}
+}
+
+@media (orientation: portrait) {
+	.boxes {
+		background-color: red;
+	}
+} */

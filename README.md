@@ -4,11 +4,11 @@
 
 ## Media Queries
 
-       ✅ Meta tag
-       ✅ Media attribute
-       ✅ Query conditions
+       ✅ Meta tag 👍🏻
+       ✅ Media attribute 👍🏻
+       ✅ Query conditions 👍🏻
          🔷 @media type and (feature)
-       ✅ Mode
+       ✅ Mode 👍🏻
          🔷 landscape
          🔷 portrait
 
