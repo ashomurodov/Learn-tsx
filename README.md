@@ -1,32 +1,24 @@
-# ---------- 19.12.22 ----------(19)
+# ---------- 21.12.22 ----------(20)
 
 ## Checking Homeworks
 
-## Grid auto
-
-      ✅ grid-auto-columns 👍🏻
-      ✅ grid-auto-rows 👍🏻
-      ✅ grid-auto-flow 👍🏻
-         🔷 column
-         🔷 row
-         🔷 dense
-
-## Layout
-
-      ✅ Hiding Elements 👍🏻
-         🔷 visibility
-            🎁 visible (default)
-            🎁 hidden
-
 ## Media Queries
 
-       ✅ At Rules
-            🔷 @media
-            🔷 @import
-            🔷 @keyframe
-            🔷 @font-face
-       ✅ Write Media Query code
-       ✅ Breakpoints
+       ✅ Meta tag
+       ✅ Media attribute
+       ✅ Query conditions
+         🔷 @media type and (feature)
+       ✅ Mode
+         🔷 landscape
+         🔷 portrait
+
+## Media type
+
+       ✅ https://bit.ly/3YHVs3K
+       ✅ Without media rule
+       ✅ https://codepen.io/web-dot-dev/pen/vYJJzMK
+       ✅ https://codepen.io/web-dot-dev/pen/QWMMVPm
+       ✅ https://1linelayouts.glitch.me
 
 ## Practice Media Queries
 
