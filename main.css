@@ -1,15 +1,35 @@
-* {
-	box-sizing: border-box;
+/* @font-face {
+	font-family: Roboto;
+	src: url("./fonts/Roboto/roboto-black-webfont.woff2") format("woff2"), url("./fonts/Roboto/roboto-black-webfont.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+} */
+
+/* h1 {
+	font-family: Roboto;
+	font-weight: 900;
 }
 
-body {
-	margin: 0;
-	height: 100vh;
-	display: grid;
-	place-items: center;
-	background-color: #efed40;
+h2 {
+	font-family: Roboto;
+	font-weight: 900;
+} */
+
+div {
+	/* column-count: 4; */
+	text-align: justify;
+	column-gap: 4rem;
+	column-rule: 2px dashed red;
+	direction: rtl;
 }
 
-h1 {
-	font-size: 80px;
+@media (max-width: 960px) {
+	div {
+		column-count: 2;
+	}
+}
+@media (max-width: 568px) {
+	div {
+		column-count: 1;
+	}
 }
