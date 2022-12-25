@@ -1,10 +1,68 @@
 body {
-	display: grid;
-	place-items: center;
-	background: #efed40;
+	margin: 2rem;
+	/* display: grid; */
+	/* align-items: center;
+	justify-items: start; */
 	height: 100vh;
 }
 
-h1 {
-	font-size: 80px;
+.parent {
+	width: 450px;
+	height: 450px;
+	border: 2px dashed;
+	border-radius: 50%;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+
+	font-size: 50px;
+	display: grid;
+	place-items: center;
+	font-weight: bold;
+	user-select: none;
+	overflow: hidden;
+	transition: transform 0.2s linear;
+	animation-name: firstAnimation;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	/* animation-timing-function: cubic-bezier(0.17, 0.67, 0.76, -1.21); */
+}
+
+.parent:active .box {
+	animation-play-state: paused;
+}
+
+/* .right-top {
+
+}
+.right-bottom {
+
+}
+.left-bottom {
+	transform: translate(0, 300px);
+} */
+
+@keyframes firstAnimation {
+	0%,
+	100% {
+		transform: translate(0, 0);
+		background-color: #efed40;
+	}
+	25% {
+		transform: translateX(300px);
+		background-color: #000;
+		color: white;
+	}
+	50% {
+		transform: translate(300px, 300px);
+		background-color: pink;
+		color: green;
+	}
+	75% {
+		transform: translate(0, 300px);
+		background-color: red;
+		color: white;
+	}
 }
