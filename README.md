@@ -1,4 +1,4 @@
-# ---------- 25.12.22 ----------(22)
+# ---------- 26.12.22 ----------(23)
 
 ## Checking Homeworks
 
@@ -18,28 +18,30 @@
        ✅ Image Filter Functions
            🔷 https://css-tricks.com/almanac/properties/f/filter/
 
-## Transformations
-
-         ✅ rotate 👍🏻
-         ✅ scale 👍🏻
-         ✅ translate 👍🏻
-         ✅ skew 👍🏻
-
-## Transitions
-
-         ✅ transition-delay 👍🏻
-         ✅ transition-duration 👍🏻
-         ✅ transition-timing-function 👍🏻
-         ✅ transition-property 👍🏻
-         ✅ Universal property (Transition)
-         🔗  https://css-tricks.com/almanac/properties/t/transition/
-         🔗  https://cubic-bezier.com/
-
 ## Animations
 
-         ✅ animation-name 👍🏻
-         ✅ animation-duration 👍🏻
-         ✅ animation-timing-function 👍🏻
-         ✅ animation-delay 👍🏻
+         ✅ animation-name
+           🔷 @keyframe animation-name
+         ✅ animation-duration
+         ✅ animation-timing-function
+         ✅ animation-delay
          ✅ animation-direction
+           🔷 normal
+           🔷 reverse
+           🔷 alternate
+           🔷 reverse-alternate
          ✅ animation-iteration-count
+         ✅ https://animate.style
+
+## Deploying
+
+         ✅ Deploy manually
+         ✅ Deploy from repo
+
+## Create git repository
+
+         ✅ git init
+         ✅ git add
+         ✅ git commit
+         ✅ git remote
+         ✅ git push
