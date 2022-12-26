@@ -1,0 +1,48 @@
+* {
+	transition: all var(--transition-time) linear;
+}
+
+.container {
+	padding: 0 120px;
+}
+
+.btn-primary {
+	background-color: var(--blue);
+	color: var(--white);
+	font-family: "Montserrat";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	padding: 18px 38px;
+	text-align: center;
+	border: none;
+	border-radius: var(--radius-size);
+	width: max-content;
+}
+
+@media (max-width: 992px) {
+	.container {
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 25px;
+	}
+	.btn-primary {
+		padding: 14px 30px;
+	}
+}
+
+@media (max-width: 568px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	.btn-primary {
+		font-size: 14px;
+		padding: 10px 24px;
+	}
+}

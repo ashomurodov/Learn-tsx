@@ -1,0 +1,9 @@
+:root {
+	--dark: #3d3d3d;
+	--dark-50: #666571;
+	--orange: #fe7244;
+	--blue: #6652da;
+	--white: #ffffff;
+	--radius-size: 8px;
+	--transition-time: 0.25s;
+}
