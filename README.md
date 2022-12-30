@@ -1,4 +1,4 @@
-# ---------- 26.12.22 ----------(23)
+# ---------- 06.01.23 ----------(24)
 
 ## Checking Homeworks
 
@@ -32,16 +32,3 @@
            🔷 reverse-alternate
          ✅ animation-iteration-count
          ✅ https://animate.style
-
-## Deploying
-
-         ✅ Deploy manually
-         ✅ Deploy from repo
-
-## Create git repository
-
-         ✅ git init
-         ✅ git add
-         ✅ git commit
-         ✅ git remote
-         ✅ git push
