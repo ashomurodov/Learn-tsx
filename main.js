@@ -1,1 +1,1 @@
-console.log("👋🏻 Lesson-24 👋🏻");
+console.log("🥶 Examine-2 🥶");
