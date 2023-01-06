@@ -1,22 +1,22 @@
 # ---------- 06.01.23 ----------(24)
 
-## Checking Homeworks
+## Checking Homeworks 👍🏻
 
-## Images
+## Images 👍🏻
 
        ✅ Background Images
-           🔷 background-image
-           🔷 background-repeat
-           🔷 background-position
-           🔷 background-size
-           🔷 background-attachment
+           🔷 background-image 👍🏻
+           🔷 background-repeat 👍🏻
+           🔷 background-position 👍🏻
+           🔷 background-size 👍🏻
+           🔷 background-attachment 👍🏻
                🎁 local
                🎁 fixed
                🎁 scroll
 
-       ✅ Clipping
+       ✅ Clipping 👍🏻
            🔷 https://bennettfeely.com/clippy
-       ✅ Image Filter Functions
+       ✅ Image Filter Functions 👍🏻
            🔷 https://css-tricks.com/almanac/properties/f/filter/
 
 ## Explain SASS Course Plan
@@ -59,7 +59,7 @@
            🎁 "Bracket Pair Colorizer"
            🎁 "SCSS IntelliSense"
 
-## What is "NodeJS" and "npm"
+## What is "NodeJS" and "npm" 
 
 ## Create first Web app with SASS
 

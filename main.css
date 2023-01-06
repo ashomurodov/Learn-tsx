@@ -1,10 +1,28 @@
 body {
+	margin: 0;
 	display: grid;
-	align-items: center;
-	justify-items: center;
+	place-items: center;
 	height: 100vh;
-	background-color: #efed40;
 }
-h1 {
-	font-size: 80px;
+
+.box {
+	width: 600px;
+	height: 600px;
+	border: 10px solid lightgray;
+	background-image: url(./images/meal.jpg), url(./images/meal.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: scroll;
+	transition: all 0.3s linear;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+	background-color: red;
+}
+
+img {
+	width: 400px;
+	height: 400px;
+}
+
+img:hover {
+	filter: grayscale() blur(5px);
 }
