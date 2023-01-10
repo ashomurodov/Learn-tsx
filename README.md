@@ -1,15 +1,28 @@
-# ---------- 09.01.23 ----------(25)
+# ---------- 11.01.23 ----------(26)
 
-## Examine-2
+## Checking Homeworks
 
-## Requirements
+## Setup
 
-     ✅ Folder structure (images, styles, fonts)
-     ✅ Using Local fonts
-     ✅ CSS Variables
-     ✅ @media [min-width: 992px | max-width: 568px]
-     ✅ Background images
-     ✅ Beautiful effects and animations
-     ✅ Netlify Deploying (optional)
+      ✅ Install VS-Code
+      ✅ Install Node JS
+      ✅ Install node-sass with npm
+      ✅ Install vs code extensions
+           🎁 "Bracket Pair Colorizer"
+           🎁 "SCSS IntelliSense"
 
-## [Design](https://bit.ly/3VTXMCo)
+## What is "NodeJS" and "npm"
+
+## Create first Web app with SASS
+
+      ✅ using "npm init -y" command
+      ✅ using global node_modules
+      ✅ compile with node-sass
+
+## SASS variables
+
+## Nesting
+
+## Parent Selector
+
+## [Examine-2](https://bit.ly/3IBBH8o)
