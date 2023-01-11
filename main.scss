@@ -1,0 +1,38 @@
+:root {
+	--yellow: #efed40;
+	--light: #eee;
+}
+body {
+	margin: 0;
+	display: grid;
+	height: 100vh;
+	place-items: center;
+
+	.boxes {
+		width: 600px;
+		height: 150px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		padding: 1rem;
+		gap: 1rem;
+		background-color: var(--yellow);
+
+		@media (max-width: 920px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 568px) {
+			grid-template-columns: 1fr;
+		}
+		.box {
+			background-color: var(--bg);
+			display: grid;
+			place-items: center;
+			font-size: 30px;
+			color: var(--light);
+
+			&:hover {
+				background-color: black;
+			}
+		}
+	}
+}

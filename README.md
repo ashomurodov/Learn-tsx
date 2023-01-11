@@ -1,8 +1,8 @@
 # ---------- 11.01.23 ----------(26)
 
-## Checking Homeworks
+## Examine-2 👍🏻
 
-## Setup
+## Setup 👍🏻
 
       ✅ Install VS-Code
       ✅ Install Node JS
@@ -11,15 +11,15 @@
            🎁 "Bracket Pair Colorizer"
            🎁 "SCSS IntelliSense"
 
-## What is "NodeJS" and "npm"
+## What is "NodeJS" and "npm" 👍🏻
 
-## Create first Web app with SASS
+## Create first Web app with SASS 👍🏻
 
       ✅ using "npm init -y" command
       ✅ using global node_modules
       ✅ compile with node-sass
 
-## SASS variables
+## SASS variables 👍🏻
 
 ## Nesting
 

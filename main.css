@@ -1,11 +1,40 @@
-body {
-	margin: 0;
-	display: grid;
-	place-items: center;
-	height: 100vh;
-	background-color: #efed40;
+:root {
+  --yellow: #efed40;
+  --light: #eee;
 }
 
-h1 {
-	font-size: 80px;
+body {
+  margin: 0;
+  display: grid;
+  height: 100vh;
+  place-items: center;
 }
+body .boxes {
+  width: 600px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--yellow);
+}
+@media (max-width: 920px) {
+  body .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 568px) {
+  body .boxes {
+    grid-template-columns: 1fr;
+  }
+}
+body .boxes .box {
+  background-color: var(--bg);
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  color: var(--light);
+}
+body .boxes .box:hover {
+  background-color: black;
+}/*# sourceMappingURL=main.css.map */
