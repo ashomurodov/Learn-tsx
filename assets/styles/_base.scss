@@ -1,0 +1,18 @@
+$bg: blue;
+$text: yellow;
+$black: black;
+$white: white;
+
+body {
+	background-color: $bg;
+}
+.box {
+	width: 150px;
+	height: 150px;
+	border: 1px solid;
+	color: $text;
+
+	&:active {
+		color: blue;
+	}
+}

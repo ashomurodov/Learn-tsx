@@ -2,11 +2,13 @@
 
 ## Checking homeworks
 
-## Variables
+## Variables 👍🏻
 
-## Nesting
+## Nesting 👍🏻
 
-## Partials
+## SVG change color 👍🏻
+
+## Partials 👍🏻
 
 ## Practice
 
