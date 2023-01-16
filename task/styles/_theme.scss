@@ -1,0 +1,7 @@
+$buttonColor: #efed40;
+$textColor: red;
+
+@mixin center() {
+	display: grid;
+	place-items: center;
+}

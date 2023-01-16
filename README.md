@@ -1,13 +1,13 @@
 # ---------- 16.01.23 ----------(28)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
-## Images && SASS
+## Images && SASS 👍🏻
 
-## Mixins
+## Mixins 👍🏻
 
-## Alias
+## @use 👍🏻
 
-## @use
+## Alias 👍🏻
 
 ## Practice

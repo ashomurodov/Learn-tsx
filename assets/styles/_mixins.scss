@@ -1,0 +1,55 @@
+@mixin center {
+	display: grid;
+	place-items: center;
+}
+@mixin flex($justify: center, $align: center, $direction: row) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+
+@mixin repeat($fontName) {
+	font-family: $fontName;
+	font-style: normal;
+}
+@mixin downloadBlack($name: Roboto) {
+	@font-face {
+		@include repeat($name);
+		src: url("../fonts/Roboto/Roboto-Black.ttf");
+		font-weight: 900;
+	}
+}
+
+@mixin downloadLight($name: Roboto) {
+	@font-face {
+		@include repeat($fontName: $name);
+		src: url("../fonts/Roboto/Roboto-Light.ttf");
+		font-weight: 300;
+	}
+}
+
+// @mixin downloadRobotoBlack {
+// 	@font-face {
+// 		font-family: Roboto;
+// 		src: url("../fonts/Roboto/Roboto-Black.ttf");
+// 		font-weight: 900;
+// 		font-style: normal;
+// 	}
+// }
+// @mixin downloadRobotoLight {
+// 	@font-face {
+// 		font-family: Roboto;
+// 		src: url("../fonts/Roboto/Roboto-Light.ttf");
+// 		font-weight: 300;
+// 		font-style: normal;
+// 	}
+// }
+@mixin downloadRobotoMedium {
+	@font-face {
+		font-family: Roboto;
+		src: url("../fonts/Roboto/Roboto-Medium.ttf");
+		font-weight: 500;
+		font-style: normal;
+	}
+}

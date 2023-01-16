@@ -1,0 +1,7 @@
+$buttonColor: red;
+
+@mixin center() {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
