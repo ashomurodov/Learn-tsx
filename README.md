@@ -1,15 +1,13 @@
-# ---------- 13.01.23 ----------(27)
+# ---------- 16.01.23 ----------(28)
 
 ## Checking homeworks
 
-## Variables 👍🏻
-
-## Nesting 👍🏻
-
-## SVG change color 👍🏻
-
-## Partials 👍🏻
-
-## Practice
+## Images && SASS
 
 ## Mixins
+
+## Alias
+
+## @use
+
+## Practice
