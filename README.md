@@ -1,13 +1,33 @@
-# ---------- 16.01.23 ----------(28)
+# ---------- 18.01.23 ----------(29)
 
-## Checking homeworks 👍🏻
+## Checking homeworks
 
-## Images && SASS 👍🏻
+## Variables
 
-## Mixins 👍🏻
+     ✅ Scoping
+     ✅ Shadowing
+     ✅ Shadowing
 
-## @use 👍🏻
+## Interpolation
 
-## Alias 👍🏻
+## At-Rules
+
+     ✅ use
+     ✅ forward
+     ✅ @import
+     ✅ @mixin && @include
+     ✅ @function
+     ✅ @extend
+     ✅ @at-root
+     ✅ @error
+     ✅ @warn
+     ✅ @debug
+
+## Flow Control
+
+     ✅ @if and @else
+     ✅ @each
+     ✅ @for
+     ✅ @while
 
 ## Practice
