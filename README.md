@@ -1,19 +1,20 @@
 # ---------- 18.01.23 ----------(29)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
-## Variables
+## Code Review(Sanjarbek) 👍🏻
 
-     ✅ Scoping
-     ✅ Shadowing
-     ✅ Shadowing
-     ✅ !default
+## Variables 👍🏻
 
-## Interpolation
+     ✅ Scoping 👍🏻
+     ✅ Shadowing 👍🏻
+     ✅ !default 👍🏻
+
+## Interpolation 👍🏻
 
 ## Using Math Module
 
-     ✅ @debug
+     ✅ @debug 👍🏻
      ✅ math.$e
      ✅ math.$pi
      ✅ math.ceil
