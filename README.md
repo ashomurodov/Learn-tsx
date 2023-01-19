@@ -1,46 +1,46 @@
-# ---------- 18.01.23 ----------(29)
+# ---------- 20.01.23 ----------(30)
 
-## Checking homeworks 👍🏻
+## Checking Homeworks
 
-## Code Review(Sanjarbek) 👍🏻
+## Values and Variables
 
-## Variables 👍🏻
+## Variable name conventions
 
-     ✅ Scoping 👍🏻
-     ✅ Shadowing 👍🏻
-     ✅ !default 👍🏻
+## Data Types
 
-## Interpolation 👍🏻
+## Primitive Data types
 
-## Using Math Module
+     ✅ Number
+     ✅ String
+     ✅ Boolean
+     ✅ Undefined
+     ✅ Null
 
-     ✅ @debug 👍🏻
-     ✅ math.$e
-     ✅ math.$pi
-     ✅ math.ceil
-     ✅ math.floor
+## let && const && var
 
-## Maps
+     ✅ Hoisting
+     ✅ Temporal dead zone(let, const)
+     ✅ Scoping
+          🔷 Global scope -> full file
+          🔷 Function scope -> function (){}
+          🔷 Block scope -> {} || for(){}
 
-     ✅ map-get
-     ✅ map-has-key
-     ✅ map-remove
-     ✅ map-merge
+## Basic operators
 
-## Loops
+     ✅ Math operators (%,+,-,++,--,*,/,*=,+=)
+     ✅ Assignment operators (=)
+     ✅ Comparison operators (>, <, >=, <=, ==, ===, !=, !==)
 
-     ✅ @each
-     ✅ @for
+## Coding Challenge
 
-## Conditions
+     ✅ CALC BMI(Body Mass Index) BMI = weight / height ** 2
+          🔷 Save values variables: height and wight
+          🔷 calc BMI with formula
+          🔷 create markResult variables
+               🎁 TEST DATA 1: Mark: weight: 78kg, height: 1.69m || Kent : weight: 92kg, height: 1.95m
+               🎁 TEST DATA 2: Mark: weight: 95kg, height: 1.88m || Kent : weight: 85kg, height: 1.76m
+     ✅ swap algorithm
 
-     ✅ @if
-     ✅ @else
+## Strings and Template Literals
 
-## Mixin
-
-     ✅ @content
-
-## Practice
-
-     ✅ Custom bootstrap
+## Coding JS Warmup-1
