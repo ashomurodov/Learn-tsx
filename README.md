@@ -1,20 +1,20 @@
 # ---------- 20.01.23 ----------(30)
 
-## Checking Homeworks
+## Checking Homeworks 👍🏻
 
-## Values and Variables
+## Values and Variables 👍🏻
 
-## Variable name conventions
+## Variable name conventions 👍🏻
 
-## Data Types
+## Data Types 👍🏻
 
-## Primitive Data types
+## Primitive Data types 👍🏻
 
-     ✅ Number
-     ✅ String
-     ✅ Boolean
-     ✅ Undefined
-     ✅ Null
+     ✅ Number 👍🏻
+     ✅ String 👍🏻
+     ✅ Boolean 👍🏻
+     ✅ Undefined 👍🏻
+     ✅ Null 👍🏻
 
 ## let && const && var
 
@@ -25,13 +25,13 @@
           🔷 Function scope -> function (){}
           🔷 Block scope -> {} || for(){}
 
-## Basic operators
+## Basic operators 👍🏻
 
      ✅ Math operators (%,+,-,++,--,*,/,*=,+=)
      ✅ Assignment operators (=)
      ✅ Comparison operators (>, <, >=, <=, ==, ===, !=, !==)
 
-## Coding Challenge
+## Coding Challenge 👍🏻
 
      ✅ CALC BMI(Body Mass Index) BMI = weight / height ** 2
           🔷 Save values variables: height and wight
