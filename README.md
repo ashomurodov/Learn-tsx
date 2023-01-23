@@ -4,25 +4,29 @@
 
 ## let && const && var
 
-## Strings and Template Literals
+      ✅ Scoping 👍🏻
+      ✅ Hoisting 👍🏻
+      ✅ Temporal dead zone 👍🏻
 
-      ✅ Using JS expression
-      ✅ Multi line
+## Strings and Template Literals 👍🏻
 
-## If && Else Statements
+      ✅ Using JS expression 👍🏻
+      ✅ Multi line 👍🏻
 
-## Statement vs Expression
+## If && Else Statements 👍🏻
+
+## Statement vs Expression 👍🏻
 
       ✅ https://www.joshwcomeau.com/javascript/statements-vs-expressions/
       ✅ https://www.youtube.com/watch?v=WVyCrI1cHi8&t=1s
+
+## Coding Challenge(2) 👍🏻
 
 ## Type Conversion and Coercion
 
 ## Truthy and Falsy values
 
 ## Equality Operators == vs ===
-
-## Coding Challenge(1)
 
 ## Boolean Logic
 
@@ -32,6 +36,6 @@
 
 ## Logic Operators
 
-## Coding Challenge(2)
+## Coding Challenge(3)
 
 ## Coding JS Warmup-1

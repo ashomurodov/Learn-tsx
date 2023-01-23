@@ -1,3 +1,4 @@
+"use strict";
 // ---------Values and Variables
 // let name = "arslonbek";
 
@@ -77,15 +78,16 @@
  *
  *
  */
-// let markWeight;
-// let markHeight;
-// let markBMI;
+// let markWeight = 120;
+// let markHeight = 1.8;
+// let markBMI = markWeight / markHeight ** 2;
 
-// let kentWeight;
-// let kentHeight;
-// let kentBMI;
+// let kentWeight = 95;
+// let kentHeight = 1.65;
+// let kentBMI = kentWeight / kentHeight ** 2;
 
-// let markResult;
+// let markResult = markBMI > kentBMI;
+// console.log(markResult);
 
 // CC - 2
 // let a = 20;
@@ -110,7 +112,94 @@
 // console.log(a == b);
 // console.log(a === b);
 
-console.log("Lesson-31");
+// console.log("Lesson-31");
+
+// let a = 30;
+// console.log(a);
+// let _a = 50;
+// console.log(_a);
+
+// var a = 20;
+// a = 40;
+// console.log(a);
+
+// {
+// 	{
+// 		{
+// 			{
+// 				// let a = 40;
+// 				{
+// 					var a = 20;
+// 					// let a = 40;
+// 					console.log(a);
+// 				}
+// 				console.log(a);
+// 			}
+// 			console.log(a);
+// 		}
+// 		console.log(a);
+// 	}
+// 	console.log(a);
+// }
+
+// -----Scoping
+// for (var i = 0; i < 10; i++) {
+// 	console.log("i = ", i);
+// }
+// console.log("i = ", i);
+
+// -----Hoisting
+// firstName = "Jamshidbek";
+// console.log(firstName);
+// let firstName;
+
+// a = 60;
+// console.log(a);
+// var a = 20;
+// console.log(a);
+// a = 40;
+
+// function app() {
+// 	var a = 20;
+// 	console.log(a);
+// }
+// console.log(a);
+
+// app();
+
+/**
+ * ------Javascript scopes
+ * {} -> Block Scope
+ * function () {} -> Function Scope
+ * main.js -> Global Scope
+ *
+ */
+
+// ---- Strings and Template Literals
+// let name = "Arslonbek";
+// let birthYear = 2001;
+// let currentYear = 2023;
+
+// // let result = name + " ning yoshi " + (currentYear - birthYear) + " da";
+// let result = `${name} ning yoshi ${20 > 10 ? true : false} da`;
+// console.log(result);
+
+// console.log("Mening \nIsmim \nArslonbek");
+// console.log(
+// 	`Mening
+// Ismim
+// Arslonbek`
+// );
+
+// let myAge = 17;
+// let carAge = 18;
+// let isAccess = myAge - carAge > 0 ? true : false;
+// if (myAge - carAge > 0) {
+// 	isAccess = true;
+// } else {
+// 	isAccess = false;
+// }
+// console.log(isAccess);
 
 /**
  * Coding Challenge #2 :
@@ -121,8 +210,29 @@ console.log("Lesson-31");
  *
  * Task-2 : Use a template literal to include the BMI values in the outputs.
  * Example: "Mark's BMI (28.3) is higher than Kent's (23.9)!"
+ * Example: "Kent's BMI (28.3) is higher than Mark's (23.9)!"
  *
  */
+
+// let markWeight = 120;
+// let markHeight = 1.8;
+// let markBMI = markWeight / markHeight ** 2;
+
+// let kentWeight = 95;
+// let kentHeight = 1.65;
+// let kentBMI = kentWeight / kentHeight ** 2;
+
+// let markResult = markBMI > kentBMI;
+// console.log(markResult);
+
+// let str = "arslonbek salom";
+// str.st;
+// if(age > 20) {
+
+// }else {
+
+// }
+// let result = str === "arslonbek" ? true : false;
 
 /**
  * Coding Challenge #3 :
