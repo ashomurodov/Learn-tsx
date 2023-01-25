@@ -2,19 +2,26 @@
 
 ## Checking Homeworks
 
-## Type Conversion and Coercion
+## Type Conversion and Coercion 👍🏻
 
-## Truthy and Falsy values
+## Truthy and Falsy values 👍🏻
 
-## Equality Operators == vs ===
+      ✅ NaN
+      ✅ false
+      ✅ null
+      ✅ 0
+      ✅ ""
+      ✅ undefined
 
-## Boolean Logic
+## Equality Operators == vs === 👍🏻
+
+## Boolean Logic 👍🏻
 
       ✅ &&
       ✅ ||
       ✅ !
 
-## Logic Operators
+## Logic Operators 👍🏻
 
 ## Coding Challenge(3)
 
