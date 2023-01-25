@@ -1,26 +1,6 @@
-# ---------- 23.01.23 ----------(31)
+# ---------- 25.01.23 ----------(32)
 
 ## Checking Homeworks
-
-## let && const && var
-
-      ✅ Scoping 👍🏻
-      ✅ Hoisting 👍🏻
-      ✅ Temporal dead zone 👍🏻
-
-## Strings and Template Literals 👍🏻
-
-      ✅ Using JS expression 👍🏻
-      ✅ Multi line 👍🏻
-
-## If && Else Statements 👍🏻
-
-## Statement vs Expression 👍🏻
-
-      ✅ https://www.joshwcomeau.com/javascript/statements-vs-expressions/
-      ✅ https://www.youtube.com/watch?v=WVyCrI1cHi8&t=1s
-
-## Coding Challenge(2) 👍🏻
 
 ## Type Conversion and Coercion
 
@@ -38,4 +18,16 @@
 
 ## Coding Challenge(3)
 
-## Coding JS Warmup-1
+## Strict Mode
+
+      ✅ Defined rule
+      ✅ Checking js keywords
+      ✅ https://medium.com/jp-tech/introduction-to-strict-mode-in-javascript-fb977bab697c
+
+## Functions
+
+      ✅ calling && running && invoking function
+      ✅ Function Declarations vs Expressions
+      ✅ Arrow functions
+
+## Coding JS
