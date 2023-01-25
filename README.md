@@ -1,27 +1,6 @@
-# ---------- 25.01.23 ----------(32)
+# ---------- 27.01.23 ----------(33)
 
 ## Checking Homeworks
-
-## Type Conversion and Coercion 👍🏻
-
-## Truthy and Falsy values 👍🏻
-
-      ✅ NaN
-      ✅ false
-      ✅ null
-      ✅ 0
-      ✅ ""
-      ✅ undefined
-
-## Equality Operators == vs === 👍🏻
-
-## Boolean Logic 👍🏻
-
-      ✅ &&
-      ✅ ||
-      ✅ !
-
-## Logic Operators 👍🏻
 
 ## Coding Challenge(3)
 
@@ -33,8 +12,12 @@
 
 ## Functions
 
+      ✅ What is Function
+      ✅ Function types
       ✅ calling && running && invoking function
       ✅ Function Declarations vs Expressions
       ✅ Arrow functions
+      ✅ Function calling other functions
+      ✅ Function Review
 
 ## Coding JS
