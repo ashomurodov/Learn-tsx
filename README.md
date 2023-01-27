@@ -1,8 +1,10 @@
 # ---------- 27.01.23 ----------(33)
 
-## Coding Challenge(3)
+## Coding JS 👍🏻
 
-## Strict Mode
+## Coding Challenge(3) 👍🏻
+
+## Strict Mode 👍🏻
 
       ✅ Defined rule
       ✅ Checking js keywords
@@ -10,10 +12,10 @@
 
 ## Functions
 
-      ✅ What is Function
-      ✅ Function types
-      ✅ calling && running && invoking function
-      ✅ Function Declarations vs Expressions
+      ✅ What is Function 👍🏻
+      ✅ Function types 👍🏻
+      ✅ calling && running && invoking function 👍🏻
+      ✅ Function Declarations vs Expressions 👍🏻
       ✅ Arrow functions
       ✅ Function calling other functions
       ✅ Function Review
@@ -35,5 +37,3 @@
       ✅ trim
       ✅ toLowerCase
       ✅ toUpperCase
-
-## Coding JS

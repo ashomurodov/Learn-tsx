@@ -1,4 +1,4 @@
-console.log("Lesson-33");
+// console.log("Lesson-33");
 
 /**
  * Coding Challenge #3 :
@@ -59,3 +59,108 @@ console.log("Lesson-33");
  *      xech kim yutmaganda : No winners 🥶
  *
  */
+// "use strict";
+
+// a = 20;
+// console.log(a);
+
+// a = a + 40;
+// console.log(a);
+
+// function foo() {
+// 	"use strict";
+// 	console.log(bar);
+// 	// Uncaught ReferenceError: bar is not defined
+// 	bar = 0;
+// 	return bar;
+// }
+
+// foo();
+
+// var foo = 1;
+// console.log(foo);
+// var bar = 2;
+// console.log(bar);
+
+// function summa(a, a) {
+// 	return a + a;
+// }
+
+// const result = summa(10, 20);
+// console.log(result);
+
+// "use strict";
+
+// Global variable
+
+// function foo() {
+// 	bar = 1;
+// }
+
+// foo();
+// console.log(bar); // 1
+
+// Local variable
+// function foo() {
+// 	var bar = 1; // bar chỉ có hiệu lực bên trong function
+// 	console.log(bar); // 1
+// }
+
+// foo();
+// console.log(bar);
+// "use strict";
+// var public = 20;
+// console.log(public);
+
+// ------ Function
+
+// function hi(name) {
+// 	console.log(`Hello ${name}`);
+// }
+
+// for (let i = 0; i < 100; i++) {
+// 	hi(`arslonbek-${i}`);
+// }
+
+// function show() {
+// 	console.log("arslonbek");
+// }
+// let app = show();
+// console.log(app);
+// "use strict";
+
+// -------- Function Declaration
+// function app() {
+// 	console.log(a);
+// 	console.log("hello world");
+// }
+
+// let a = 20;
+// {
+//  console.log(a);
+// 	console.log("hello world");
+// }
+
+// -------- Function Expression
+
+// "use strict";
+
+// show();
+// var show = function (a, b) {
+// 	console.log("hello world");
+// };
+
+// show = 20;
+
+// console.log(show);
+
+// function app() {
+// 	console.log("I am APP Function");
+// }
+
+// const show = function () {
+// 	console.log("I am SHOW Function");
+// };
+
+// app();
+// show();
