@@ -1,7 +1,5 @@
 # ---------- 27.01.23 ----------(33)
 
-## Checking Homeworks
-
 ## Coding Challenge(3)
 
 ## Strict Mode
@@ -19,5 +17,23 @@
       ✅ Arrow functions
       ✅ Function calling other functions
       ✅ Function Review
+
+## String Methods
+
+      ✅ charAt
+      ✅ concat
+      ✅ endsWith
+      ✅ startsWith
+      ✅ includes
+      ✅ indexOf
+      ✅ lastIndexOf
+      ✅ search
+      ✅ replace
+      ✅ split
+      ✅ slice
+      ✅ substring
+      ✅ trim
+      ✅ toLowerCase
+      ✅ toUpperCase
 
 ## Coding JS
