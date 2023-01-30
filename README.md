@@ -4,33 +4,33 @@
 
 ## Functions
 
-      ✅ What is Function
-      ✅ Function types
-      ✅ calling && running && invoking function
-      ✅ Function Declarations vs Expressions
-      ✅ Arrow functions
-      ✅ Function calling other functions
-      ✅ Function Review
+      ✅ What is Function 👍🏻
+      ✅ Function types 👍🏻
+      ✅ calling && running && invoking function 👍🏻
+      ✅ Function Declarations vs Expressions 👍🏻
+      ✅ Arrow functions 👍🏻
+      ✅ Function calling other functions 👍🏻
+      ✅ Function Review 👍🏻
 
-## Coding Challenge(4)
+## Coding Challenge(4) 👍🏻
 
-## String Methods
+## String Methods 👍🏻
 
-      ✅ charAt
-      ✅ concat
-      ✅ endsWith
-      ✅ startsWith
-      ✅ includes
-      ✅ indexOf
-      ✅ lastIndexOf
-      ✅ search
-      ✅ replace
-      ✅ split
-      ✅ slice
-      ✅ substring
-      ✅ trim
-      ✅ toLowerCase
-      ✅ toUpperCase
+      ✅ charAt 👍🏻
+      ✅ concat 👍🏻
+      ✅ endsWith 👍🏻
+      ✅ startsWith 👍🏻
+      ✅ includes 👍🏻
+      ✅ indexOf 👍🏻
+      ✅ lastIndexOf 👍🏻
+      ✅ search 👍🏻
+      ✅ replace --
+      ✅ split 👍🏻
+      ✅ slice --
+      ✅ substring 👍🏻
+      ✅ trim 👍🏻
+      ✅ toLowerCase 👍🏻
+      ✅ toUpperCase 👍🏻
 
 ## Introduction to Arrays
 
