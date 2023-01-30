@@ -1,49 +1,28 @@
-# ---------- 30.01.23 ----------(34)
+# ---------- 01.02.23 ----------(35)
 
 ## Coding JS
 
-## Functions
+## Array
 
-      ✅ What is Function 👍🏻
-      ✅ Function types 👍🏻
-      ✅ calling && running && invoking function 👍🏻
-      ✅ Function Declarations vs Expressions 👍🏻
-      ✅ Arrow functions 👍🏻
-      ✅ Function calling other functions 👍🏻
-      ✅ Function Review 👍🏻
+      ✅ Introduction to Arrays
+            🔷 Working simple array
+            🔷 Working matrix and x*y arrays
 
-## Coding Challenge(4) 👍🏻
+      ✅ Basic Array Operations(Methods)
+            🔷 Method vs Function
+            🔷 Crete simple forEach and map method
+            🔷 What is callback function
 
-## String Methods 👍🏻
+      ✅ Add and Remove Elements
+            🔷 push
+            🔷 unshift
+            🔷 pop
+            🔷 shift
 
-      ✅ charAt 👍🏻
-      ✅ concat 👍🏻
-      ✅ endsWith 👍🏻
-      ✅ startsWith 👍🏻
-      ✅ includes 👍🏻
-      ✅ indexOf 👍🏻
-      ✅ lastIndexOf 👍🏻
-      ✅ search 👍🏻
-      ✅ replace --
-      ✅ split 👍🏻
-      ✅ slice --
-      ✅ substring 👍🏻
-      ✅ trim 👍🏻
-      ✅ toLowerCase 👍🏻
-      ✅ toUpperCase 👍🏻
+      ✅ Coding Challenge (Dolphin vs Koala)
 
-## Introduction to Arrays
+## Object
 
-## Basic Array Operations(Methods)
-
-      ✅ Method vs Function
-      ✅ Crete simple forEach and map method
-      ✅ Crete simple forEach and map method
-      ✅ What is callback function
-
-## Add and Remove Elements
-
-      ✅ push
-      ✅ unshift
-      ✅ pop
-      ✅ shift
+      ✅ Introduction Object
+      ✅ Dot vs. Bracket Notation
+      ✅ Object Methods
