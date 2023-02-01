@@ -60,4 +60,74 @@
 
  */
 
-console.log("Lesson-35");
+// let str = "-arslonbek";
+// str.__proto__.replace = function () {
+// 	return "My Function";
+// };
+
+// console.log(str);
+// console.log(str.replace("-", ""));
+
+// const person = {
+// 	name: "Bekzod",
+// 	job: "Teacher",
+// 	age: 25,
+// 	run: function () {
+// 		console.log("Bekzod is running...");
+// 	},
+// };
+
+// person.run();
+
+// ------- Array --------
+
+function hi(name) {
+	console.log(`Hello ${name}`);
+}
+// let name1 = "Arslonbek";
+// let name2 = "Erkinbek";
+// let name3 = "Jamshidbek";
+// // ...
+// let name27 = "Maftuna";
+
+// hi(name1);
+// hi(name2);
+// hi(name3);
+// hi("...");
+// hi(name27);
+
+// let names = ["Arslonbek", 22, "Erkinbek", "Jamshidbek", "...", "Maftuna"];
+
+// // for (let i = 0; i < names.length; i++) {
+// // 	hi(names[i]);
+// // }
+
+// for (let name of names) {
+// 	console.log(`Hello ${name}`);
+// }
+
+// console.log("------");
+// for (let i = 0; i < names.length; i++) {
+// 	console.log(`Hello ${names[i]}`);
+// }
+
+let list = [
+	["Toshkent", "Olmazor", "Yunusobod"],
+	["Xorazm", "Xiva", "Gurlan"],
+	["Navoiy", "Zarafshon", "Uchquduq"],
+	["Samarqand", "Kattaqorgon", "Urgut"],
+];
+
+console.log(list[2][1]);
+
+/**
+ * # Toshkent
+ *   --- Olmazor
+ *   --- Yunusobod
+ * # Xorazm
+ *   --- Xiva
+ *   --- Gurlan
+ *
+ *
+ *
+ */

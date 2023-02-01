@@ -1,6 +1,8 @@
 # ---------- 01.02.23 ----------(35)
 
-## Coding JS
+## Coding JS 👍🏻
+
+## Method vs Function 👍🏻
 
 ## Array
 
@@ -9,7 +11,6 @@
             🔷 Working matrix and x*y arrays
 
       ✅ Basic Array Operations(Methods)
-            🔷 Method vs Function
             🔷 Crete simple forEach and map method
             🔷 What is callback function
 
