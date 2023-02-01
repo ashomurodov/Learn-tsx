@@ -6,13 +6,13 @@
 
 ## Array
 
-      ✅ Introduction to Arrays
+      ✅ Introduction to Arrays 👍🏻
             🔷 Working simple array
             🔷 Working matrix and x*y arrays
 
       ✅ Basic Array Operations(Methods)
+            🔷 What is callback function 👍🏻
             🔷 Crete simple forEach and map method
-            🔷 What is callback function
 
       ✅ Add and Remove Elements
             🔷 push

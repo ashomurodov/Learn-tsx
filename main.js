@@ -111,14 +111,28 @@ function hi(name) {
 // 	console.log(`Hello ${names[i]}`);
 // }
 
-let list = [
-	["Toshkent", "Olmazor", "Yunusobod"],
-	["Xorazm", "Xiva", "Gurlan"],
-	["Navoiy", "Zarafshon", "Uchquduq"],
-	["Samarqand", "Kattaqorgon", "Urgut"],
-];
+// let nums = [1, [2, 21, 22, 23], 3, 4];
 
-console.log(list[2][1]);
+// for (let i = 0; i < nums[1].length; i++) {
+// 	let num = nums[1][i];
+// 	console.log(num);
+// }
+
+// let list = [
+// 	["Toshkent", "Olmazor", "Yunusobod"],
+// 	["Xorazm", "Xiva", "Gurlan"],
+// 	["Navoiy", "Zarafshon", "Uchquduq"],
+// 	["Samarqand", "Kattaqorgon", "Urgut"],
+// ];
+
+// for (let i = 0; i < list.length; i++) {
+// 	const sub = list[i];
+// 	const city = sub[0];
+// 	console.log(`#${city}`);
+// 	for (let j = 1; j < sub.length; j++) {
+// 		console.log(`------${sub[j]}`);
+// 	}
+// }
 
 /**
  * # Toshkent
@@ -131,3 +145,84 @@ console.log(list[2][1]);
  *
  *
  */
+/// ---------Callback
+// function fullName(str) {
+// 	const names = str.split("-");
+// 	const firstName = names[0];
+// 	const lastName = names[1];
+// 	return `${firstName} ${lastName}`;
+// }
+
+// function firstName(str) {
+// 	const names = str.split("-");
+// 	const firstName = names[0];
+// 	return firstName;
+// }
+// function lastName(str) {
+// 	const names = str.split("-");
+// 	const lastName = names[1];
+// 	return lastName;
+// }
+
+// function hi(callback) {
+// 	const name = callback("Arslonbek-Alimbayev");
+// 	console.log(`Hi ${name}`);
+// }
+
+// hi(fullName);
+// hi(firstName);
+// hi(lastName);
+
+// ------ const and array
+// const list = [1, 2, 3];
+// console.log(list);
+
+// list[1] = 20;
+// console.log(list);
+
+// ------ reference vs primitive
+//  Primitive
+// let a = 20; // 001
+// let b = a; // 002
+// b += 20; // 002 = 40
+// console.log(a);
+// console.log(b);
+
+/**
+ * Stack Memory
+ * Address     |  Value
+ *  a(001)     |   20
+ *  b(002)     |   40
+ *
+ */
+
+// // Reference
+// let a = [10, 20, 30]; // a(001) = H(0001)
+// let b = [10, 20, 50]; // b(002) = H(0002)
+// let c = b;
+// b[1] = 50; // H(0001)[1] = 50
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+/**
+ * Stack Memory
+ * Address     |  Value
+ *  a(001)     | H(0001)
+ *  b(002)     | H(0002)
+ *  c(003)     | H(0002)
+ *--------
+ *------- Heap Memory
+ * Address     |    Value
+ *  0001       |  [10,20,30]
+ *  0002       |  [10, 50, 50]
+ *
+ */
+
+// HM(0001) = [], HM(0002) = []
+let a = []; // SM-a(001) = HM(0001)
+let b = []; // SM-b(002) = HM(0002)
+// console.log(a === b)
+console.log(20 === 20);
+console.log([] === []);
