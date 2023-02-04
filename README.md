@@ -1,4 +1,4 @@
-# ---------- 01.02.23 ----------(35)
+# ---------- 05.02.23 ----------(37)
 
 ## Coding JS 👍🏻
 
@@ -19,11 +19,12 @@
             🔷 unshift
             🔷 pop
             🔷 shift
-
-      ✅ Coding Challenge (Dolphin vs Koala)
+            🔷 forEach
+            🔷 map
 
 ## Object
 
       ✅ Introduction Object
       ✅ Dot vs. Bracket Notation
       ✅ Object Methods
+      ✅ this
