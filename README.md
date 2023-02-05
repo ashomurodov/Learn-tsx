@@ -7,8 +7,8 @@
 ## Array
 
       ✅ Introduction to Arrays 👍🏻
-            🔷 Working simple array
-            🔷 Working matrix and x*y arrays
+            🔷 Working simple array 👍🏻
+            🔷 Working matrix and x*y arrays 👍🏻
 
       ✅ Basic Array Operations(Methods)
             🔷 What is callback function 👍🏻
@@ -28,3 +28,5 @@
       ✅ Dot vs. Bracket Notation
       ✅ Object Methods
       ✅ this
+
+## https://github.com/leonardomso/33-js-concepts
