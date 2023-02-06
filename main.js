@@ -1,6 +1,6 @@
 "use strict";
-// console.log("Lesson-37");
-const clg = console.log;
+console.log("Lesson-38");
+// const clg = console.log;
 // // HM_0001 = [10,50,30], HM_0002 = [20,30,40]
 // let a = [10, 20, 30]; // SM_a_001 = HM_0001
 // let b = a; // SM_b_002 = HM_0001
