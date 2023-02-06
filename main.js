@@ -1,152 +1,127 @@
 "use strict";
-console.log("Lesson-38");
 // const clg = console.log;
-// // HM_0001 = [10,50,30], HM_0002 = [20,30,40]
-// let a = [10, 20, 30]; // SM_a_001 = HM_0001
-// let b = a; // SM_b_002 = HM_0001
-// b[1] = 50; // HM_0001[1] = 50
-// b = [20, 10, 40]; // SM_b_002 = HM_0002
-// b[1] = 30; // HM_0002[1] = 30;
-
-// console.log(a); // SM_a_001 -> [10,50,30]
-// console.log(b); // SM_b_002 -> [20,30,40]
-
-// let a = "pdp";
-// let b = "g-8";
-// let c = a + "-" + b;
-// console.log(c);
-// let a = [1, 2];
-// let b = [3, 4];
-// let c = a.concat(b);
-// console.log(c);
-// console.log(a);
-// console.log(b);
-
-// Primitive
-// let str = "arslonbek alimbayev"; // SM_str_001 = 'arslonbek alimbayev'
-// str = str.repeat(2);
-// console.log(str);
-
-// Reference
-// const nums = [1, 2, 3, 4];
-// console.log(nums);
-// const removed = nums.pop(); // mutate
-// const newLength = nums.push(20, 10, 10, 10); // mutate
-// clg(`removed = ${removed}`);
-// clg(`newLength = ${newLength}`);
-// // nums.push(10, 20, 30); // mutate
-// console.log(nums);
-
-// // PUSH METHOD
-// let nums = [10, 30];
-// const newLength = nums.push(10, 20); // nums =  [10,30,10,20]
-// clg(newLength);
-
-// // POP METHOD
-// let nums = [10, 30];
-// const removedElement = nums.pop(); // 30 -> nums =  [10]
-// clg(removedElement);
-// clg(nums);
-
-// SHIFT METHOD
-// let nums = [10, 30];
-// const removedElement = nums.shift(); // 10 -> nums =  [30]
-// clg(removedElement);
-// clg(nums);
-
-// // UNSHIFT METHOD
-// let nums = [10, 30];
-// const newLength = nums.unshift(100, 200); // 4 -> nums =  [100,200,10,30]
-// clg(newLength);
-// clg(nums);
-
-//  HOF
-// function hi(fun) {
-// 	const name = fun();
-// 	clg(`Hi ${name}`);
+// function forEach(fun) {
+// 	for (let i = 0; i < fruits.length; i++) {
+// 		fun(fruits[i], i);
+// 	}
 // }
 
-// function getUsername() {
-// 	return "code2307";
-// }
+// forEach(function (fruit, index) {
+// 	console.log(`I am eating:  ${fruit}`);
+// });
 
-// function getName() {
-// 	return "Arslonbek";
-// }
+// const fruits = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
 
-// hi(getUsername);
-
-// hi(getName);
-
-// function summa(a, b, c, d) {
-// 	return a + b + c + d;
-// }
-
-// const result = summa(10, 20, 30, 40);
-
-// function summa(a) {
-// 	return function (b) {
-// 		return function (c) {
-// 			return function (d) {
-// 				return a + b + c + d;
-// 			};
-// 		};
-// 	};
-// }
-// const result = summa(10)(20)(30)(40);
-// clg(result);
-
-// const nums = [10, 20, 30, 40];
-
-// nums.unshift(100);
-
-// clg(nums);
-
-// function unshift(item) {
-// 	for (let i = nums.length; i > 0; i--) {
-// 		nums[i] = nums[i - 1];
+// function map(callback) {
+// 	let result = [];
+// 	for (let i = 0; i < fruits.length; i++) {
+// 		result[i] = callback(fruits[i]);
 // 	}
 
-// 	nums[0] = item;
+// 	return result;
 // }
 
-// unshift(100);
+// const result1 = map(function (fruit) {
+// 	return `${fruit}+${fruit}`;
+// });
+// clg(result1);
+
+// const result2 = map(function (fruit) {
+// 	return fruit.repeat(2);
+// });
+// clg(result2);
+
+// const result3 = map(function (fruit) {
+// 	return fruit.repeat(3);
+// });
+// clg(result3);
+
+// const list = ["arslonbek 25", "boburbek 14", "jamshidbek 66"];
+
+// const newList = list.map(function (item) {
+// 	let temp = item.split(" "); // ['arslonbek','25']
+// 	let reversed = temp.reverse(); // ['25','arslonbek']
+// 	let result = reversed.join(" "); // '25 arslonbek'
+// 	return result;
+// });
+
+// clg(newList);
+
+// const groups = [
+// 	["g", "8"],
+// 	["d", "10"],
+// 	["g", "11"],
+// ];
+
+// const newGroups = groups.map(function (item) {
+// 	return item.join("-");
+// });
+
+// clg(newGroups);
+
+// const fruits = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+
+// function convertor(fruit) {
+// 	return `<div>${fruit}</div>`;
+// }
+
+// let result = fruits.map(convertor);
+
+// clg(result);
+
+// const items = [
+// 	'<li>🍅</li>'
+// 	'<li>🍄</li>'
+// 	'<li>🥦</li>'
+// 	'<li>🥒</li>'
+// 	'<li>🌽</li>'
+// 	'<li>🥕</li>'
+// 	'<li>🥑</li>'
+// ]
+
+let items = ["🍅", "🍄"];
+// function map(fun) {
+// 	let items = ["🍅", "🍄"];
+// 	let result = [];
+
+// 	for (let item of items) {
+// 		const value = fun(item); // 10
+// 		result.push(value);
+// 	}
+
+// 	return result;
+// }
+
+// function two(item) {
+// 	return `${item}${item}`;
+// }
+
+// const list = items.map(two);
+// clg(list);
+
+// let nums = [1, 2, 3, 4, 5];
+
+// function filter(fun) {
+// 	let result = [];
+
+// 	for (let i = 0; i < nums.length; i++) {
+// 		if (fun(nums[i])) result.push(nums[i]);
+// 	}
+
+// 	return result;
+// }
+
+// let newNums = filter(function (num) {
+// 	return num % 2 === 1;
+// });
+
+// clg(newNums);
+
+// let nums = ["c", "d", "e", "f", "a", "b"];
+
+// nums.sort();
 // clg(nums);
 
-// const names = ["arslonbek", "boburbek", "jamshidbek", "azizbek"];
-
-// function hi(name) {
-// 	clg(`Hi ${name} 👍🏻`);
-// }
-// function hello(name) {
-// 	clg(`Hello ${name} 🤩`);
-// }
-
-// names.forEach(hi);
-// names.forEach(hello);
-
-// Map Method
-// const nums = [1, 2, 3, 4, 5, 6];
-// const powNums = nums.map(function (num) {
-// 	return num ** 2;
-// }); // [1,4,9,16,25,36]
-
-// console.log(nums);
-// console.log(powNums);
-
-// Coding Challenge (Map)
-const names = ["arslonbek-alimbayev", "odilbek-alimbayev", "Boburbek-Jamshidov"];
-
-const _names = names.map(function (name) {
-	return name.split("-").map(function (name) {
-		return name.toLowerCase();
-	});
-});
-
-clg(names);
-clg(_names);
-// const _names = [
-// 	["arslonbek", "alimbayev"],
-// 	["odilbek", "alimbayev"],
-// 	["boburbek", "jamshidov"],
-// ];
+let nums = [1, 2, 3];
+nums.push(10);
+clg(nums);

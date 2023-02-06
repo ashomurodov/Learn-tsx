@@ -4,9 +4,9 @@
 
 ## Array Methods
 
-      ✅ map
-      ✅ filter
-      ✅ sort
+      ✅ map 👍🏻
+      ✅ filter 👍🏻
+      ✅ sort 🎁
       ✅ fill
       ✅ find
       ✅ findIndex
