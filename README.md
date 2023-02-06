@@ -1,26 +1,15 @@
 # ---------- 05.02.23 ----------(37)
 
-## Coding JS 👍🏻
+## Coding JS
 
-## Method vs Function 👍🏻
+## Array Methods
 
-## Array
-
-      ✅ Introduction to Arrays 👍🏻
-            🔷 Working simple array 👍🏻
-            🔷 Working matrix and x*y arrays 👍🏻
-
-      ✅ Basic Array Operations(Methods)
-            🔷 What is callback function 👍🏻
-            🔷 Crete simple forEach and map method
-
-      ✅ Add and Remove Elements
-            🔷 push
-            🔷 unshift
-            🔷 pop
-            🔷 shift
-            🔷 forEach
-            🔷 map
+      ✅ map
+      ✅ filter
+      ✅ sort
+      ✅ fill
+      ✅ find
+      ✅ findIndex
 
 ## Object
 
@@ -29,4 +18,4 @@
       ✅ Object Methods
       ✅ this
 
-## https://github.com/leonardomso/33-js-concepts
+## https://code2307.notion.site/Examine-3-6f096f28e4a54115a7743ca626820f06
