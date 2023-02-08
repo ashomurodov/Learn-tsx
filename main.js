@@ -122,6 +122,11 @@ let items = ["🍅", "🍄"];
 // nums.sort();
 // clg(nums);
 
-let nums = [1, 2, 3];
-nums.push(10);
-clg(nums);
+// let nums = [1, 2, 3];
+// nums.push(10);
+// clg(nums);
+
+/*----------- 08.02.23(39)--------- */
+console.log("Lesson-39");
+
+const a = 20;

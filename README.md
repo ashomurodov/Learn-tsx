@@ -1,4 +1,4 @@
-# ---------- 06.02.23 ----------(38)
+# ---------- 08.02.23 ----------(39)
 
 ## Coding JS
 
@@ -17,5 +17,3 @@
       ✅ Dot vs. Bracket Notation
       ✅ Object Methods
       ✅ this
-
-## https://code2307.notion.site/Examine-3-6f096f28e4a54115a7743ca626820f06
