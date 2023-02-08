@@ -79,7 +79,7 @@
 // 	'<li>🥑</li>'
 // ]
 
-let items = ["🍅", "🍄"];
+// let items = ["🍅", "🍄"];
 // function map(fun) {
 // 	let items = ["🍅", "🍄"];
 // 	let result = [];
@@ -127,6 +127,100 @@ let items = ["🍅", "🍄"];
 // clg(nums);
 
 /*----------- 08.02.23(39)--------- */
-console.log("Lesson-39");
+// console.log("Lesson-39");
 
-const a = 20;
+// function app(nums) {
+// 	for (let i = 0; i < nums.length; i++) {
+// 		if (nums[i] % 2 === 0) continue;
+//  	}
+// 	console.log("I AM APP FUNCTION");
+// }
+
+// app([1, 2, 3, 4, 5]);
+
+// function show(nums = [], points = []) {
+// 	for (let i = 0; i < nums.length; i++) {
+// 		const num = nums[i];
+// 		let isDiv = false;
+
+// 		for (let j = 0; j < points.length; j++) {
+// 			isDiv = num % points[j] === 0;
+// 			if (isDiv) break;
+// 		}
+// 		if (isDiv) continue;
+// 		console.log(num);
+// 	}
+// }
+
+// show([10, 11, 20, 25, 35, 45, 13, 44, 55], [3, 5, 11]);
+
+// DEFAULT VALUE
+// function sum(a, b, c = 20) {
+// 	return a + b + c;
+// }
+
+// const result = sum(10, 20, null);
+// console.log(`result = ${result}`);
+// console.log(+null);
+
+// const nums = [1, 2, 3];
+
+// function app() {
+// 	nums.forEach(function (num) {
+// 		console.log("num = ", num);
+// 		return;
+// 		console.log("hello");
+// 	});
+
+// 	// for (let i = 0; i < nums.length; i++) {
+// 	// 	console.log("num = ", nums[i]);
+// 	// 	return;
+// 	// }
+// }
+
+// app();
+
+// let count = 0;
+// const nums = new Array(100);
+
+// function fill(value, startIdx = 0, lastIdx = nums.length) {
+// 	for (let i = startIdx; i < lastIdx; i++) {
+// 		nums[i] = value;
+// 	}
+// }
+
+// fill(20, 30, 50);
+// console.log(nums);
+
+// const items = [1, 2, 3, 4, 25];
+
+// const result = items.find(function (item) {
+// 	if (item % 5 === 0) return true;
+// 	return false;
+// });
+
+// console.log(result);
+
+// const items = [20, 10, 40, 23, 40, 66, 60, 200];
+// const _items = items.filter(function (item) {
+// 	return item % 10 === 0;
+// });
+// // const _items = items.filter((item) => item % 10 === 0);
+
+// console.log(_items);
+
+// const items = [1, 2, 3, 25, 50, 4, 25];
+
+// const result = items.findIndex(function (item) {
+// 	return item % 25 === 0;
+// });
+
+// console.log(result);
+
+const items = [1, 2, 3, 5, 6, 7, 2, 3, 5, 3, 2, 3];
+const result = items.filter(function (item, idx) {
+	return items[idx + 1] === 2 && items[idx + 2] === 3;
+});
+
+console.log(result);
+/

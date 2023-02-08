@@ -7,9 +7,11 @@
       ✅ map 👍🏻
       ✅ filter 👍🏻
       ✅ sort 🎁
-      ✅ fill
-      ✅ find
+      ✅ fill 👍🏻
+      ✅ find 👍🏻
       ✅ findIndex
+      ✅ indexOf
+      ✅ reduce
 
 ## Object
 
