@@ -217,10 +217,12 @@
 
 // console.log(result);
 
-const items = [1, 2, 3, 5, 6, 7, 2, 3, 5, 3, 2, 3];
-const result = items.filter(function (item, idx) {
-	return items[idx + 1] === 2 && items[idx + 2] === 3;
-});
+// const items = [1, 2, 3, 5, 6, 7, 2, 3, 5, 3, 2, 3];
+// const result = items.filter(function (item, idx) {
+// 	return items[idx + 1] === 2 && items[idx + 2] === 3;
+// });
 
-console.log(result);
-/
+// console.log(result);
+
+/*----------- 10.02.23(40)--------- */
+console.log("Lesson-40");
