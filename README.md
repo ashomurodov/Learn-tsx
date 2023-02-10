@@ -2,6 +2,12 @@
 
 ## Coding JS
 
+## Spread Operator
+
+## Explain Array.sort method
+
+## Explain Array.reduce method
+
 ## Array Methods
 
       ✅ map 👍🏻

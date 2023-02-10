@@ -226,3 +226,49 @@
 
 /*----------- 10.02.23(40)--------- */
 console.log("Lesson-40");
+
+// Spread Operator
+// function sum(a, b, c) {
+// 	return a + b + c;
+// }
+// const nums = [10, 20, 30, 20, 50, 60];
+// const result = sum(nums[0], nums[1], nums[2]);
+// const result = sum(...nums);
+// console.log(result);
+
+// let a = [10, 20, 30];
+// let b = [60, 50, 40];
+// let c = [...a, ...b];
+
+// console.log(c);
+
+// const result = nums.reduce((a, c) => {
+// 	console.log("a = ", a);
+// 	console.log("c = ", c);
+// 	return a + c;
+// });
+// console.log(result);
+
+// const nums = [10, 20, 30, 10, 22, 322, 1, 321];
+// function reduce(fn) {
+// 	let acc = nums[0];
+// 	for (let i = 1; i < nums.length; i++) {
+// 		let cur = nums[i];
+// 		acc = fn(acc, cur);
+// 	}
+
+// 	return acc;
+// }
+// console.log(reduce((a, c) => `${a} + ${c}`));
+
+// const nums = Array(10); // [empty x 10]
+// console.log(nums);
+// console.log(nums.length);
+
+// nums.map(function (item) {
+// 	console.log("item = ", item);
+// });
+
+// const nums = [];
+// nums[100] = "arslonbek";
+// console.log(nums[55]);
