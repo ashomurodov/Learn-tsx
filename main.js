@@ -275,3 +275,132 @@
 
 /*----------- 12.02.23(41)--------- */
 console.log("Lesson-41");
+// console.log(Math.max());
+
+// let input = [10, 20, 30];
+
+/** ARRAY "AT" METHOD */
+// const output = input.at();
+// console.log(output);
+
+/** ARRAY "REDUCE" METHOD */
+
+// const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// function reduce(fn, init) {
+// 	let accumulator = init || input[0];
+
+// 	for (let i = init ? 0 : 1; i < input.length; i++) {
+// 		const current = input[i];
+// 		accumulator = fn(accumulator, current);
+// 	}
+
+// 	return accumulator;
+// }
+
+// function summa(a, c) {
+// 	return a + c;
+// }
+// const output = input.reduce(summa, 10);
+// console.log(output);
+
+// /** ARRAY "MAP" METHOD */
+// const input = [10, 4, 6, 3, 7];
+// /**
+//  * powTwo: output = [20, 8, 12, 6, 14]
+//  * powThree: output = [30, 12, 18, 9, 21]
+//  * addPrefix: output = ['pdp-g-10','pdp-g-4','pdp-g-6', 'pdp-g-3','pdp-g-7']
+//  * addSuffix: output = ['10-group', '4-group', '6-group', '3-group','7-group']
+//  * addSuffix: output = ['100-group', '41-group', '62-group', '33-group','74-group']
+//  */
+
+// const powTwo = (item) => 2 * item;
+// const powThree = (item) => 3 * item;
+// const addPrefix = (item) => `pdp-g-${item}`;
+// const addSuffix = (item) => `${item}-group`;
+// const addSuffixIdx = (item, idx) => `${item}${idx}-group`;
+
+// const output = input.map(addSuffixIdx);
+// console.log(output);
+
+// /** ARRAY "FILTER" METHOD */
+// const input = [10, 4, 6, 3, 7];
+// const _input = ["pdp", "google", "amazon", "arslonbek", "PaP-apple", "amazon-pdp"];
+// /**
+//  * getOdd: output = [3,7]
+//  * big20: output = []
+//  * small20: output = [10, 4, 6, 3, 7]
+//  * smallAB -> (5,10): output = [10, 6, 7]
+//  * _getPdpWord : _output = ['pdp','pap-apple', 'pdp-amazon']
+//  */
+
+// const getOdd = (item) => item % 2 === 1;
+// const big20 = (item) => item > 20;
+// const small20 = (item) => item < 20;
+// const smallAB = (item) => item >= 5 && item <= 10;
+// const _getPdpWord = (item) => item.search(/p[a-z]p/i) !== -1;
+
+// const output = input.filter(smallAB);
+// console.log(output);
+// const _output = _input.filter(_getPdpWord);
+// console.log(_output);
+
+/** Eval function */
+// console.log(eval("2**7"));
+
+/** ARRAY "REDUCE" METHOD */
+// const input = [10, 4, 6, 3, 7];
+// /**
+//  * sum: output = 30
+//  * join: output = '10+4+6+3+7=30'
+//  * prefix: output = ['pdp-g-10','pdp-g-4',"pdp-g-6", "pdp-g-3", "pdp-g-7"]
+//  */
+
+// const sum = (a, c) => a + c;
+// const join = (a, c, idx) => {
+// 	a = `${a}+${c}`;
+// 	if (idx === input.length - 1) {
+// 		let summa = eval(a);
+// 		return `${a} = ${summa}`;
+// 	}
+// 	return a;
+// };
+// const prefix = (a, c) => [...a, `pdp-g-${c}`];
+
+// const output = input.reduce(prefix, []);
+// console.log(output);
+
+/** ARRAY "SPLICE" METHOD */
+// const input = ["pdp", "google", "amazon", "arslonbek", "apple"];
+/**
+ *  removeGoogle: output = ["pdp", "amazon", "arslonbek", "apple"]
+ *  removeAppleAmazon: output = ["pdp", "google", "amazon", "arslonbek", "amazon"]
+ *  removeAmazonAppleTwo: output = ["pdp", "google", "apple", "apple", "arslonbek", "apple"]
+ */
+
+/* removeGoogle */
+// const output = input.splice(1, 1);
+// console.log(output);
+// console.log(input);
+
+// /* removeAppleAmazon */
+// const output = input.splice(3, 0, "Amazon");
+// console.log(output);
+// console.log(input);
+
+// // /* removeAmazonAppleTwo */
+// const output = input.splice(2, 1, "apple", "apple");
+// console.log(output);
+// console.log(input);
+
+// /** ARRAY "SOME" METHOD */
+// const input = [9, 3, 5, 3, 7];
+
+// const output = input.some((item) => item % 2 === 0);
+// console.log(output);
+
+/** ARRAY "EVERY" METHOD */
+const input = [9, 3, 5, -2, 7];
+
+const output = input.every((item) => item > 1);
+console.log(output);

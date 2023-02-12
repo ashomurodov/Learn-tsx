@@ -10,16 +10,21 @@
             🔷 shift 👍🏻
             🔷 unshift 👍🏻
             🔷 sort 👍🏻
-            🔷 splice
+            🔷 splice 👍🏻
+            🔷 fill 👍🏻
 
       ✅ Immutable Methods
             🔷 forEach 👍🏻
             🔷 map 👍🏻
             🔷 reduce 👍🏻
-            🔷 at
+            🔷 at 👍🏻
             🔷 filter 👍🏻
-            🔷 every
-            🔷 some
+            🔷 find 👍🏻
+            🔷 findIndex 👍🏻
+            🔷 indexOf 👍🏻
+            🔷 every 👍🏻
+            🔷 some 👍🏻
+            🔷 slice 👍🏻
 
       ✅ Array Static Methods
             🔷 Array.isArray
