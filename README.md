@@ -1,23 +1,30 @@
-# ---------- 10.02.23 ----------(40)
+# ---------- 12.02.23 ----------(41)
 
 ## Coding JS
 
-## Spread Operator
-
-## Explain Array.sort method
-
-## Explain Array.reduce method
-
 ## Array Methods
 
-      ✅ map 👍🏻
-      ✅ filter 👍🏻
-      ✅ sort 🎁
-      ✅ fill 👍🏻
-      ✅ find 👍🏻
-      ✅ findIndex
-      ✅ indexOf
-      ✅ reduce
+    ✅ Mutable Methods
+            🔷 push 👍🏻
+            🔷 pop 👍🏻
+            🔷 shift 👍🏻
+            🔷 unshift 👍🏻
+            🔷 sort 👍🏻
+            🔷 splice
+
+      ✅ Immutable Methods
+            🔷 forEach 👍🏻
+            🔷 map 👍🏻
+            🔷 reduce 👍🏻
+            🔷 at
+            🔷 filter 👍🏻
+            🔷 every
+            🔷 some
+
+      ✅ Array Static Methods
+            🔷 Array.isArray
+            🔷 Array.from
+            🔷 Array.of
 
 ## Object
 

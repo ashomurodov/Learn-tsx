@@ -225,7 +225,7 @@
 // console.log(result);
 
 /*----------- 10.02.23(40)--------- */
-console.log("Lesson-40");
+// console.log("Lesson-40");
 
 // Spread Operator
 // function sum(a, b, c) {
@@ -272,3 +272,6 @@ console.log("Lesson-40");
 // const nums = [];
 // nums[100] = "arslonbek";
 // console.log(nums[55]);
+
+/*----------- 12.02.23(41)--------- */
+console.log("Lesson-41");
