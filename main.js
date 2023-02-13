@@ -406,4 +406,76 @@
 // console.log(output);
 
 /*----------- 13.02.23(42)--------- */
-console.log("Lesson-42");
+// console.log("Lesson-42");
+
+// function maxSpan(nums) {
+// 	let maxSpan = 0;
+// 	let leftIndex = {};
+// 	let rightIndex = {};
+
+// 	for (let i = 0; i < nums.length; i++) {
+// 		if (leftIndex[nums[i]] === undefined) leftIndex[nums[i]] = i;
+
+// 		rightIndex[nums[i]] = i;
+// 	}
+
+// 	console.log(leftIndex);
+// 	console.log(rightIndex);
+
+// 	for (let key in leftIndex) {
+// 		maxSpan = Math.max(maxSpan, rightIndex[key] - leftIndex[key] + 1);
+// 	}
+
+// 	return maxSpan;
+// }
+
+// maxSpan([1, 2, 1, 1, 3]);
+// // maxSpan([1, 2, 1, 1, 3])
+
+function fix34(nums) {
+	let threeIndexes = [];
+	let fourIndexes = [];
+
+	for (let i = 0; i < nums.length; i++) {
+		const num = nums[i];
+		if (num === 3) threeIndexes.push(i);
+		if (num === 4) fourIndexes.push(i);
+	}
+
+	threeIndexes.forEach((threeIdx, idx) => {
+		const fourIdx = fourIndexes[idx];
+		const temp = nums[threeIdx + 1];
+		nums[threeIdx + 1] = 4;
+		nums[fourIdx] = temp;
+	});
+
+	return nums;
+}
+
+/**
+ * fix34([5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5]);
+ * let threeIndexes = [],fourIndexes = [];
+ *
+ *     * first loop:
+ *   i = 0; num = 5 -> threeIndexes = [],fourIndexes = []
+ *   i = 1; num = 3 -> threeIndexes = [1],fourIndexes = []
+ *   i = 2; num = 5 -> threeIndexes = [1],fourIndexes = []
+ *   i = 3; num = 4 -> threeIndexes = [1],fourIndexes = [3]
+ *   i = 4; num = 5 -> threeIndexes = [1],fourIndexes = [3]
+ *   i = 5; num = 4 -> threeIndexes = [1],fourIndexes = [3,5]
+ *   i = 6; num = 5 -> threeIndexes = [1],fourIndexes = [3,5]
+ *   i = 7; num = 4 -> threeIndexes = [1],fourIndexes = [3,5,7]
+ *   i = 8; num = 3 -> threeIndexes = [1,8],fourIndexes = [3,5,7]
+ *   i = 9; num = 5 -> threeIndexes = [1,8],fourIndexes = [3,5,7]
+ *   i = 10; num = 3 -> threeIndexes = [1,8,10],fourIndexes = [3,5,7]
+ *   i = 11; num = 5 -> threeIndexes = [1,8,10],fourIndexes = [3,5,7]
+ *
+ *   threeIndexes = [1,8,10],fourIndexes = [3,5,7]
+ *
+ * second loop :
+ *   threeIdx = 1, idx = 0 -> fourIdx = 3, temp = 5, nums = [5, 3, 4, 5, 5, 4, 5, 4, 3, 5, 3, 5]
+ *   threeIdx = 8, idx = 1 -> fourIdx = 5, temp = 5, nums = [5, 3, 4, 5, 5, 5, 5, 4, 3, 4, 3, 5]
+ *   threeIdx = 10,idx = 2 -> fourIdx = 7, temp = 5, nums = [5, 3, 4, 5, 5, 5, 5, 5, 3, 4, 3, 4]
+ *
+ *
+ */
