@@ -273,8 +273,8 @@
 // nums[100] = "arslonbek";
 // console.log(nums[55]);
 
-/*----------- 12.02.23(41)--------- */
-console.log("Lesson-41");
+// /*----------- 12.02.23(41)--------- */
+// console.log("Lesson-41");
 // console.log(Math.max());
 
 // let input = [10, 20, 30];
@@ -400,7 +400,10 @@ console.log("Lesson-41");
 // console.log(output);
 
 /** ARRAY "EVERY" METHOD */
-const input = [9, 3, 5, -2, 7];
+// const input = [9, 3, 5, -2, 7];
 
-const output = input.every((item) => item > 1);
-console.log(output);
+// const output = input.every((item) => item > 1);
+// console.log(output);
+
+/*----------- 13.02.23(42)--------- */
+console.log("Lesson-42");

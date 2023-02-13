@@ -1,4 +1,4 @@
-# ---------- 12.02.23 ----------(41)
+# ---------- 13.02.23 ----------(42)
 
 ## Coding JS
 
@@ -35,5 +35,6 @@
 
       ✅ Introduction Object
       ✅ Dot vs. Bracket Notation
+      ✅ Explain HEAP and STACK memories for JS Objects
       ✅ Object Methods
       ✅ this
