@@ -1,30 +1,6 @@
-# ---------- 13.02.23 ----------(42)
+# ---------- 15.02.23 ----------(43)
 
 ## Coding JS
-
-## Array Methods
-
-    ✅ Mutable Methods
-            🔷 push 👍🏻
-            🔷 pop 👍🏻
-            🔷 shift 👍🏻
-            🔷 unshift 👍🏻
-            🔷 sort 👍🏻
-            🔷 splice 👍🏻
-            🔷 fill 👍🏻
-
-      ✅ Immutable Methods
-            🔷 forEach 👍🏻
-            🔷 map 👍🏻
-            🔷 reduce 👍🏻
-            🔷 at 👍🏻
-            🔷 filter 👍🏻
-            🔷 find 👍🏻
-            🔷 findIndex 👍🏻
-            🔷 indexOf 👍🏻
-            🔷 every 👍🏻
-            🔷 some 👍🏻
-            🔷 slice 👍🏻
 
       ✅ Array Static Methods
             🔷 Array.isArray

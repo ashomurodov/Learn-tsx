@@ -432,25 +432,25 @@
 // maxSpan([1, 2, 1, 1, 3]);
 // // maxSpan([1, 2, 1, 1, 3])
 
-function fix34(nums) {
-	let threeIndexes = [];
-	let fourIndexes = [];
+// function fix34(nums) {
+// 	let threeIndexes = [];
+// 	let fourIndexes = [];
 
-	for (let i = 0; i < nums.length; i++) {
-		const num = nums[i];
-		if (num === 3) threeIndexes.push(i);
-		if (num === 4) fourIndexes.push(i);
-	}
+// 	for (let i = 0; i < nums.length; i++) {
+// 		const num = nums[i];
+// 		if (num === 3) threeIndexes.push(i);
+// 		if (num === 4) fourIndexes.push(i);
+// 	}
 
-	threeIndexes.forEach((threeIdx, idx) => {
-		const fourIdx = fourIndexes[idx];
-		const temp = nums[threeIdx + 1];
-		nums[threeIdx + 1] = 4;
-		nums[fourIdx] = temp;
-	});
+// 	threeIndexes.forEach((threeIdx, idx) => {
+// 		const fourIdx = fourIndexes[idx];
+// 		const temp = nums[threeIdx + 1];
+// 		nums[threeIdx + 1] = 4;
+// 		nums[fourIdx] = temp;
+// 	});
 
-	return nums;
-}
+// 	return nums;
+// }
 
 /**
  * fix34([5, 3, 5, 4, 5, 4, 5, 4, 3, 5, 3, 5]);
@@ -479,3 +479,6 @@ function fix34(nums) {
  *
  *
  */
+
+/*----------- 15.02.23(43)--------- */
+console.log("Lesson-43");
