@@ -9,8 +9,8 @@
 
 ## Object
 
-      ✅ Introduction Object
-      ✅ Dot vs. Bracket Notation
+      ✅ Introduction Object 👍🏻
+      ✅ Dot vs Bracket Notation
       ✅ Explain HEAP and STACK memories for JS Objects
       ✅ Object Methods
       ✅ this

@@ -481,4 +481,172 @@
  */
 
 /*----------- 15.02.23(43)--------- */
-console.log("Lesson-43");
+// console.log("Lesson-43");
+
+// function maxMirror(arr) {
+// 	let max = 0;
+// 	for (let i = 0; i < arr.length; i++) {
+// 		for (let j = arr.length - 1; j >= 0; j--) {
+// 			let count = 0;
+// 			let left = i;
+// 			let right = j;
+// 			while (k < arr.length && right >= 0 && arr[left] === arr[right]) {
+// 				count++;
+// 				left++;
+// 				right--;
+// 			}
+// 			max = Math.max(max, count);
+// 		}
+// 	}
+// 	return max;
+// }
+
+// maxMirror([7, 1, 2, 9, 7, 2, 1]);
+
+/**
+ *                 0, 1, 2, 3, 4, 5, 6
+ * max = 0; arr = [7, 1, 2, 9, 7, 2, 1]; arrLen = 7
+ * first loop:
+ *    i = 0:
+ * 				 second loop:
+ *									j = 6, count = 0, left = 0, right = 6
+ * 												third loop(7===1): -> max = 0;
+ *									j = 5, count = 0, left = 0, right = 5
+ * 												third loop(7===2):  -> max = 0;
+ *									j = 4, count = 0, left = 0, right = 4
+ * 												third loop(7===7): count = 1, left = 1, right = 3
+ * 												third loop(1===9): max = 1
+ *									j = 3, count = 0, left = 0, right = 3
+ * 												third loop(7===9): max = 1
+ *									j = 2, count = 0, left = 0, right = 2
+ * 												third loop(7===2): max = 1
+ *									j = 1, count = 0, left = 0, right = 1
+ * 												third loop(7===1): max = 0
+ *									j = 0, count = 0, left = 0, right = 0
+ * 												third loop(7===7): count = 1, left = 1, right = -1 : max = 1;
+ *
+ *
+ *
+ *
+ */
+
+/**
+ * Reference*
+ * HM_0001 = [10, 20, 30]
+ * HM_0002 = [10, 50, 30]
+ */
+// const a = [10, 20, 30]; // SM_a_001 = HM_0001
+// const b = [...a]; // SM_b_002 = HM_0002
+// b[1] = 50; // HM_0002[1]  = 50
+// console.log(a); // HM_0001
+// console.log(b); // HM_0001
+
+/**
+ * Reference**
+ * HM_0001 = [10, HM_0002, 30]
+ * HM_0002 = [50, 40]
+ * HM_0003 = [50, HM_0004, 30]
+//  * HM_0004 = [50,40]
+//  */
+// const a = [10, [20, 40], 30]; // SM_a_001 =
+
+// const b = [...a]; // SM_b_002 = HM_0003 =
+// b[1] = [...a[1]]; // HM_0002[0] = 50
+
+// b[0] = 50; // HM_0003[0] = 50
+// b[1][0] = 50; // HM_0002[0] = 50
+// console.log(a); // HM_0001 = [10, HM_0002, 30]
+// console.log(b); // HM_0003 = [10, HM_0002, 30]
+
+// let a = [[20, 30], 10, 20, [10, 50]];
+// //...start your code...
+// let b = [...a];
+// b[0] = [...a[0]];
+// b[3] = [...a[3]];
+// // ...end your code ...
+// b[0][1] = 40;
+// b[1] = 20;
+// b[3][0] = 40;
+
+// console.log(a); // [[20, 30], 10, 20, [10, 50]];
+// console.log(b); // [[20, 40], 20, 20, [40, 50]]
+
+/*Introduction Object*/
+
+// const person = ["arslonbek", "alimbayev", 2023 - 2001, "teacher", 500];
+
+// console.log(person);
+
+// const _person = {
+// 	firstName: "arslonbek",
+// 	lastName: "alimbayev",
+// 	age: 2023 - 2001,
+// 	job: "teacher",
+// 	salary: 500,
+// };
+// const _person2 = {
+// 	firstName: "odilbek",
+// 	lastName: "alimbayev",
+// 	age: 25,
+// 	job: "teacher",
+// 	salary: 500,
+// 	friends: ["arslnbek"],
+// };
+
+/**Dot Notation  */
+// const person = {
+// 	firstName: "arslonbek",
+// 	lastName: "alimbayev",
+// 	age: 2023 - 2001,
+// 	job: "teacher",
+// 	salary: 500,
+// };
+
+// console.log(person.age);
+// console.log(person.firstName);
+
+/**Bracket Notation  */
+// const nums = [10, 20, 30];
+
+// console.log(nums[0]);
+
+// const person = {
+// 	firstName: "arslonbek",
+// 	lastName: "alimbayev",
+// 	age: 2023 - 2001,
+// 	job: "teacher",
+// 	function: 500,
+// };
+
+// console.log(person);
+// person.firstName = "Jamishdbek";
+
+// console.log(person);
+
+// let myKey = true;
+// console.log(person["function"]);
+// console.log(person["lastName"]);
+
+// Challenge
+
+// HM_0001 = { firstName: "Arslonbek", age: 20, job: "Developer"}
+const person = {
+	firstName: "arslonbek",
+	age: 20,
+}; // SM_person_001 = HM_0001
+
+function app(obj) {
+	// obj = HM_0001
+	if (obj === person) console.log("👍🏻 Like 👍🏻");
+
+	obj.job = "Developer"; // HM_0001.job =
+	return obj; // HM_0001
+}
+
+const myPerson = person; // SM_myPerson_002 = HM_0001
+myPerson.job = "Teacher"; // HM_0001.job = "Teacher"
+
+const result = app(myPerson); // SM_result_003 = HM_0001
+
+console.log(result === person); // HM_0001 === HM_0001
+console.log(person === myPerson); // HM_0001 === HM_0001
