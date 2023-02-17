@@ -652,4 +652,79 @@
 // console.log(person === myPerson); // HM_0001 === HM_0001
 
 /*----------- 17.02.23(44)--------- */
-console.log("Lesson-44");
+// console.log("Lesson-44");
+
+// function countYZ(str) {
+// 	str = str.toLowerCase();
+
+// 	let words = str.split(/[^a-z]/);
+// 	console.log(words);
+
+// 	words = words.filter((word) => word.endsWith("y") || word.endsWith("z"));
+// 	console.log(words);
+// 	return words.length;
+// }
+
+// console.log(countYZ("!!day--yaz!!") === 2);
+
+function withoutString(base, remove) {
+	let regex = new RegExp(remove, "i");
+	const word = base.replace(regex, "");
+	console.log(word);
+	return word;
+}
+
+// console.log(withoutString("HeLLO there", "he") === "He there");
+
+// console.log("".match(/is/g));
+
+// console.log("ars-lon-bek".split("-"));
+// console.log("ars-lon-bek".match(/-/g));
+
+// function countTriple(str) {
+// 	const words = str.match(/(.)\1{2}/g) || [];
+// 	console.log(words);
+// 	return words.length;
+// }
+
+// countTriple("xxxabyyyycd");
+
+// const num = 20; // new Number()
+// const str = "arslonbek"; // new String()
+// console.log(str.substring(0, 5));
+
+// function Box(name, color) {
+// 	this.name = name;
+// 	this.color = color;
+// 	this.run = function () {
+// 		console.log(`${name} is running...`);
+// 	};
+// }
+
+// const box = new Box("Box-1", "red");
+
+// box.run();
+// console.log(box);
+
+// let nums = [1, 2, 3]; // new Array()
+// console.log(nums.slice(0, 2));
+
+// console.log(nums.__proto__);
+// console.log(nums.__proto__.__proto__);
+// console.log(nums.__proto__.__proto__.__proto__);
+
+// console.log(Array.isArray([]));
+// console.log(Array.isArray(""));
+
+// const a = [10, 20, 30];
+// const b = Array.from(a); // cloning
+// console.log(a);
+// console.log(b);
+
+// const a = 10;
+// const a1 = 20;
+// const a2 = 30;
+// const b = Array.of(a, a1, a2); // cloning
+// b[1] = 50;
+// console.log(a);
+// console.log(b);
