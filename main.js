@@ -630,23 +630,26 @@
 // Challenge
 
 // HM_0001 = { firstName: "Arslonbek", age: 20, job: "Developer"}
-const person = {
-	firstName: "arslonbek",
-	age: 20,
-}; // SM_person_001 = HM_0001
+// const person = {
+// 	firstName: "arslonbek",
+// 	age: 20,
+// }; // SM_person_001 = HM_0001
 
-function app(obj) {
-	// obj = HM_0001
-	if (obj === person) console.log("👍🏻 Like 👍🏻");
+// function app(obj) {
+// 	// obj = HM_0001
+// 	if (obj === person) console.log("👍🏻 Like 👍🏻");
 
-	obj.job = "Developer"; // HM_0001.job =
-	return obj; // HM_0001
-}
+// 	obj.job = "Developer"; // HM_0001.job =
+// 	return obj; // HM_0001
+// }
 
-const myPerson = person; // SM_myPerson_002 = HM_0001
-myPerson.job = "Teacher"; // HM_0001.job = "Teacher"
+// const myPerson = person; // SM_myPerson_002 = HM_0001
+// myPerson.job = "Teacher"; // HM_0001.job = "Teacher"
 
-const result = app(myPerson); // SM_result_003 = HM_0001
+// const result = app(myPerson); // SM_result_003 = HM_0001
 
-console.log(result === person); // HM_0001 === HM_0001
-console.log(person === myPerson); // HM_0001 === HM_0001
+// console.log(result === person); // HM_0001 === HM_0001
+// console.log(person === myPerson); // HM_0001 === HM_0001
+
+/*----------- 17.02.23(44)--------- */
+console.log("Lesson-44");
