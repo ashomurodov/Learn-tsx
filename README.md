@@ -1,23 +1,21 @@
 # ---------- 24.02.23 ----------(45)
 
-## Coding JS
-
-## Primitive type vs Reference type
+## Primitive type vs Reference type 👍🏻
 
 ## Function && Object
 
       ✅ bind
-      ✅ call
+      ✅ call 👍🏻
       ✅ apply
-      ✅ Factory function
+      ✅ Factory function 👍🏻
       ✅ Constructor function
 
 ============= DOM =============
 
 ## DOM -> (Document Object Model)
 
-       ✅ What is this DOM ?
-       ✅ Difference between DOM and HTML source code
+       ✅ What is this DOM ?  👍🏻
+       ✅ Difference between DOM and HTML source code 👍🏻
        ✅ Simple example
 
 ## DOM TREE and Nodes
@@ -82,3 +80,5 @@
            🔷 classList.toggle
            🔷 classList.replace
            🔷 classList.remove
+
+## Coding JS
