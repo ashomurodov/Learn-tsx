@@ -1,14 +1,4 @@
-# ---------- 24.02.23 ----------(45)
-
-## Primitive type vs Reference type 👍🏻
-
-## Function && Object
-
-      ✅ bind
-      ✅ call 👍🏻
-      ✅ apply
-      ✅ Factory function 👍🏻
-      ✅ Constructor function
+# ---------- 27.02.23 ----------(46)
 
 ============= DOM =============
 
