@@ -6,9 +6,9 @@
 
        ✅ What is this DOM ?  👍🏻
        ✅ Difference between DOM and HTML source code 👍🏻
-       ✅ Simple example
+       ✅ Simple example 👍🏻
 
-## DOM TREE and Nodes
+## DOM TREE and Nodes 👍🏻
 
        ✅ Most using nodes
            🔷 Element node
@@ -17,7 +17,7 @@
        ✅ Node types
            🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
 
-## Change HTML codes
+## Change HTML codes 👍🏻
 
        ✅ Most using selectors
            🔷 document.querySelector()
@@ -27,11 +27,11 @@
            🔷 document.getElementsByTagName()
        ✅ Write Examples
 
-## Children Nodes
+## Children Nodes 👍🏻
 
        ✅ Write Examples
 
-## Sibling Nodes
+## Sibling Nodes 👍🏻
 
        ✅ Write Examples
 
