@@ -17,9 +17,6 @@
        ✅ Removing Nodes from the DOM
            🔷 removeChild()
            🔷 remove()
-       ✅ Removing Nodes from the DOM
-           🔷 removeChild()
-           🔷 remove()
 
 ## How To Modify Attributes, Classes, and Styles in the DOM
 
