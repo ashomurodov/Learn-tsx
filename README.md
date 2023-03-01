@@ -1,39 +1,4 @@
-# ---------- 27.02.23 ----------(46)
-
-============= DOM =============
-
-## DOM -> (Document Object Model)
-
-       ✅ What is this DOM ?  👍🏻
-       ✅ Difference between DOM and HTML source code 👍🏻
-       ✅ Simple example 👍🏻
-
-## DOM TREE and Nodes 👍🏻
-
-       ✅ Most using nodes
-           🔷 Element node
-           🔷 Text node
-           🔷 Comment node
-       ✅ Node types
-           🔷 https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType
-
-## Change HTML codes 👍🏻
-
-       ✅ Most using selectors
-           🔷 document.querySelector()
-           🔷 document.querySelectorAll()
-           🔷 document.getElementById()
-           🔷 document.getElementsByClassName()
-           🔷 document.getElementsByTagName()
-       ✅ Write Examples
-
-## Children Nodes 👍🏻
-
-       ✅ Write Examples
-
-## Sibling Nodes 👍🏻
-
-       ✅ Write Examples
+# ---------- 01.03.23 ----------(47)
 
 ## How To Make Changes to the DOM
 
