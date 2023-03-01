@@ -1,11 +1,15 @@
-body {
-	background-color: #efed40;
-	height: 100vh;
-	display: grid;
-	place-items: center;
-	margin: 0;
+[custom] {
+	background-color: black;
+	width: 160px;
+	text-align: center;
+	padding: 1rem;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	transition: 3s linear background-color;
 }
 
-h1 {
-	font-size: 80px;
+arslonbek {
+	background-color: red;
 }
