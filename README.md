@@ -9,19 +9,22 @@
            🔷 getAttribute
            🔷 setAttribute
            🔷 removeAttribute
-       ✅ Modifying Classes
-           🔷 className
-           🔷 classList.add
-           🔷 classList.remove
-           🔷 classList.toggle
-           🔷 classList.replace
-           🔷 classList.remove
+           🔷 toggleAttribute
+       ✅ Fragment 👍🏻
+       ✅ Set 👍🏻
+       ✅ Modifying Classes 👍🏻
+           🔷 className 👍🏻
+           🔷 classList.add 👍🏻
+           🔷 classList.remove 👍🏻
+           🔷 classList.toggle 👍🏻
+           🔷 classList.replace 👍🏻
+           🔷 classList.contains 👍🏻
 
-## Understanding Events in JavaScript
+## Understanding Events in JavaScript 👍🏻
 
-       ✅ Inline Event Handler Attributes
-       ✅ Event Handler Properties
-       ✅ Event Listeners
+       ✅ Inline Event Handler Attributes 👍🏻
+       ✅ Event Handler Properties 👍🏻
+       ✅ Event Listeners 👍🏻
 
 ## Common Events
 
