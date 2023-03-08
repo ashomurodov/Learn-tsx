@@ -1,11 +1,68 @@
-# ---------- 03.03.23 ----------(48)(Examine-4)
+# ---------- 08.03.23 ----------(49)
 
-## Questions
+## How To Modify Attributes, Classes, and Styles in the DOM
 
-     ✅ ballon
-     ✅ find
-     ✅ search
+       ✅ Attributes functions 👍🏻
+           🔷 hasAttribute
+           🔷 getAttribute
+           🔷 setAttribute
+           🔷 removeAttribute
+       ✅ Modifying Classes
+           🔷 className
+           🔷 classList.add
+           🔷 classList.remove
+           🔷 classList.toggle
+           🔷 classList.replace
+           🔷 classList.remove
 
-## DOM (Pomodoro App)
+## Understanding Events in JavaScript
 
-     ✅ https://pomofocus.io/app
+       ✅ Inline Event Handler Attributes
+       ✅ Event Handler Properties
+       ✅ Event Listeners
+
+## Common Events
+
+       ✅ Mouse Events
+           🔷 click
+           🔷 dblclick
+           🔷 mouseenter
+           🔷 mouseleave
+           🔷 mousemove
+
+       ✅ Form Events
+           🔷 submit
+           🔷 focus
+           🔷 blur
+
+       ✅ Keyboard Events
+           🔷 keydown
+           🔷 keyup
+           🔷 keypress
+
+## [ALL EVENTS](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+
+## [Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+
+## Events Phase
+
+       ✅ Bubbling phase
+       ✅ Capturing Phase
+       ✅ Target Phase
+
+## Events Phase
+
+## Git and Github
+
+## Netlify
+
+## Projects
+
+    ✅ Pomodoro focus
+    ✅ Pig game
+    ✅ Tic Tac Toe
+    ✅ Memory game v1
+    ✅ Speed memory game
+    ✅ Quiz app
+
+## Coding JS
