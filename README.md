@@ -1,30 +1,4 @@
-# ---------- 08.03.23 ----------(49)
-
-## [Examine-4](https://bit.ly/41RVeJ9)
-
-## How To Modify Attributes, Classes, and Styles in the DOM
-
-       ✅ Attributes functions 👍🏻
-           🔷 hasAttribute
-           🔷 getAttribute
-           🔷 setAttribute
-           🔷 removeAttribute
-           🔷 toggleAttribute
-       ✅ Fragment 👍🏻
-       ✅ Set 👍🏻
-       ✅ Modifying Classes 👍🏻
-           🔷 className 👍🏻
-           🔷 classList.add 👍🏻
-           🔷 classList.remove 👍🏻
-           🔷 classList.toggle 👍🏻
-           🔷 classList.replace 👍🏻
-           🔷 classList.contains 👍🏻
-
-## Understanding Events in JavaScript 👍🏻
-
-       ✅ Inline Event Handler Attributes 👍🏻
-       ✅ Event Handler Properties 👍🏻
-       ✅ Event Listeners 👍🏻
+# ---------- 10.03.23 ----------(50)
 
 ## Common Events
 

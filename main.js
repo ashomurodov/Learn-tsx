@@ -101,10 +101,10 @@
 // 	console.log("handle clicked...");
 // };
 
-const btn = document.querySelector(".btn");
-btn.addEventListener("click", function () {
-	console.log("listener-1 clicked...");
-});
+// const btn = document.querySelector(".btn");
+// btn.addEventListener("click", function () {
+// 	console.log("listener-1 clicked...");
+// });
 
 // btn.addEventListener("click", function () {
 // 	console.log("listener-2 clicked...");
@@ -115,3 +115,5 @@ btn.addEventListener("click", function () {
 // btn.addEventListener("click", function () {
 // 	console.log("listener-4 clicked...");
 // });
+
+/*----------- 10.03.23(50)--------- */
