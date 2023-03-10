@@ -14,9 +14,10 @@ body {
 }
 
 .box {
+	width: 200px;
+	height: 200px;
 	display: grid;
 	place-items: center;
-
 	border-radius: 6px;
 	padding: 1rem 2rem;
 	transition: 0.2s linear;
@@ -32,12 +33,18 @@ body {
 	color: rgb(206, 252, 0);
 }
 
-.btn {
+.inner {
+	width: 100px;
+	height: 100px;
+	background-color: green;
 	border: none;
 	user-select: none;
 	cursor: pointer;
 	outline: none;
 	transition: 0.02s transform linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .btn:active {

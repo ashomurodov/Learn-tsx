@@ -3,21 +3,22 @@
 ## Common Events
 
        ✅ Mouse Events
-           🔷 click
-           🔷 dblclick
-           🔷 mouseenter
-           🔷 mouseleave
-           🔷 mousemove
+           🔷 click 👍🏻
+           🔷 dblclick 👍🏻
+           🔷 mouseenter 👍🏻
+           🔷 mouseleave 👍🏻
+           🔷 mousemove 👍🏻
+           🔷 mouseover 👍🏻
 
        ✅ Form Events
-           🔷 submit
-           🔷 focus
-           🔷 blur
+           🔷 submit 👍🏻
+           🔷 focus 👍🏻
+           🔷 blur 👍🏻
 
-       ✅ Keyboard Events
-           🔷 keydown
-           🔷 keyup
-           🔷 keypress
+       ✅ Keyboard Events 👍🏻
+           🔷 keydown 👍🏻
+           🔷 keyup 👍🏻
+           🔷 keypress 👍🏻
 
 ## [ALL EVENTS](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 
@@ -26,8 +27,9 @@
 ## Events Phase
 
        ✅ Bubbling phase
-       ✅ Capturing Phase
-       ✅ Target Phase
+       ✅ Capturing Phase 👍🏻
+       ✅ Target Phase 👍🏻
+       ✅ stopPropagation
 
 ## Events Phase
 
@@ -45,3 +47,5 @@
     ✅ Quiz app
 
 ## Coding JS
+
+<!-- https://thisthat.dev/ -->

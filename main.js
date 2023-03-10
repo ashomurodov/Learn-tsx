@@ -117,3 +117,104 @@
 // });
 
 /*----------- 10.03.23(50)--------- */
+
+// const inner = document.querySelector(".inner");
+// const btn = document.querySelector(".btn");
+
+// inner.addEventListener("click", function (event) {
+// 	console.log("clicked INNER");
+// });
+
+// btn.addEventListener("click", function (event) {
+// 	console.log("clicked BTN");
+// });
+
+// const form = document.forms[0];
+// const username = document.getElementById("username");
+
+// form.addEventListener("submit", (event) => {
+// 	event.preventDefault();
+// 	const username = form[0].value;
+// 	const password = form[1].value;
+// 	console.log({ username, password });
+// });
+
+// form.addEventListener("reset", () => {
+// 	console.log("reset form");
+// });
+
+// username.addEventListener("focus", () => {
+// 	console.log("input focus");
+// });
+// username.addEventListener("blur", () => {
+// 	console.log("input blur");
+// });
+
+// const inner = document.querySelector(".inner");
+
+// window.addEventListener("keydown", (e) => {
+// 	console.log("key = ", e.key);
+// });
+
+// window.addEventListener("keypress", (e) => {
+// 	console.log("key = ", e.key);
+// });
+// window.addEventListener("keyup", (e) => {
+// 	console.log("key = ", e.key);
+// });
+
+// const inner = document.querySelector(".inner");
+// const btn = document.querySelector(".btn");
+
+// inner.addEventListener("click", function (event) {
+// 	console.log("clicked INNER");
+// });
+
+// btn.addEventListener("click", function (event) {
+// 	console.log("clicked BTN");
+// });
+
+const inner = document.querySelector(".inner");
+const box = document.querySelector(".btn");
+const container = document.querySelector(".container");
+
+inner.addEventListener("click", function (event) {
+	console.log("INNER target = ", event.target);
+	console.log("clicked INNER");
+	// event.stopPropagation();
+});
+
+box.addEventListener(
+	"click",
+	function (event) {
+		console.log("BOX target = ", event.target);
+		console.log("clicked BOX");
+	},
+	{ capture: false }
+);
+
+container.addEventListener(
+	"click",
+	function (event) {
+		event.stopPropagation();
+		console.log("CONTAINER target = ", event.target);
+		console.log("clicked CONTAINER");
+	},
+	{ capture: false }
+);
+document.body.addEventListener(
+	"click",
+	function (event) {
+		console.log("BODY target = ", event.target);
+		console.log("clicked BODY");
+	},
+	{ capture: false }
+);
+document.addEventListener(
+	"click",
+	function (event) {
+		console.log("HTML target = ", event.target);
+		console.log("clicked HTML");
+	},
+	{ capture: false }
+);
