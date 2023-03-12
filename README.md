@@ -6,7 +6,7 @@
 
 ## Projects
 
-    ✅ Pomodoro focus
+    ✅ Pomofocus 👍🏻
     ✅ Pig game
     ✅ Tic Tac Toe
     ✅ Memory game v1
