@@ -1,18 +1,30 @@
-# ---------- 15.03.23 ----------(52)
-
-## https://www.atlassian.com/git/glossary
-
-## Git and Github
-
-## Netlify
+# ---------- 22.03.23 ----------(53)
 
 ## Projects
 
     ✅ Pomofocus 👍🏻
-    ✅ Pig game
     ✅ Tic Tac Toe
+    ✅ Pig game
     ✅ Memory game v1
     ✅ Speed memory game
     ✅ Quiz app
 
-## Coding JS
+## Git Commands
+
+    ✅ git init
+    ✅ git add
+    ✅ git remote
+    ✅ git status
+    ✅ git commit
+    ✅ git checkout
+    ✅ git push
+    ✅ git pull
+    ✅ git config
+    ✅ git fetch
+    ✅ git merge
+    ✅ git branch
+    ✅ git log
+    ✅ git clone
+    ------------
+    ✅ git stash
+    ✅ git diff
