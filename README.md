@@ -3,13 +3,13 @@
 ## Projects
 
     ✅ Pomofocus 👍🏻
-    ✅ Tic Tac Toe
-    ✅ Pig game
+    ✅ Tic Tac Toe  👍🏻
+    ✅ Pig game 👍🏻
     ✅ Memory game v1
     ✅ Speed memory game
     ✅ Quiz app
 
-## Git Commands
+## Git Commands 👍🏻
 
     ✅ git init
     ✅ git add
@@ -26,5 +26,5 @@
     ✅ git log
     ✅ git clone
     ------------
-    ✅ git stash
-    ✅ git diff
+    ✅ git stash 👍🏻
+    ✅ git diff 👍🏻

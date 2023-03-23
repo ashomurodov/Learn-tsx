@@ -1,6 +1,7 @@
 "use strict";
 /*----------- 22.03.23(53)--------- */
-const games = document.querySelectorAll(".game");
+const container = document.querySelector(".container");
+const game = document.querySelector(".game").cloneNode(true);
 
 const positions = [
 	[0, 1, 2],
@@ -47,9 +48,9 @@ function addListeners() {
 }
 
 function init() {
-	addListeners();
+	for (let i = 0; i < 5; i++) {
+		container.appendChild(game);
+	}
 }
 
 init();
-
-["X", "O", "X", "O", "X", "O", "O", "O", "X"];
