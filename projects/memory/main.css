@@ -11,7 +11,7 @@ body {
 	place-items: center;
 }
 
-.cards {
+.wrapper {
 	width: 1000px;
 	height: 800px;
 	display: grid;
