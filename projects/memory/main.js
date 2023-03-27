@@ -64,18 +64,16 @@
 
 // init();
 
-function init() {
-	setTimeout(() => {
-		console.log("First");
-	}, 0);
-	for (let i = 0; i < 100; i++) {
-		console.log("i  = ", i);
-	}
+setTimeout(() => {
+	console.log("First");
+}, 0);
 
-	setTimeout(() => {
-		console.log("Third");
-	}, 0);
-	console.log("Second");
+for (let i = 0; i < 100; i++) {
+	console.log("i  = ", i);
 }
 
-init();
+setTimeout(() => {
+	console.log("Third");
+}, 0);
+
+console.log("Second");
