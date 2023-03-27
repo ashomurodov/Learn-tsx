@@ -16,9 +16,9 @@ function nextPlayer() {
 function renderGame() {
 	[...game.children].forEach((elm) => elm.remove());
 
-	const currentHistory = histories[step]; // [null, null, null, "X", "X", "X", null, null, null]
+	const currentHistory = histories[step];
 	const board = document.createElement("div");
-	board.className = "board";
+	board.classList.add("board");
 
 	for (let i = 0; i < currentHistory.length; i++) {
 		const item = currentHistory[i];
@@ -72,7 +72,10 @@ function handleHistory(idx) {
 }
 
 function handleReset() {
-	console.log("clicked reset btn");
+	histories.splice(1);
+	step = 0;
+	renderGame();
+	renderHistories();
 }
 
 function handleCell(idx) {
