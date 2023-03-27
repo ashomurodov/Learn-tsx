@@ -1,14 +1,22 @@
 const game = document.querySelector(".game");
 const controller = document.querySelector(".controller");
 
-let step = 0;
-const histories = [[null, null, null, null, null, null, null, null, null]];
+let step = +localStorage.getItem("tic-tac-toe:step") || 0;
+const histories = localStorage.getItem("tic-tac-toe:histories") ? JSON.parse(localStorage.getItem("tic-tac-toe:histories")) : [[null, null, null, null, null, null, null, null, null]];
 
 // LOGIC FUNCTIONS
 function nextPlayer() {
 	const nextPlayer = step % 2 === 0 ? "X" : "O";
-	step++;
+	setStep(step + 1);
 	return nextPlayer;
+}
+
+function setStep(newStep) {
+	step = newStep;
+	localStorage.setItem("tic-tac-toe:step", newStep);
+}
+function setHistories(newHistories) {
+	localStorage.setItem("tic-tac-toe:histories", JSON.stringify(newHistories));
 }
 
 // RENDER FUNCTIONS
@@ -66,14 +74,15 @@ function renderHistories() {
 
 // HANDLE FUNCTIONS
 function handleHistory(idx) {
-	step = idx;
+	setStep(idx);
 	renderGame();
 	renderHistories();
 }
 
 function handleReset() {
 	histories.splice(1);
-	step = 0;
+	setHistories(histories);
+	setStep(0);
 	renderGame();
 	renderHistories();
 }
@@ -86,11 +95,13 @@ function handleCell(idx) {
 
 	if (nextHistory) {
 		histories.splice(step);
+		setHistories(histories);
 	}
 
 	const currentHistory = [...lastHistory];
 	currentHistory[idx] = player;
 	histories.push(currentHistory);
+	setHistories(histories);
 
 	renderGame();
 	renderHistories();
