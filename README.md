@@ -1,4 +1,4 @@
-# ---------- 02.04.23 ----------(58)
+# ---------- 03.04.23 ----------(58)
 
 ## Projects
 
@@ -9,5 +9,7 @@
     ✅ Tic Tac Toe v2 👍🏻
     ✅ Speed memory game
     ✅ Quiz app
+
+## Rest Params
 
 https://www.quizbeez.com/brain-games/brainmemory/
