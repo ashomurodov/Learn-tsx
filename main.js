@@ -277,12 +277,18 @@ const person = {
 
 const element = {
 	classes: ["btn", "btn-danger", "btn-primary"],
+	get className() {
+		return this.classes.join(" ");
+	},
+	set className(value) {
+		this.classes = value.split(" ");
+	},
 };
 
 console.log(element.className); // "btn btn-danger btn-primary"
 console.log(element.classes); // ["btn", "btn-danger", "btn-primary"]
 
-element.className = `${element.className} btn-success`;
+element.className = `${element.className} btn-success btn-warning`;
 
 console.log(element.className); // "btn btn-danger btn-primary btn-success"
 console.log(element.classes); // ["btn", "btn-danger", "btn-primary", "btn-success"]
