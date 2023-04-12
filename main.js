@@ -77,32 +77,34 @@
 
 /** Factory functions */
 
-let counter = 1;
+// let counter = 1;
 
-function createUser(name, phone, job) {
-	return {
-		id: counter++,
-		name,
-		phone,
-		job,
-	};
-}
+// function createUser(name, phone, job) {
+// 	return {
+// 		id: counter++,
+// 		name,
+// 		phone,
+// 		job,
+// 	};
+// }
 
-const user = {
-	id: 1,
-	name: "Kent",
-	phone: "+12323231231",
-	job: "Teacher",
-};
-const user2 = {
-	id: 2,
-	name: "Mark",
-	phone: "+12323231231",
-	job: "Developer",
-};
+// const user = {
+// 	id: 1,
+// 	name: "Kent",
+// 	phone: "+12323231231",
+// 	job: "Teacher",
+// };
+// const user2 = {
+// 	id: 2,
+// 	name: "Mark",
+// 	phone: "+12323231231",
+// 	job: "Developer",
+// };
 
-// const user = createUser("Kent", "+12323231231", "Teacher");
-// const user2 = createUser("Mark", "+12323231231", "Developer");
+// // const user = createUser("Kent", "+12323231231", "Teacher");
+// // const user2 = createUser("Mark", "+12323231231", "Developer");
 
-console.log(user);
-console.log(user2);
+// console.log(user);
+// console.log(user2);
+
+/* 12.04.23(62) */

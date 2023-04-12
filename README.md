@@ -25,9 +25,16 @@
     ✅ this keyword 👍🏻
     ✅ call && bind && apply function methods 👍🏻
     ✅ Factory function
-    ✅ new keyword
-    ✅ Class
     ✅ Constructor function
+    ✅ new keyword
+    ✅ Abstraction
+    ✅ Private Properties and Methods
+    ✅ Object.defineProperty && Object.freeze && Object.hasOwnProperty
+    ✅ Getters and Setters
+    ✅ Coding Challenge
+
+    ✅ Class
+    ✅ Constructor
     ✅ Inheritance
 
 # [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
