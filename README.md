@@ -24,10 +24,10 @@
     ✅ Object 👍🏻
     ✅ this keyword 👍🏻
     ✅ call && bind && apply function methods 👍🏻
-    ✅ Factory function
-    ✅ Constructor function
-    ✅ new keyword
-    ✅ Abstraction
+    ✅ Factory function 👍🏻
+    ✅ Constructor function 👍🏻
+    ✅ new keyword 👍🏻
+    ✅ Abstraction 👍🏻
     ✅ Private Properties and Methods
     ✅ Object.defineProperty && Object.freeze && Object.hasOwnProperty
     ✅ Getters and Setters
