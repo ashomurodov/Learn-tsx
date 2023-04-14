@@ -1,10 +1,12 @@
 # ---------- 14.04.23 ----------(63)
 
+# Checking homeworks 👍🏻
+
 # Github organization 👍🏻
 
 # JS Advanced 👍🏻
 
-    ✅ Expression vs Statement
+    ✅ Expression vs Statement 👍🏻
     ✅ OOP && Object.create && Object.assign
     ✅ Prototype && Prototype Chain
     ✅ Functional Programming && Closure
@@ -30,12 +32,20 @@
     ✅ Abstraction 👍🏻
     ✅ Private Properties and Methods 👍🏻
     ✅ Getters and Setters 👍🏻
-    ✅ Object.defineProperty && Object.freeze && Object.hasOwnProperty
-    ✅ Coding Challenge
-
+    ✅ Object Static Methods 👍🏻
+           🍩 Object.defineProperty 👍🏻
+           🍩 Object.defineProperties 👍🏻
+           🍩 Object.freeze 👍🏻
+           🍩 Object.hasOwnProperty 🗑️ 👍🏻
+           🍩 Object.keys 👍🏻
+           🍩 Object.values 👍🏻
+           🍩 Object.entries 👍🏻
+    ✅ Coding Challenge 👍🏻
     ✅ Class
     ✅ Constructor
     ✅ Inheritance
+
+# Git rebase
 
 # [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
 

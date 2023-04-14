@@ -257,38 +257,164 @@ function createBox(name, color, price) {
 // box.onPaid(3000);
 // console.log(box.getMoney());
 
-const person = {
-	firstName: "Arslonbek",
-	lastName: "Alimbaev",
-	salary: 1000,
-	get fullName() {
-		return `${this.firstName} ${this.lastName}`;
-	},
-	set fullName(value) {
-		const [firstName, lastName] = value.split(" ");
-		this.firstName = firstName;
-		this.lastName = lastName;
-	},
-};
+// const person = {
+// 	firstName: "Arslonbek",
+// 	lastName: "Alimbaev",
+// 	salary: 1000,
+// 	get fullName() {
+// 		return `${this.firstName} ${this.lastName}`;
+// 	},
+// 	set fullName(value) {
+// 		const [firstName, lastName] = value.split(" ");
+// 		this.firstName = firstName;
+// 		this.lastName = lastName;
+// 	},
+// };
 
 // console.log(person.fullName);
 // person.fullName = "Boburbek Muradov";
 // console.log(person.fullName);
 
-const element = {
-	classes: ["btn", "btn-danger", "btn-primary"],
-	get className() {
-		return this.classes.join(" ");
-	},
-	set className(value) {
-		this.classes = value.split(" ");
-	},
-};
+// const element = {
+// 	classes: ["btn", "btn-danger", "btn-primary"],
+// 	get className() {
+// 		return this.classes.join(" ");
+// 	},
+// 	set className(value) {
+// 		this.classes = value.split(" ");
+// 	},
+// };
 
-console.log(element.className); // "btn btn-danger btn-primary"
-console.log(element.classes); // ["btn", "btn-danger", "btn-primary"]
+// console.log(element.className); // "btn btn-danger btn-primary"
+// console.log(element.classes); // ["btn", "btn-danger", "btn-primary"]
 
-element.className = `${element.className} btn-success btn-warning`;
+// element.className = `${element.className} btn-success btn-warning`;
 
-console.log(element.className); // "btn btn-danger btn-primary btn-success"
-console.log(element.classes); // ["btn", "btn-danger", "btn-primary", "btn-success"]
+// console.log(element.className); // "btn btn-danger btn-primary btn-success"
+// console.log(element.classes); // ["btn", "btn-danger", "btn-primary", "btn-success"]
+
+function Watch() {
+	let started = false;
+	let intervalID = null;
+	this.duration = 0;
+
+	this.start = function () {
+		if (started) return console.error("Already started");
+		started = true;
+
+		intervalID = setInterval(() => {
+			this.duration += 1;
+			console.log("duration ", this.duration);
+		}, 1000);
+
+		console.log("Watch started");
+	};
+
+	this.stop = function () {
+		if (!started) return console.error("Already stopped");
+
+		clearInterval(intervalID);
+		started = false;
+		this.duration = 0;
+		console.log("Watch stopped");
+	};
+}
+
+// const watch = new Watch();
+// watch.start(); // ✅ watch started
+
+// watch.stop(); // ✅ watch stopped
+// watch.stop(); // ❌  already stopped !
+// watch.start(); // ✅ watch started
+
+// function first() {
+// 	console.log(this);
+// }
+
+// const second = () => {
+// 	console.log(this);
+// };
+// first();
+// second();
+
+// function Box() {
+// 	this.name = "My Box";
+// 	this.color = "Black";
+
+// 	this.start = function () {
+// 		console.log("start(this) = ", this);
+
+// 		function app() {
+// 			console.log("app(this) = ", this);
+// 			console.log(`color = ${this?.color}`);
+// 		}
+
+// 		setTimeout(app.bind(this), 2000);
+// 		setTimeout(app, 2000);
+// 	};
+// }
+
+// const box = new Box();
+// box.start();
+
+// const person = {
+// 	firstName: "arslonbek",
+// 	lastName: "alimbayev",
+// 	eat() {
+// 		console.log(`${this.name}(🧸) is eating Honey (🍯)...`);
+// 	},
+// 	get fullName() {
+// 		console.log("calling fullName");
+// 		return `${this.firstName} ${this.lastName}`;
+// 	},
+// 	set fullName(value) {
+// 		const [firstName, lastName] = value.split(" ");
+// 		this.firstName = firstName;
+// 		this.lastName = lastName;
+// 	},
+// };
+
+// Object.defineProperty(person, "fullName", {
+// 	writable: false,
+// 	get: function () {
+// 		console.log("calling fullName");
+// 		return `${this.firstName} ${this.lastName}`;
+// 	},
+// 	set: function (fullName) {
+// 		const [firstName, lastName] = fullName.split(" ");
+// 		this.firstName = firstName;
+// 		this.lastName = lastName;
+// 	},
+// });
+
+// console.log(person);
+// person.fullName = "Boburbek Jamshidov";
+// console.log(person);
+
+// const person = {
+// 	name: "Arslonbek",
+// };
+// Object.defineProperties(person, {
+// 	age: {
+// 		value: 40,
+// 		writable: false,
+// 	},
+// 	salary: {
+// 		value: 500,
+// 		writable: true,
+// 	},
+// });
+
+// person.age = 21;
+// person.salary = 5000;
+// console.log(person);
+
+// const book = {
+// 	name: "Sherlock holmes",
+// 	// price: 2000,
+// };
+
+// // const isExist = Object.keys(book).includes("price");
+// const isExist = book.hasOwnProperty("price");
+
+// console.log(isExist);
