@@ -1,420 +1,113 @@
 "use strict";
-/* 10.04.23(61) */
+/* 16.04.23(64) */
 
-/* ----Expression vs Statement-----  */
-// let age = 10 + 10;
-// let access = age > 18 ? "ruxsat" : "ruxsat yoq";
-
-// if (age > 18) {
-// 	console.log("ruxsat");
-// } else {
-// 	console.log("ruxsat yoq");
-// }
-
-// const x = 20;
-// const y = function () {};
-
-// function app(a, b) {
-// 	return a + b;
-// }
-
-// console.log(20, function () {});
-
-/* OOP(Object Oriented Programming) */
-
-/** Object  && call & bind & apply function methods*/
-// const box = {
-// 	name: "Boxjon",
-// 	color: "black",
-// 	run(prefix = "None", ...args) {
-// 		console.log("args = ", args);
-// 		console.log(`${prefix} : ${this.name} is running...🏃‍♀️`);
-// 	},
-// };
-
-// const fruit = {
-// 	name: "Banana",
-// 	color: "black",
-// };
-// const car = {
-// 	name: "BMW i8",
-// 	color: "black",
-// };
-
-/* CALL method of function */
-// box.run();
-// // box.run.call(fruit);
-// // run.call(fruit);
-
-/* BIND method of function */
-
-/** bind version */
-// const runFruit = box.run.bind(fruit);
-// runFruit();
-
-// const runCar = box.run.bind(car);
-// runCar();
-
-/** call version */
-// box.run.call(fruit);
-// box.run.call(car);
-
-/** Sending parameters Call */
-// box.run();
-// box.run("Data");
-// box.run.call(fruit, "Fruit Data", "test data", 1, 2, 3, "arslonbek", false);
-
-/** Sending parameters Bind */
-// const boxRun = box.run.bind(box);
-// boxRun("Box Data");
-// const fruitRun = box.run.bind(fruit);
-// fruitRun("Fruit Data");
-// const carRun = box.run.bind(car);
-// carRun("Car Data");
-
-/** Sending parameters Apply */
-// box.run.apply(fruit, ["Fruit Data", "Fruit Data", "Fruit Data"]);
-
-/** Factory functions */
-
-// let counter = 1;
-
-// function createUser(name, phone, job) {
-// 	return {
-// 		id: counter++,
-// 		name,
-// 		phone,
-// 		job,
-// 	};
-// }
-
-// const user = {
-// 	id: 1,
-// 	name: "Kent",
-// 	phone: "+12323231231",
-// 	job: "Teacher",
-// };
-// const user2 = {
-// 	id: 2,
-// 	name: "Mark",
-// 	phone: "+12323231231",
-// 	job: "Developer",
-// };
-
-// // const user = createUser("Kent", "+12323231231", "Teacher");
-// // const user2 = createUser("Mark", "+12323231231", "Developer");
-
-// console.log(user);
-// console.log(user2);
-
-/* 12.04.23(62) */
-
-/** Factory Function */
-function createBox(name, color, price) {
-	return {
-		name,
-		color,
-		price,
-		jump() {
-			console.log(`${this.name} is jumping...`);
-		},
-		randomPrice(limit = 100) {
-			this.price = Math.floor(Math.random() * limit);
-		},
-	};
-}
-
-// const box1 = createBox("Box-1", "Black", 10);
-
-// console.log("box1 = ", box1.__proto__);
-
-// function Box(name, color, price) {
-// 	this.name = name;
-// 	this.color = color;
-// 	this.price = price;
-// 	this.jump = function () {
-// 		console.log(`${this.name} is jumping...`);
-// 	};
-// 	this.showData = function () {
-// 		console.log("name = ", this.name);
-// 		console.log("color = ", this.color);
-// 		console.log("price = ", this.price);
-// 	};
-// }
-
-// const box = new Box("Best Box", "Blue", 2000);
-// console.log(box);
-
-// box.jump();
-// box.showData();
-
-// function String1(value) {
+// book.read();
+// function NewString(value) {
 // 	this.value = value;
-// 	this.repeat = function (count) {
-// 		let result = "";
-// 		for (let i = 0; i < count; i++) {
-// 			result += this.value;
-// 		}
-
-// 		return result;
-// 	};
 // }
 
-// const str = new String("hello world");
-// console.log(str);
+// NewString.prototype.repeat = function (count) {
+// 	let result = "";
 
-// const str1 = new String1("Arslonbek ");
+// 	for (let i = 0; i < count; i++) {
+// 		result += this.value;
+// 	}
+
+// 	return result;
+// };
+
+// const str1 = new String("First Word");
 // console.log(str1);
 
-// function Watch() {
-// 	this.time = 0;
+// const str2 = new String("Second Word");
+// console.log(str2);
 
-// 	this.increment = function () {
-// 		this.time += 1;
-// 	};
+// console.log(str1.repeat === str2.repeat);
 
-// 	this.start = function () {
-// 		console.log("Watch started");
+// const str1 = new NewString("First Word");
+// console.log(str1);
 
-// 		setInterval(this.increment.bind(this), 1000);
-// 	};
+// const str2 = new NewString("Second Word");
+// console.log(str2);
 
-// 	this.log = function () {
-// 		console.log(`Watch(${this.name}) time : ${this.time}`);
-// 	};
+// console.log(str1.repeat === str2.repeat);
+
+/** Class */
+// class Book {
+// 	createdDate = "24.04.24";
+
+// 	constructor(name, price, author, createdDate) {
+// 		this.name = name;
+// 		this.price = price;
+// 		this.author = author;
+// 		if (createdDate) this.createdDate = createdDate;
+// 	}
+
+// 	read() {
+// 		console.log(`${this.name} is reading Forsage book`);
+// 	}
 // }
 
-// const watch = new Watch("Rolex");
-// watch.start();
+// const book = new Book("Sherlock Holmes", 2000, "Conan Doyle");
+// console.log(book);
+// book.read();
 
-// setTimeout(() => {
-// 	watch.log();
-// }, 3000);
-// setTimeout(() => {
-// 	watch.log();
-// }, 6000);
-// setTimeout(() => {
-// 	watch.log();
-// }, 9000);
-// setTimeout(() => {
-// 	watch.log();
-// }, 12000);
-
-// create Watch constructor function
-// watch.start() -> watch start
-// watch.stop() -> watch stop ||
-
-// { start, stop, started: false }
-
-// function Watch() {
-// 	this.started = false;
-// 	this.stop = function () {
-// 		if (!this.started) {
-// 			console.error("Already stopped");
-// 		} else {
-// 			this.started = false;
-// 			console.log("Stopped");
-// 		}
-// 	};
-// 	this.start = function () {
-// 		if (this.started) {
-// 			console.error("Already started");
-// 		} else {
-// 			this.started = true;
-// 			console.log("Started");
-// 		}
-// 	};
-// }
-
-// const watch = new Watch();
-// watch.start(); // started
-// watch.start(); // error
-// watch.stop(); // stopped
-// watch.start(); // started
-// watch.stop(); // stopped
-// watch.stop(); // error
-
-// function Box() {this.name = "Box";} // new Function
-// let a = 20; // new Number(20)
-// let b = "ars" // new String('ars')
-
-// function Box(name) {
+// /** Constructor function */
+// function BookFN(name, price, author) {
 // 	this.name = name;
-// 	let money = 2000;
-
-// 	this.getMoney = function () {
-// 		return money;
-// 	};
-
-// 	this.onPaid = function (amount) {
-// 		money += amount;
-// 	};
+// 	this.price = price;
+// 	this.author = author;
 // }
 
-// const box = new Box();
+// BookFN.prototype.read = function () {
+// 	console.log(`${this.name} is reading Forsage book`);
+// };
+// const bookFN = new BookFN("Sherlock Holmes", 2000, "Conan Doyle");
+// console.log(bookFN);
+// bookFN.read();
 
-// console.log(box.getMoney());
-// box.onPaid(3000);
-// console.log(box.getMoney());
+// class User {
+// 	get data() {
+// 		return `${this.firstName} ${this.lastName} ${this.salary}`;
+// 	}
 
-// const person = {
-// 	firstName: "Arslonbek",
-// 	lastName: "Alimbaev",
-// 	salary: 1000,
-// 	get fullName() {
-// 		return `${this.firstName} ${this.lastName}`;
-// 	},
-// 	set fullName(value) {
-// 		const [firstName, lastName] = value.split(" ");
+// 	set data(value) {
+// 		const [firstName, lastName, salary] = value.split(" ");
 // 		this.firstName = firstName;
 // 		this.lastName = lastName;
+// 		this.salary = +salary;
+// 	}
+
+// 	showData() {
+// 		console.log("firstName: " + this.firstName);
+// 		console.log("lastName: " + this.lastName);
+// 		console.log("salary: " + this.salary);
+// 	}
+// }
+
+// function getUsers(counter) {
+// 	const users = [];
+
+// 	for (let i = 0; i < counter; i++) {
+// 		const user = new User();
+// 		user.data = `Name-${i + 1} Last-${i + 1} ${1000 * (i + 1)}`;
+// 		users.push(user);
+// 	}
+
+// 	return users;
+// }
+
+// const users = getUsers(5);
+// users[0].firstName = "Boburbek";
+// users[0].salary = 4000;
+// console.log(users[0].data);
+
+// const person = {
+// 	firstName: "Boburbek",
+// 	lastName: "boburov",
+// 	get fullName() {
+// 		return this.firstName + " " + this.lastName;
 // 	},
 // };
 
 // console.log(person.fullName);
-// person.fullName = "Boburbek Muradov";
-// console.log(person.fullName);
-
-// const element = {
-// 	classes: ["btn", "btn-danger", "btn-primary"],
-// 	get className() {
-// 		return this.classes.join(" ");
-// 	},
-// 	set className(value) {
-// 		this.classes = value.split(" ");
-// 	},
-// };
-
-// console.log(element.className); // "btn btn-danger btn-primary"
-// console.log(element.classes); // ["btn", "btn-danger", "btn-primary"]
-
-// element.className = `${element.className} btn-success btn-warning`;
-
-// console.log(element.className); // "btn btn-danger btn-primary btn-success"
-// console.log(element.classes); // ["btn", "btn-danger", "btn-primary", "btn-success"]
-
-function Watch() {
-	let started = false;
-	let intervalID = null;
-	this.duration = 0;
-
-	this.start = function () {
-		if (started) return console.error("Already started");
-		started = true;
-
-		intervalID = setInterval(() => {
-			this.duration += 1;
-			console.log("duration ", this.duration);
-		}, 1000);
-
-		console.log("Watch started");
-	};
-
-	this.stop = function () {
-		if (!started) return console.error("Already stopped");
-
-		clearInterval(intervalID);
-		started = false;
-		this.duration = 0;
-		console.log("Watch stopped");
-	};
-}
-
-// const watch = new Watch();
-// watch.start(); // ✅ watch started
-
-// watch.stop(); // ✅ watch stopped
-// watch.stop(); // ❌  already stopped !
-// watch.start(); // ✅ watch started
-
-// function first() {
-// 	console.log(this);
-// }
-
-// const second = () => {
-// 	console.log(this);
-// };
-// first();
-// second();
-
-// function Box() {
-// 	this.name = "My Box";
-// 	this.color = "Black";
-
-// 	this.start = function () {
-// 		console.log("start(this) = ", this);
-
-// 		function app() {
-// 			console.log("app(this) = ", this);
-// 			console.log(`color = ${this?.color}`);
-// 		}
-
-// 		setTimeout(app.bind(this), 2000);
-// 		setTimeout(app, 2000);
-// 	};
-// }
-
-// const box = new Box();
-// box.start();
-
-// const person = {
-// 	firstName: "arslonbek",
-// 	lastName: "alimbayev",
-// 	eat() {
-// 		console.log(`${this.name}(🧸) is eating Honey (🍯)...`);
-// 	},
-// 	get fullName() {
-// 		console.log("calling fullName");
-// 		return `${this.firstName} ${this.lastName}`;
-// 	},
-// 	set fullName(value) {
-// 		const [firstName, lastName] = value.split(" ");
-// 		this.firstName = firstName;
-// 		this.lastName = lastName;
-// 	},
-// };
-
-// Object.defineProperty(person, "fullName", {
-// 	writable: false,
-// 	get: function () {
-// 		console.log("calling fullName");
-// 		return `${this.firstName} ${this.lastName}`;
-// 	},
-// 	set: function (fullName) {
-// 		const [firstName, lastName] = fullName.split(" ");
-// 		this.firstName = firstName;
-// 		this.lastName = lastName;
-// 	},
-// });
-
-// console.log(person);
-// person.fullName = "Boburbek Jamshidov";
-// console.log(person);
-
-// const person = {
-// 	name: "Arslonbek",
-// };
-// Object.defineProperties(person, {
-// 	age: {
-// 		value: 40,
-// 		writable: false,
-// 	},
-// 	salary: {
-// 		value: 500,
-// 		writable: true,
-// 	},
-// });
-
-// person.age = 21;
-// person.salary = 5000;
-// console.log(person);
-
-// const book = {
-// 	name: "Sherlock holmes",
-// 	// price: 2000,
-// };
-
-// // const isExist = Object.keys(book).includes("price");
-// const isExist = book.hasOwnProperty("price");
-
-// console.log(isExist);
