@@ -1,8 +1,6 @@
-# ---------- 16.04.23 ----------(64)
+# ---------- 17.04.23 ----------(65)
 
 # Checking homeworks 👍🏻
-
-# Github organization 👍🏻
 
 # JS Advanced 👍🏻
 
