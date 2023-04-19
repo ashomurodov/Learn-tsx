@@ -1,4 +1,4 @@
-# ---------- 17.04.23 ----------(65)
+# ---------- 19.04.23 ----------(66)
 
 # Checking homeworks 👍🏻
 
@@ -11,7 +11,7 @@
     ✅ JS Execution && Event Loop
     ✅ JS Modules
     ✅ Collections && Generators **
-    ✅ Getters && Setters
+    ✅ Getters && Setters 👍🏻
     ✅ Promises && Async/Await
     ✅ NPM Package
     ✅ Backend && AJAX && Fetch
