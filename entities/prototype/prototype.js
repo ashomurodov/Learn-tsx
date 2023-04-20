@@ -1,58 +1,56 @@
-"use strict";
+var __extends =
+	(this && this.__extends) ||
+	(function () {
+        
+		var extendStatics = function (d, b) {
+			extendStatics =
+				Object.setPrototypeOf ||
+				({ __proto__: [] } instanceof Array &&
+					function (d, b) {
+						d.__proto__ = b;
+					}) ||
+				function (d, b) {
+					for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
+				};
+			return extendStatics(d, b);
+		};
 
-// function Box(name) {
-// 	this.name = name;
-// }
+		return function (d, b) {
+			if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+			extendStatics(d, b);
+			function __() {
+				this.constructor = d;
+			}
+			d.prototype = b === null ? Object.create(b) : ((__.prototype = b.prototype), new __());
+		};
+	})();
 
-// Box.prototype.run = function () {
-// 	console.log(`${this?.name} is running...`);
-// };
-// Box.prototype.jump = function () {
-// 	console.log(`${this?.name} is jumping...`);
-// };
-// Box.prototype.eat = function () {
-// 	console.log(`${this?.name} is eating...`);
-// };
+var Car = /** @class */ (function () {
+	function Car(name, price) {
+		this.name = name;
+		this.price = price;
+	}
+	Car.prototype.move = function () {
+		console.log("".concat(this.name, " is moving..."));
+	};
+	return Car;
+})();
 
-// for (let i = 1; i <= 10; i++) {
-// 	const box = new Box(`Black Box-${i}`);
-// 	box.run();
-// 	box.eat();
-// 	// console.log(box);
-// }
+var Cobalt = /** @class */ (function (_super) {
+	__extends(Cobalt, _super);
 
-// const str = new String("PDP Best");
-// console.log(str.__proto__ === String.prototype);
+	function Cobalt(name, price, color) {
+		var _this = _super.call(this, name, price) || this;
+		_this.color = color;
+		return _this;
+	}
 
-// const list = new Array(10);
-// console.log(list);
+	Cobalt.prototype.lock = function () {
+		console.log("".concat(this.name, " was locked"));
+	};
+	return Cobalt;
+})(Car);
 
-/* Prototype and __Proto__ */
-// function Box(name) {
-// 	this.name = name;
-// } // new Function
+const cobalt = new Cobalt("cobalt", 2000, "red");
 
-// Box.prototype.run = function () {
-// 	console.log(`${this?.name} is running...`);
-// };
-
-// const myBox = new Box();
-
-// // console.log(myBox);
-// // console.log(myBox.__proto__ === Box.prototype);
-// // console.log(myBox.__proto__.__proto__);
-
-// console.log(Function.__proto__ === Function.prototype);
-
-// function run() {
-// 	console.log(`✅ ${this.name} is running...`);
-// }
-
-// function Foo(name) {
-// 	this.name = name;
-// }
-
-// Foo.prototype.run = run;
-
-/* Class */
-
+console.log(cobalt);
