@@ -39,11 +39,13 @@
            🍩 Object.values 👍🏻
            🍩 Object.entries 👍🏻
     ✅ Coding Challenge 👍🏻
-    ✅ Prototype
-    ✅ Prototype Chaining && __proto__
+    ✅ Prototype 👍🏻
+    ✅ Prototype Chaining && __proto__ 👍🏻
+    ✅ instanceof 👍🏻
     ✅ Class
     ✅ Constructor
-    ✅ Inheritance
+    ✅ Real Project(PayMe App)
+    ✅ Inheritance --
 
 # Try and Catch
 
