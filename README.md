@@ -1,4 +1,4 @@
-# ---------- 19.04.23 ----------(66)
+# ---------- 26.04.23 ----------(67)
 
 # Checking homeworks 👍🏻
 
@@ -44,6 +44,10 @@
     ✅ Class
     ✅ Constructor
     ✅ Inheritance
+
+# Try and Catch
+
+# throw Exception
 
 # Git rebase
 
