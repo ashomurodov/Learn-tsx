@@ -1,12 +1,30 @@
-import { Card } from "./entities/card";
 import { User } from "./entities/user";
+import { Card } from "./entities/card";
+import { CardRepository } from "./repository/card-repository";
+import { UserRepository } from "./repository/user-repository";
 
-function init() {
-	const user = new User("Mark", "Maya", "+998998961348", "root123");
+const users = [
+	["Mark", "Kent"],
+	["Sherlock", "Holmes"],
+	["Barry", "Bob"],
+];
 
-	console.log("USER: ", user);
-	const card = new Card("8600 0417 1313 0495", 8080, "11/11", "UZCARD", 100000, user.getId(), "TBC BANK");
-	console.log("CARD: ", card);
+function main() {
+	const cardRepository = new CardRepository();
+	const userRepository = new UserRepository();
+
+	for (let idx in users) {
+		const [firstName, lastName] = users[idx];
+
+		const user = new User(firstName, lastName, `+99899896134${idx}`, "root123");
+		userRepository.create(user);
+
+		const card = new Card(`8600 1313 4444 095${idx}`, 7878, "11/26", "UZCARD", 100000, user.getId(), `TBC BANK-${+idx + 1}`);
+		cardRepository.create(card);
+	}
+
+	console.log("USERS: ", userRepository.getList());
+	console.log("CARDS: ", cardRepository.getList());
 }
 
-init();
+main();
