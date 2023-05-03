@@ -2,7 +2,7 @@ class Car {
 	name: string;
 	price: number;
 
-	constructor(name: string, price: number,color: string) {
+	constructor(name: string, price: number, color: string) {
 		this.name = name;
 		this.price = price;
 	}
@@ -15,7 +15,7 @@ class Car {
 class Cobalt extends Car {
 	color: string;
 	constructor(name: string, price: number, color: string) {
-		super(name, price);
+		super(name, price, color);
 		this.color = color;
 	}
 

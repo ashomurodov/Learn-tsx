@@ -1,4 +1,5 @@
-export type CARD_TYPE = "UZCARD" | "HUMO";
+export type CARD_TYPE = "UZCARD" | "HUMO" | "VISA" | "MASTER CARD";
+
 export class Card {
 	private id: number;
 

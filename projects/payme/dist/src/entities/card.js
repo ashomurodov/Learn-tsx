@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Card = void 0;
-var Card = /** @class */ (function () {
-    function Card(cardNumber, pin, expiry, type, balance, ownerId, bankName) {
+class Card {
+    constructor(cardNumber, pin, expiry, type, balance, ownerId, bankName) {
         this.cardNumber = cardNumber;
         this.pin = pin;
         this.expiry = expiry;
@@ -11,12 +11,11 @@ var Card = /** @class */ (function () {
         this.ownerId = ownerId;
         this.bankName = bankName;
     }
-    Card.prototype.getId = function () {
+    getId() {
         return this.id;
-    };
-    Card.prototype.setId = function (newId) {
+    }
+    setId(newId) {
         this.id = newId;
-    };
-    return Card;
-}());
+    }
+}
 exports.Card = Card;

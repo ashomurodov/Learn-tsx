@@ -1,20 +1,20 @@
-# ---------- 01.05.23 ----------(add-4)
+# ---------- 03.05.23 ----------(69)
 
-# Checking homeworks 👍🏻
+# Checking homeworks
 
-# JS Advanced 👍🏻
+# JS Advanced
 
     ✅ Expression vs Statement 👍🏻
-    ✅ OOP && Object.create && Object.assign
-    ✅ Prototype && Prototype Chain
-    ✅ Functional Programming && Closure
-    ✅ JS Execution && Event Loop
-    ✅ JS Modules
-    ✅ Collections && Generators **
     ✅ Getters && Setters 👍🏻
+    ✅ Prototype && Prototype Chain 👍🏻
+    ✅ OOP(PayMe | Shop | Telegram) && Object.create && Object.assign
     ✅ Promises && Async/Await
-    ✅ NPM Package
+    ✅ JS Execution && Event Loop
+    ✅ Functional Programming && Closure
+    ✅ JS Modules
     ✅ Backend && AJAX && Fetch
+    ✅ Collections && Generators **
+    ✅ NPM Package
     ✅ Clean Code
 
 # Expression vs Statement 👍🏻
