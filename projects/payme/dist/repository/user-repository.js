@@ -4,17 +4,15 @@ exports.UserRepository = void 0;
 class UserRepository {
     constructor() {
         this.list = [];
-        this.counter = 0;
+        this.counterID = 0;
     }
-    getList() {
-        return this.list;
-    }
-    create(user) {
-        if (this.isExist(user.phoneNumber)) {
-            throw new Error(`User(${user.phoneNumber}) already exists`);
+    add(...newUsers) {
+        for (let newUser of newUsers) {
+            if (this.isExist(newUser.phoneNumber))
+                throw new Error(`This user(${newUser.phoneNumber}) already exists`);
+            newUser.setId(++this.counterID);
+            this.list.push(newUser);
         }
-        user.setId(++this.counter);
-        this.list.push(user);
     }
     isExist(phoneNumber) {
         for (let user of this.list) {
@@ -22,6 +20,9 @@ class UserRepository {
                 return true;
         }
         return false;
+    }
+    getList() {
+        return this.list;
     }
 }
 exports.UserRepository = UserRepository;
