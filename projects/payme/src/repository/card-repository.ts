@@ -32,8 +32,4 @@ export class CardRepository {
 
 		return cards;
 	}
-
-	getCardsByPhoneNumber(phoneNumber: string) {
-		
-	}
 }

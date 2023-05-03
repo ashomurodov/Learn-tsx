@@ -32,7 +32,5 @@ class CardRepository {
         }
         return cards;
     }
-    getCardsByPhoneNumber(phoneNumber) {
-    }
 }
 exports.CardRepository = CardRepository;
