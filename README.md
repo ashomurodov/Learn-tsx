@@ -1,4 +1,4 @@
-# ---------- 03.05.23 ----------(69)
+# ---------- 05.05.23 ----------(70)
 
 # Checking homeworks
 
@@ -18,6 +18,14 @@
     ✅ Clean Code
 
 # Expression vs Statement 👍🏻
+
+# Try and Catch
+
+# Throw Exception
+
+# Interface and Type
+
+# Extends and Implements
 
 # JS OOP
 
@@ -44,12 +52,8 @@
     ✅ instanceof 👍🏻
     ✅ Class
     ✅ Constructor
-    ✅ Real Project(PayMe App)
-    ✅ Inheritance --
-
-# Try and Catch
-
-# throw Exception
+    ✅ Real Project(PayMe | Parking | Shop | Telegram)
+    ✅ Inheritance 
 
 # Git rebase
 
