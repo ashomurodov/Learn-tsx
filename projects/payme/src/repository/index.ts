@@ -1,4 +1,3 @@
-import { CardRepository } from "./card-repository";
-import { UserRepository } from "./user-repository";
-
-export { CardRepository, UserRepository };
+export { CardRepository } from "./card";
+export { UserRepository } from "./user";
+export { TransactionRepository } from "./transaction";

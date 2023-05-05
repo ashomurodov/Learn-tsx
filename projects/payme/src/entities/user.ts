@@ -1,13 +1,18 @@
-export class User {
-	private id: number;
+import { BaseEntity } from "./base";
+import { Transaction } from "./transaction";
 
-	constructor(public firstName: string, public lastName: string, public phoneNumber: string, public password: string, public isBlocked = false) {}
+export class User extends BaseEntity {
+	private transactions: Transaction[] = [];
 
-	getId() {
-		return this.id;
+	constructor(public firstName: string, public lastName: string, public phoneNumber: string, public password: string, public isBlocked = false) {
+		super();
 	}
 
-	setId(newId: number) {
-		this.id = newId;
+	setTransaction(newTransaction: Transaction) {
+		this.transactions.push(newTransaction);
+	}
+
+	getTruncations() {
+		return this.transactions;
 	}
 }

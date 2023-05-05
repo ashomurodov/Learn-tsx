@@ -1,4 +1,4 @@
-import { Card } from "../entities/card";
+import { Card } from "../entities";
 
 export class CardRepository {
 	private list: Card[] = [];
@@ -31,5 +31,12 @@ export class CardRepository {
 		}
 
 		return cards;
+	}
+
+	getCardByCardNumber(cardNumber: string) {
+		const card = this.list.find((card) => card.cardNumber === cardNumber);
+		if (card) return card;
+
+		throw new Error(`Card not found with card number: ${cardNumber}`);
 	}
 }

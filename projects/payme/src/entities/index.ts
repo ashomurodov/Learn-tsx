@@ -1,4 +1,3 @@
-import { Card } from "./card";
-import { User } from "./user";
-
-export { Card, User };
+export { Card } from "./card";
+export { User } from "./user";
+export { Transaction } from "./transaction";

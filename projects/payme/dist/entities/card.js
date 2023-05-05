@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Card = void 0;
-class Card {
+const base_1 = require("./base");
+class Card extends base_1.BaseEntity {
     constructor(cardNumber, pin, expiry, type, balance, ownerId, bankName) {
+        super();
         this.cardNumber = cardNumber;
         this.pin = pin;
         this.expiry = expiry;
@@ -10,12 +12,6 @@ class Card {
         this.balance = balance;
         this.ownerId = ownerId;
         this.bankName = bankName;
-    }
-    getId() {
-        return this.id;
-    }
-    setId(newId) {
-        this.id = newId;
     }
 }
 exports.Card = Card;
