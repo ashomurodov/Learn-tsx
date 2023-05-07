@@ -1,4 +1,4 @@
-# ---------- 05.05.23 ----------(70)
+# ---------- 07.05.23 ----------(71)
 
 # Checking homeworks
 
@@ -53,7 +53,7 @@
     ✅ Class
     ✅ Constructor
     ✅ Real Project(PayMe | Parking | Shop | Telegram)
-    ✅ Inheritance 
+    ✅ Inheritance
 
 # Git rebase
 
