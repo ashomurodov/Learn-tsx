@@ -2,7 +2,6 @@
 	"compilerOptions": {
 		"target": "ES2017",
 		"module": "commonjs",
-		"baseUrl": "src/",
 		"watch": true,
 		"outDir": "./dist",
 		"strictPropertyInitialization": false,
@@ -11,7 +10,7 @@
 		"strict": true,
 		"noImplicitAny": false,
 		"noImplicitThis": false,
-		"alwaysStrict": false,
+		"alwaysStrict": true,
 		"skipLibCheck": true
 	}
 }

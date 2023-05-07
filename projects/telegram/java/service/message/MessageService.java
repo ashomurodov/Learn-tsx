@@ -8,6 +8,6 @@ import java.util.ArrayList;
 public interface MessageService extends BaseService<Message> {
     ArrayList<Message> messages = new ArrayList<>();
 
-    ArrayList<Message> getByUserIdAndReceiverId(Long userId, Long receiverId);
+    Message[] getByUserIdAndReceiverId(Long userId, Long receiverId);
 
 }
