@@ -1,4 +1,4 @@
-# ---------- 07.05.23 ----------(71)
+# ---------- 07.05.23 ----------(72)
 
 # Checking homeworks
 
@@ -54,6 +54,14 @@
     ✅ Constructor
     ✅ Real Project(PayMe | Parking | Shop | Telegram)
     ✅ Inheritance
+
+# Typescript
+
+    ✅ Simple type : const app: string = "Hello World";
+    ✅ Return type and parameter types
+    ✅ Interface and implements
+    ✅ Generic types
+    ✅ 
 
 # Git rebase
 

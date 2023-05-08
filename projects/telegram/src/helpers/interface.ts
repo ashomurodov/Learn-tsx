@@ -2,7 +2,7 @@ function request<MYT>(data: MYT): { value: MYT } {
 	return { value: data };
 }
 
-const result = request({ text: "hello world" });
+// const result = request({ text: "hello world" });
 
 /**
  * app(20) -> { value: 20 }
