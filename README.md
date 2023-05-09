@@ -1,70 +1,51 @@
-# ---------- 07.05.23 ----------(72)
+# ---------- 09.05.23 ----------(73)(Examine-6)
 
-# Checking homeworks
+# Questions
 
-# JS Advanced
+# (1)(✅) e.preventDefault() va e.stopPropogation() larning bir-biridan qanday farqi bor?
 
-    ✅ Expression vs Statement 👍🏻
-    ✅ Getters && Setters 👍🏻
-    ✅ Prototype && Prototype Chain 👍🏻
-    ✅ OOP(PayMe | Shop | Telegram) && Object.create && Object.assign
-    ✅ Promises && Async/Await
-    ✅ JS Execution && Event Loop
-    ✅ Functional Programming && Closure
-    ✅ JS Modules
-    ✅ Backend && AJAX && Fetch
-    ✅ Collections && Generators **
-    ✅ NPM Package
-    ✅ Clean Code
+# (2)(🎁) JavaScript qanday ma’lumot turlari (data type) mavjud?
 
-# Expression vs Statement 👍🏻
+# (3)(🎁) null va undefined ham ma'lumot turlariga kiradimi?
 
-# Try and Catch
+# (4)(🎁) var, let va const orqali o'zgaruvchi e'lon qilishni farqi nimada?
 
-# Throw Exception
+# (5)(🎁) hoisting haqida ma'lumot bering
 
-# Interface and Type
+# (6)(🎁) hoistingda temporary dead zone tushunchasi nima?
 
-# Extends and Implements
+# (7)(🎁) o'qli funksiya (arrow function) va oddiy functionni farqi nimada?
 
-# JS OOP
+# (8)(🎁) this kalit so'zi va uni ishlatilishi haqida ma’lumot bering
 
-    ✅ Object 👍🏻
-    ✅ this keyword 👍🏻
-    ✅ call && bind && apply function methods 👍🏻
-    ✅ Factory function 👍🏻
-    ✅ Constructor function 👍🏻
-    ✅ new keyword 👍🏻
-    ✅ Abstraction 👍🏻
-    ✅ Private Properties and Methods 👍🏻
-    ✅ Getters and Setters 👍🏻
-    ✅ Object Static Methods 👍🏻
-           🍩 Object.defineProperty 👍🏻
-           🍩 Object.defineProperties 👍🏻
-           🍩 Object.freeze 👍🏻
-           🍩 Object.hasOwnProperty 🗑️ 👍🏻
-           🍩 Object.keys 👍🏻
-           🍩 Object.values 👍🏻
-           🍩 Object.entries 👍🏻
-    ✅ Coding Challenge 👍🏻
-    ✅ Prototype 👍🏻
-    ✅ Prototype Chaining && __proto__ 👍🏻
-    ✅ instanceof 👍🏻
-    ✅ Class
-    ✅ Constructor
-    ✅ Real Project(PayMe | Parking | Shop | Telegram)
-    ✅ Inheritance
+# (9)(🎁) proto va prototype haqida ma'lumot bering va farqini ayting
 
-# Typescript
+# (10)(🎁) call, bind, apply metodlarini farqi nimada?
 
-    ✅ Simple type : const app: string = "Hello World";
-    ✅ Return type and parameter types
-    ✅ Interface and implements
-    ✅ Generic types
-    ✅ 
+# (11)(🎁) JavaScriptda DOM dagi elementlarni olish uchun qanday metodlar mavjud?
 
-# Git rebase
+# (12)(🎁) getElementById va getElementsByClassName ni farqi nimada?
 
-# [JS Interview questions (500)](https://github.com/sudheerj/javascript-interview-questions)
+# (13)(✅) getElementById va getElementsByClassName ni farqi nimada?
 
-# [Examine-5](https://bit.ly/3ZPocak)
+# (14)(✅) JavaScriptda inheritance qanday ishlaydi?
+
+# (15)(✅) Objectning "prototype" ni qanday aniqlash mumkun?
+
+# (16)(✅) JavaScriptda hodisalar qanday ishlaydi (event propogationga urg'u berilgan)
+
+# (19)(✅) Qanday qilib hodisalarning standart holatini, bubblingdan capturingga o'tkazib qo'yish mumkun? (Event phase)
+
+# (20)(✅) e.preventDefault() va e.stopPropogation() larning bir-biridan qanday farqi bor?
+
+# (21)(✅) simple clone va deep clone larning qanday farqi bor?
+
+# (22)(✅) Object.create va Object.assign methodlaring maqsadi 
+
+# (23)(✅) Getters va Setters nima uchun kerak
+
+# (24)(🎁) break va continue nima uchun kerak (loop larga urg'u berilgan)
+
+# (25)(✅) Typescript dagi interface nima uchun kerak
+
+# (26)(✅) Class boshqa class dan extends olsa nima boladi
