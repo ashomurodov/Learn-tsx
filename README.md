@@ -2,8 +2,8 @@
 
 ## Async JS
 
-        Asynchronous(non-blocking) vs Synchronous(blocking)
-        setTimeout
+        Asynchronous(non-blocking) vs Synchronous(blocking) 👍🏻
+        setTimeout 👍🏻
         Patterns
                 ✅ Callbacks
                 ✅ Promises
