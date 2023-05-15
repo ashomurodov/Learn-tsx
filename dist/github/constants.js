@@ -1,40 +1,47 @@
-export const users = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.commits = exports.branches = exports.repositories = exports.users = exports.TIME = void 0;
+exports.TIME = 4000; // for all settimes
+exports.users = [
     {
         id: 123,
         username: "arslonbekXX",
+        email: "ars@domain.com",
     },
     {
         id: 104,
         username: "xushnud123",
+        email: "xushnud@domain.com",
     },
     {
         id: 100,
         username: "abdurakhmon",
+        email: "abdurakhmon@domain.com",
     },
 ];
-export const repositories = [
+exports.repositories = [
     {
         id: 1,
         name: "pdp-8",
-        ownerUsername: "arslonbekXX",
+        owner: "arslonbekXX",
     },
     {
         id: 2,
         name: "Pig Game",
-        ownerUsername: "abdurakhmon",
+        owner: "abdurakhmon",
     },
     {
         id: 3,
         name: "pdp-11",
-        ownerUsername: "arslonbekXX",
+        owner: "arslonbekXX",
     },
     {
         id: 4,
         name: "pdp-10",
-        ownerUsername: "arslonbekXX",
+        owner: "arslonbekXX",
     },
 ];
-export const branches = [
+exports.branches = [
     {
         id: 15,
         name: "lesson-74",
@@ -56,7 +63,7 @@ export const branches = [
         repoID: 2,
     },
 ];
-export const commits = [
+exports.commits = [
     {
         id: 50,
         message: "lesson-74 start-codes",

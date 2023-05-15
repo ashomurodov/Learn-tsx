@@ -1,12 +1,13 @@
 export namespace IEntity {
 	export interface User {
 		id: number;
+		email: string;
 		username: string;
 	}
 
 	export interface Repo {
 		id: number;
-		ownerUsername: string;
+		owner: string;
 		name: string;
 	}
 
@@ -24,5 +25,5 @@ export namespace IEntity {
 }
 
 export namespace IFunction {
-	export type Callback = () => void;
+	export type Callback<T> = (data: T) => void;
 }

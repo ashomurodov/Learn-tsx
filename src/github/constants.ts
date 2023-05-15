@@ -1,17 +1,22 @@
-import { IEntity, IFunction } from "./types";
+import { IEntity } from "./types";
+
+export const TIME = 4000; // for all settimes
 
 export const users: IEntity.User[] = [
 	{
 		id: 123,
 		username: "arslonbekXX",
+		email: "ars@domain.com",
 	},
 	{
 		id: 104,
 		username: "xushnud123",
+		email: "xushnud@domain.com",
 	},
 	{
 		id: 100,
 		username: "abdurakhmon",
+		email: "abdurakhmon@domain.com",
 	},
 ];
 
@@ -19,22 +24,22 @@ export const repositories: IEntity.Repo[] = [
 	{
 		id: 1,
 		name: "pdp-8",
-		ownerUsername: "arslonbekXX",
+		owner: "arslonbekXX",
 	},
 	{
 		id: 2,
 		name: "Pig Game",
-		ownerUsername: "abdurakhmon",
+		owner: "abdurakhmon",
 	},
 	{
 		id: 3,
 		name: "pdp-11",
-		ownerUsername: "arslonbekXX",
+		owner: "arslonbekXX",
 	},
 	{
 		id: 4,
 		name: "pdp-10",
-		ownerUsername: "arslonbekXX",
+		owner: "arslonbekXX",
 	},
 ];
 
@@ -83,5 +88,3 @@ export const commits: IEntity.Commit[] = [
 		branchID: 17,
 	},
 ];
-
-
