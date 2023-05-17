@@ -53,7 +53,7 @@ const displayUser = (user: IEntity.User) => {
 	getRepositories(user.username, displayRepositories);
 };
 
-getUser("ars@domain.com", displayUser);
+// getUser("ars@domain.com", displayUser);
 
 getUser("ars@domain.com", (user) => {
 	console.log("user = ", user);

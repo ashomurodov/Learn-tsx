@@ -1,4 +1,4 @@
-# ---------- 15.05.23 ----------(75)
+# ---------- 17.05.23 ----------(76)
 
 ## Async JS
 
@@ -29,5 +29,3 @@
         ✅ JSON - JavaScript object notation
         ✅ explain fetch
         ✅ Simple example with fetch
-
-# [Examine-6](https://bit.ly/3MkvOhz)
