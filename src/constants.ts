@@ -1,6 +1,6 @@
 import { IEntity } from "./types";
 
-export const TIME = 4000; // for all settimes
+export const TIME = 1000; // for all settimes
 
 export const users: IEntity.User[] = [
 	{

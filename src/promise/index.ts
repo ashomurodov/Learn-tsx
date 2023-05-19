@@ -2,17 +2,17 @@ import { IEntity } from "../types";
 import { getBranches, getCommits, getRepositories, getUser } from "./backend";
 
 const displayCommits = (commits: IEntity.Commit[]) => {
-	console.log("commits = ", commits);
+	return console.log("commits = ", commits);
 };
 
 const displayBranches = (branches: IEntity.Branch[]) => {
 	console.log("branches = ", branches);
-	getCommits(branches[0].id).then(displayCommits);
+	return getCommits(branches[0].id);
 };
 
 const displayRepositories = (repos: IEntity.Repo[]) => {
 	console.log("repos = ", repos);
-	getBranches(repos[0].id).then(displayBranches);
+	return getBranches(repos[0].id);
 };
 
 const displayUser = (user: IEntity.User) => {
@@ -21,4 +21,8 @@ const displayUser = (user: IEntity.User) => {
 };
 
 /** Promise */
-getUser("ars@domain.com").then(displayUser).then(displayRepositories);
+getUser("ars@domain.com")
+	.then(displayUser)
+	.then(displayRepositories)
+	.then(displayBranches)
+	.then(displayCommits);

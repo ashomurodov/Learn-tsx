@@ -1,5 +1,5 @@
 import { TIME, branches, commits, repositories, users } from "../constants";
-import { IEntity, IFunction } from "../types";
+import { IEntity } from "../types";
 
 export function getUser(email: string) {
 	return new Promise<IEntity.User>((resolve, reject) => {
