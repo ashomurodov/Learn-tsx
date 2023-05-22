@@ -1,27 +1,18 @@
-# ---------- 19.05.23 ----------(77)
+# ---------- 22.05.23 ----------(78)
 
-## Async JS
+# JS Advanced
 
-        Asynchronous(non-blocking) vs Synchronous(blocking) 👍🏻
-        setTimeout 👍🏻
-        Patterns
-                ✅ Callbacks 👍🏻
-                ✅ Promises 👍🏻
-                ✅ Async / await
-        Callbacks 👍🏻
-        Callback Hell 👍🏻
-        Promises
-                ✅ Pending 👍🏻
-                ✅ Resolve
-                ✅ Rejected
-                ✅ than
-                ✅ catch
-                ✅ finally
-                ✅ Promise.all
-                ✅ Promise.rice
-        Replacing Callbacks with Promises
-        Parallel Promises
-        Simple example with DOM
+    ✅ Expression vs Statement 👍🏻
+    ✅ Getters && Setters 👍🏻
+    ✅ Prototype && Prototype Chain 👍🏻
+    ✅ OOP(PayMe | Shop | Telegram) && Object.create && Object.assign 👍🏻
+    ✅ Promises && Async/Await 👍🏻
+    ✅ Backend && AJAX && Fetch
+    ✅ JS Execution && Event Loop 
+    ✅ Functional Programming && Closure
+    ✅ JS Modules
+    ✅ NPM Package
+    ✅ Clean Code
 
 # AJAX - Asynchronous JavaScript And XML
 
