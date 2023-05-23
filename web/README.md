@@ -1,4 +1,4 @@
-# ---------- 22.05.23 ----------(78)
+# ---------- 24.05.23 ----------(79)
 
 # JS Advanced
 
@@ -8,7 +8,7 @@
     ✅ OOP(PayMe | Shop | Telegram) && Object.create && Object.assign 👍🏻
     ✅ Promises && Async/Await 👍🏻
     ✅ Backend && AJAX && Fetch
-    ✅ JS Execution && Event Loop 
+    ✅ JS Execution && Event Loop
     ✅ Functional Programming && Closure
     ✅ JS Modules
     ✅ NPM Package
