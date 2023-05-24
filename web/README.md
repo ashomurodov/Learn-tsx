@@ -7,9 +7,9 @@
     ✅ Prototype && Prototype Chain 👍🏻
     ✅ OOP(PayMe | Shop | Telegram) && Object.create && Object.assign 👍🏻
     ✅ Promises && Async/Await 👍🏻
-    ✅ Backend && AJAX && Fetch
-    ✅ JS Execution && Event Loop
-    ✅ Functional Programming && Closure
+    ✅ Backend && AJAX && Fetch (2)
+    ✅ JS Execution && Event Loop (1.5)
+    ✅ Functional Programming && Closure (1.5)
     ✅ JS Modules
     ✅ NPM Package
     ✅ Clean Code
