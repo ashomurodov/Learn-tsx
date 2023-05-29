@@ -3,3 +3,5 @@
 .netlify
 /node_modules/
 /backend/node_modules/
+/movies-backend/node_modules/
+/movies-react/node_modules/
