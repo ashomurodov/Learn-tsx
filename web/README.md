@@ -1,4 +1,4 @@
-# ---------- 24.05.23 ----------(79)
+# ---------- 29.05.23 ----------(81)
 
 # JS Advanced
 
@@ -14,11 +14,19 @@
     ✅ NPM Package
     ✅ Clean Code
 
-# AJAX - Asynchronous JavaScript And XML
+# JS Execution && Event Loop
 
-        ✅ Simple example AJAX Request
-        ✅ JSON - JavaScript object notation
-        ✅ explain fetch
-        ✅ Simple example with fetch
+    ✅ Javascript principles
+        🔷 Thread of Execution
+        🔷 Memory/variable environment
+        🔷 Call stack
 
-# [Fake API](https://jsonplaceholder.typicode.com/users)
+    ✅ Execution Context
+        🔷 Global Execution Context
+        🔷 Function(Local) Execution Context
+
+    ✅ Closure
+
+# JS Homeworks
+
+    ✅ http://csbin.io/callbacks
