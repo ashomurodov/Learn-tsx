@@ -1,42 +1,48 @@
-function delay(time: number) {
-	return new Promise((res) => {
-		setTimeout(() => res(20), time);
-	});
-}
+import { userServices } from "./services/users";
 
-interface User {
-	id: string;
-	name: string;
-	username: string;
-	email: string;
-}
+const getUsersBtn = document.querySelector<HTMLButtonElement>("#get_users_btn")!;
+const updateUserBtn = document.querySelector<HTMLButtonElement>("#update_user_btn")!;
+const addUserBtn = document.querySelector<HTMLButtonElement>("#add_user_btn")!;
 
-const endPoint = "https://jsonplaceholder.typicode.com/users";
+const mockUser = {
+	username: "Arslonbek",
+	avatarURL: "https://avatars.googleusercontent.com",
+	address: "Tashkent city",
+	age: 100,
+	phoneNumber: "12345",
+	email: "ars@domain.com",
+};
 
-window.addEventListener("load", async () => {
-	await delay(5000); // fake delay
-	const res = await fetch(endPoint);
-	const users = (await res.json()) as User[];
-	renderUsers(users);
-});
+const middleware = async (
+	btn: HTMLButtonElement,
+	loadingMsg: string,
+	serviceCB: () => Promise<any>
+) => {
+	const defaultText = btn.innerText;
+	btn.innerText = loadingMsg;
+	btn.disabled = true;
 
-function renderUsers(users: User[]) {
-	const usersElm = document.createElement("ul");
-
-	for (let { name, username, email, id } of users) {
-		const li = document.createElement("li");
-
-		li.innerHTML = `<span>${name}</span><span>${username}</span>`;
-
-		const anchor = document.createElement("a");
-		anchor.innerText = "👁️";
-		anchor.href = `/public/user.html?id=${id}`;
-
-		li.appendChild(anchor);
-
-		usersElm.appendChild(li);
+	try {
+		const data = await serviceCB();
+		console.log(data);
+	} catch (err: any) {
+		console.log(err.message);
 	}
 
-	document.body.children[0].remove();
-	document.body.appendChild(usersElm);
-}
+	btn.innerText = defaultText;
+	btn.disabled = false;
+};
+
+getUsersBtn.addEventListener("click", async () =>
+	middleware(getUsersBtn, "Loading users...", userServices.users)
+);
+
+addUserBtn.addEventListener("click", async (e) => {
+	middleware(e.target as HTMLButtonElement, "Adding user...", () => userServices.create(mockUser));
+});
+
+updateUserBtn.addEventListener("click", async (e) => {
+	middleware(e.target as HTMLButtonElement, "Updating user...", () =>
+		userServices.update("846f4aef-937d-4d42-9592-3644b9df3598", mockUser)
+	);
+});
