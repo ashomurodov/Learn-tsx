@@ -1,4 +1,4 @@
-# ---------- 31.05.23 ----------(82)
+# ---------- 02.06.23 ----------(83)
 
 # JS Advanced
 
@@ -12,7 +12,7 @@
     ✅ Functional Programming && Closure (1.5)
     ✅ JS Modules
     ✅ NPM Package
-    ✅ Clean Code
+    ✅ Clean Code (https://github.com/ryanmcdermott/clean-code-javascript)
 
 # JS Execution && Event Loop && Closure
 
