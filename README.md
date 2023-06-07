@@ -4,10 +4,10 @@
 
 ## NPM Package
 
-    ✅ what is semantic version
+    ✅ what is semantic version 👍🏻
     ✅ what are [^] | [~]
-    ✅ view dependencies of package
-    ✅ view versions of package
+    ✅ view dependencies of package 👍🏻
+    ✅ view versions of package 👍🏻
 
 ## What Is React ?
 
