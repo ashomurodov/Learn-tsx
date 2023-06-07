@@ -1,32 +1,38 @@
-# ---------- 05.06.23 ----------(84)
+# ---------- 07.06.23 ----------(85)
 
-# JS Advanced
+## (Examine-7)(https://bit.ly/3J2p3yW)
 
-    ✅ Expression vs Statement 👍🏻
-    ✅ Getters && Setters 👍🏻
-    ✅ Prototype && Prototype Chain 👍🏻
-    ✅ OOP(PayMe | Shop | Telegram) && Object.create && Object.assign 👍🏻
-    ✅ Promises && Async/Await 👍🏻
-    ✅ Backend && AJAX && Fetch (2) 👍🏻
-    ✅ JS Execution && Event Loop (1.5)
-    ✅ Functional Programming && Closure (1.5)
-    ✅ JS Modules
-    ✅ NPM Package
-    ✅ Clean Code (https://github.com/ryanmcdermott/clean-code-javascript)
+## NPM Package
 
-# JS Execution && Event Loop && Closure
+    ✅ what is semantic version
+    ✅ what are [^] | [~]
+    ✅ view dependencies of package
+    ✅ view versions of package
 
-    ✅ Javascript principles
-        🔷 Thread of Execution
-        🔷 Memory/variable environment
-        🔷 Call stack
+## What Is React ?
 
-    ✅ Execution Context
-        🔷 Global Execution Context
-        🔷 Function(Local) Execution Context
+         ✅ JSX
+         ✅ Component
+         ✅ FAST FAST FAST DOM (Vertual DOM)
 
-    ✅ Closure
+## Explain React Folder Structure
 
-# JS Homeworks
+         ✅ React strart
+         ✅ React build
+         ✅ React eject
 
-    ✅ http://csbin.io/callbacks
+## JSX
+
+         ✅ React.createElement
+         ✅ babeljs.io
+         ✅ js expression with JSX
+         ✅ https://reactjs.org/docs/jsx-in-depth.html#gatsby-focus-wrapper
+
+## Class Component
+
+         ✅ Fragment
+
+## Using Bootstrap With React
+
+         ✅ download
+         ✅ import
