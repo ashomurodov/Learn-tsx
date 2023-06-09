@@ -1,19 +1,6 @@
-# ---------- 07.06.23 ----------(85)
+# ---------- 09.06.23 ----------(86)
 
-## (Examine-7)(https://bit.ly/3J2p3yW)
-
-## NPM Package
-
-    ✅ what is semantic version 👍🏻
-    ✅ what are [^] | [~]
-    ✅ view dependencies of package 👍🏻
-    ✅ view versions of package 👍🏻
-
-## What Is React ?
-
-         ✅ JSX
-         ✅ Component
-         ✅ FAST FAST FAST DOM (Vertual DOM)
+## Front-end roadmap
 
 ## Explain React Folder Structure
 
@@ -28,11 +15,40 @@
          ✅ js expression with JSX
          ✅ https://reactjs.org/docs/jsx-in-depth.html#gatsby-focus-wrapper
 
+## JSX in depth
+
+         ✅ self-closing
+         ✅ Using Dot Notation for JSX Type
+         ✅ Booleans, Null, and Undefined Are Ignored
+
 ## Class Component
 
+         ✅ Children
          ✅ Fragment
+         ✅ JS Expression
+         ✅ Using state
 
 ## Using Bootstrap With React
 
-         ✅ download
-         ✅ import
+         ✅ install & using
+         ✅ craete Counter component
+
+## Setting Attributes
+
+         ✅ using expression
+         ✅ using style object
+
+## Props
+
+         ✅ What is props
+         ✅ using props
+         ✅ example
+         ✅ practice - 118
+
+## JSX In Depth
+
+         ✅ Ignored values
+         ✅ Default true props
+         ✅ using String Literals
+
+## Deploy react app
