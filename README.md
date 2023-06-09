@@ -6,27 +6,27 @@
 
          ✅ React strart -> yarn start | npm start
          ✅ React build -> yarn build | npm run build
-         ✅ React eject
+         ✅ React eject -> yarn eject | npm run eject
 
 ## JSX
 
-         ✅ React.createElement
-         ✅ babeljs.io
-         ✅ js expression with JSX
-         ✅ https://reactjs.org/docs/jsx-in-depth.html#gatsby-focus-wrapper
+         ✅ React.createElement 👍🏻
+         ✅ babeljs.io  👍🏻
+         ✅ js expression with JSX  👍🏻
+         ✅ https://reactjs.org/docs/jsx-in-depth.html
 
-## JSX in depth
+## JSX in depth 👍🏻
 
-         ✅ self-closing
-         ✅ Using Dot Notation for JSX Type
+         ✅ Self closing
+         ✅ Dot Notation for components
+         ✅ User-Defined Components Must Be Capitalized
          ✅ Booleans, Null, and Undefined Are Ignored
 
 ## Class Component
 
-         ✅ Children
-         ✅ Fragment
-         ✅ JS Expression
-         ✅ Using state
+         ✅ Children 👍🏻
+         ✅ Fragment 👍🏻
+         ✅ JS Expression 👍🏻
 
 ## Using Bootstrap With React
 
