@@ -1,11 +1,11 @@
 # ---------- 09.06.23 ----------(86)
 
-## Front-end roadmap
+## Front-end roadmap 👍🏻
 
 ## Explain React Folder Structure
 
-         ✅ React strart
-         ✅ React build
+         ✅ React strart -> yarn start | npm start
+         ✅ React build -> yarn build | npm run build
          ✅ React eject
 
 ## JSX
