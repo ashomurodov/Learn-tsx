@@ -1,22 +1,22 @@
 # ---------- 12.06.23 ----------(87)
 
-## Checking homeworks
+## Checking homeworks 👍🏻
 
-## Using Bootstrap With React
+## Using Bootstrap With React 👍🏻
 
-         ✅ install & using
-         ✅ craete Counter component
+         ✅ install & using 👍🏻
+         ✅ craete Counter component 👍🏻
 
 ## Setting Attributes
 
-         ✅ using expression
-         ✅ using style object
+         ✅ using expression 👍🏻
+         ✅ using style object 👍🏻
 
 ## Props
 
-         ✅ What is props
-         ✅ using props
-         ✅ example
+         ✅ What is props 👍🏻
+         ✅ using props 👍🏻
+         ✅ Condational Rendering 👍🏻
 
 ## Deploy react app(Netlify)
 
