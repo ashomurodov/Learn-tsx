@@ -1,32 +1,6 @@
-# ---------- 09.06.23 ----------(86)
+# ---------- 12.06.23 ----------(87)
 
-## Front-end roadmap 👍🏻
-
-## Explain React Folder Structure
-
-         ✅ React strart -> yarn start | npm start
-         ✅ React build -> yarn build | npm run build
-         ✅ React eject -> yarn eject | npm run eject
-
-## JSX
-
-         ✅ React.createElement 👍🏻
-         ✅ babeljs.io  👍🏻
-         ✅ js expression with JSX  👍🏻
-         ✅ https://reactjs.org/docs/jsx-in-depth.html
-
-## JSX in depth 👍🏻
-
-         ✅ Self closing
-         ✅ Dot Notation for components
-         ✅ User-Defined Components Must Be Capitalized
-         ✅ Booleans, Null, and Undefined Are Ignored
-
-## Class Component
-
-         ✅ Children 👍🏻
-         ✅ Fragment 👍🏻
-         ✅ JS Expression 👍🏻
+## Checking homeworks
 
 ## Using Bootstrap With React
 
@@ -43,12 +17,33 @@
          ✅ What is props
          ✅ using props
          ✅ example
-         ✅ practice - 118
 
-## JSX In Depth
+## Deploy react app(Netlify)
 
-         ✅ Ignored values
-         ✅ Default true props
-         ✅ using String Literals
+         ✅ manually deploy react app
+         ✅ from github links
 
-## Deploy react app
+## Rendering List
+
+         ✅ Key props
+         ✅ Rerendering
+
+## Handling Events
+
+         ✅ Useing simple event handler
+         ✅ Binding Event handlers
+         ✅ bind with constructor
+         ✅ bind with arrow function
+         ✅ bind render method
+         ✅ Passing event arguments
+
+## State
+
+         ✅ State
+         ✅ setState
+         ✅ Updating the State
+
+## Create Counter list
+
+         ✅ passing data
+         ✅ passing children
