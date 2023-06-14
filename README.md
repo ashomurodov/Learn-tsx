@@ -1,22 +1,13 @@
-# ---------- 12.06.23 ----------(87)
+# ---------- 14.06.23 ----------(88)
 
-## Checking homeworks 👍🏻
-
-## Using Bootstrap With React 👍🏻
-
-         ✅ install & using 👍🏻
-         ✅ craete Counter component 👍🏻
-
-## Setting Attributes
-
-         ✅ using expression 👍🏻
-         ✅ using style object 👍🏻
+## Checking homeworks
 
 ## Props
 
          ✅ What is props 👍🏻
          ✅ using props 👍🏻
          ✅ Condational Rendering 👍🏻
+         ✅ Children
 
 ## Deploy react app(Netlify)
 
@@ -30,11 +21,11 @@
 
 ## Handling Events
 
-         ✅ Useing simple event handler
-         ✅ Binding Event handlers
-         ✅ bind with constructor
-         ✅ bind with arrow function
-         ✅ bind render method
+         ✅ Using simple event handler 👍🏻
+         ✅ Binding Event handlers 👍🏻
+         ✅ bind with constructor 👍🏻
+         ✅ bind with arrow function 👍🏻
+         ✅ bind render method 👍🏻
          ✅ Passing event arguments
 
 ## State

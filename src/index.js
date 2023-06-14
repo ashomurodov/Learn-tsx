@@ -7,3 +7,10 @@ import "./main.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
+
+/**
+ *  packages
+ *  components
+ *  images(videos)
+ *  styles(css or sass)
+ */

@@ -11,7 +11,7 @@ export default class App extends React.Component {
 		return (
 			<main className="container">
 				{counters.map((count, idx) => (
-					<Counter key={Math.random()} count={count} />
+					<Counter key={idx} count={count} />
 				))}
 			</main>
 		);
