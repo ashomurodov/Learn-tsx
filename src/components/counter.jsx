@@ -1,10 +1,8 @@
 import React from "react";
 
 export default class Counter extends React.Component {
-	state = { count: 0 };
-
 	getBadgeClassName() {
-		const { count } = this.state;
+		const { count } = this.props;
 		return `badge bg-${count === 0 ? "danger" : "secondary"}`;
 	}
 
@@ -13,7 +11,7 @@ export default class Counter extends React.Component {
 	};
 
 	render() {
-		const { count } = this.state;
+		const { count } = this.props;
 
 		return (
 			<div className="mt-2">
