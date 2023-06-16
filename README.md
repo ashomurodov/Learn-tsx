@@ -1,40 +1,30 @@
-# ---------- 14.06.23 ----------(88)
+# ---------- 16.06.23 ----------(89)
 
 ## Checking homeworks
 
-## Props
+## Deploy react app(Netlify) 👍🏻
 
-         ✅ What is props 👍🏻
-         ✅ using props 👍🏻
-         ✅ Condational Rendering 👍🏻
-         ✅ Children
+         ✅ manually deploy react app 👍🏻
+         ✅ from github links 👍🏻
 
-## Deploy react app(Netlify)
+## Rendering List 👍🏻
 
-         ✅ manually deploy react app
-         ✅ from github links
-
-## Rendering List
-
-         ✅ Key props
-         ✅ Rerendering
-
-## Handling Events
-
-         ✅ Using simple event handler 👍🏻
-         ✅ Binding Event handlers 👍🏻
-         ✅ bind with constructor 👍🏻
-         ✅ bind with arrow function 👍🏻
-         ✅ bind render method 👍🏻
-         ✅ Passing event arguments
-
-## State
-
-         ✅ State
-         ✅ setState
-         ✅ Updating the State
+         ✅ Key props 👍🏻
+         ✅ Rerendering 👍🏻
 
 ## Create Counter list
 
          ✅ passing data
          ✅ passing children
+
+## Props vs State
+
+         ✅ create delete btn
+         ✅ create reset btn
+         ✅ controlled component
+
+## Create NavBar component
+
+         ✅ single source of truth
+
+## React dev tools
