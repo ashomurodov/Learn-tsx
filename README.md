@@ -1,16 +1,6 @@
-# ---------- 16.06.23 ----------(89)
+# ---------- 19.06.23 ----------(90)
 
 ## Checking homeworks
-
-## Deploy react app(Netlify) 👍🏻
-
-         ✅ manually deploy react app 👍🏻
-         ✅ from github links 👍🏻
-
-## Rendering List 👍🏻
-
-         ✅ Key props 👍🏻
-         ✅ Rerendering 👍🏻
 
 ## Create Counter list
 
@@ -28,3 +18,15 @@
          ✅ single source of truth
 
 ## React dev tools
+
+## Stateless Functional Component
+
+         ✅ Destructuring
+
+## React lifecycle
+
+         ✅ Mount   -> (constructor, render, componentDidMount)
+         ✅ Update  -> (render, componentDidUpdate)
+         ✅ Unmount -> (componentWillUnmount)
+
+## Advanced setState
