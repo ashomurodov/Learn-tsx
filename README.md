@@ -2,22 +2,9 @@
 
 ## Checking homeworks
 
-## Create NavBar component
+## Tic-Tac-Toe
 
-         ✅ single source of truth
+## CSS MODULES
 
-## React dev tools
-
-## Stateless Functional Component
-
-         ✅ Destructuring
-
-## React lifecycle
-
-         ✅ Mount   -> (constructor, render, componentDidMount)
-         ✅ Update  -> (render, componentDidUpdate)
-         ✅ Unmount -> (componentWillUnmount)
-
-## URLS
-
-         ✅ [React Lifecycle](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+    ✅ using .module files
+    ✅
