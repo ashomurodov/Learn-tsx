@@ -1,4 +1,3 @@
-import { Component } from "react";
 import { Counter } from ".";
 import { ICount, TYPE } from "../app";
 
@@ -8,20 +7,15 @@ interface CountersProps {
 	onReset: () => void;
 }
 
-export default class Counters extends Component<CountersProps> {
-	render() {
-		const { counters } = this.props;
-		return (
-			<>
-				<main className="container">
-					<button className="my-2 btn btn-primary" onClick={this.props.onReset}>
-						Reset
-					</button>
-					{counters.map((count, idx) => (
-						<Counter key={idx} count={count} onAction={this.props.onAction} />
-					))}
-				</main>
-			</>
-		);
-	}
+export default function Counters({ counters, onAction, onReset }: CountersProps) {
+	return (
+		<main className="container">
+			<button className="my-2 btn btn-primary" onClick={onReset}>
+				Reset
+			</button>
+			{counters.map((count, idx) => (
+				<Counter key={idx} count={count} onAction={onAction} />
+			))}
+		</main>
+	);
 }

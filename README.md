@@ -1,17 +1,6 @@
-# ---------- 19.06.23 ----------(90)
+# ---------- 21.06.23 ----------(91)
 
 ## Checking homeworks
-
-## Create Counter list
-
-         ✅ passing data
-         ✅ passing children
-
-## Props vs State
-
-         ✅ create delete btn
-         ✅ create reset btn
-         ✅ controlled component
 
 ## Create NavBar component
 
@@ -29,4 +18,6 @@
          ✅ Update  -> (render, componentDidUpdate)
          ✅ Unmount -> (componentWillUnmount)
 
-## Advanced setState
+## URLS
+
+         ✅ [React Lifecycle](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
