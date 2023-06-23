@@ -7,9 +7,15 @@ interface CounterProps {
 }
 
 export default class Counter extends React.Component<CounterProps, {}> {
+	intervalID?: NodeJS.Timer;
 	getBadgeClassName() {
 		const { count } = this.props;
 		return `badge bg-${count.value === 0 ? "danger" : "secondary"}`;
+	}
+
+	componentWillUnmount(): void {
+		console.log("[COUNTER] WILL UNMOUNT");
+		clearInterval(this.intervalID);
 	}
 
 	render() {

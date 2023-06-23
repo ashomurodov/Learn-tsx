@@ -9,7 +9,17 @@ interface CountersProps {
 }
 
 export default class Counters extends Component<CountersProps> {
+	constructor(props: CountersProps) {
+		super(props);
+		console.log("[Counters] Constructor");
+	}
+
+	componentDidMount(): void {
+		console.log("[Counters] DidMount");
+	}
+
 	render() {
+		console.log("[Counters] Render");
 		const { counters } = this.props;
 		return (
 			<>

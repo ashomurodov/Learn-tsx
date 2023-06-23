@@ -22,10 +22,13 @@ export default class App extends Component<AppProps, AppState> {
 		counters: [
 			{ id: 1, value: 1 },
 			{ id: 2, value: 2 },
-			{ id: 3, value: 0 },
-			{ id: 4, value: 3 },
 		],
 	};
+
+	constructor(props: AppProps) {
+		super(props);
+		console.log("[App] - Constructor");
+	}
 
 	handleReset = () => {
 		this.setState(({ counters }) => ({
@@ -53,7 +56,17 @@ export default class App extends Component<AppProps, AppState> {
 		}
 	};
 
+	componentDidMount(): void {
+		console.log("[App] - Did Mound ");
+	}
+
+	componentDidUpdate(): void {
+		console.log("[APP] - Did Update");
+	}
+
 	render() {
+		console.log("[App] - Render");
+
 		const { counters } = this.state;
 		return (
 			<div>

@@ -12,3 +12,5 @@
 
          ✅ What is axios ?
          ✅ using axios with all methods [GET, POST, PUT, DELETE, PATCH]
+
+## [React Lifecycle](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
