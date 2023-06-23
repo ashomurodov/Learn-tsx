@@ -1,10 +1,14 @@
-# ---------- 21.06.23 ----------(91)
+# ---------- 23.06.23 ----------(92)
 
 ## Checking homeworks
 
-## Tic-Tac-Toe
+## React lifecycle
 
-## CSS MODULES
+         ✅ Mount   -> (constructor, render, componentDidMount)
+         ✅ Update  -> (render, componentDidUpdate)
+         ✅ Unmount -> (componentWillUnmount)
 
-    ✅ using .module files
-    ✅
+## Using backend services
+
+         ✅ What is axios ?
+         ✅ using axios with all methods [GET, POST, PUT, DELETE, PATCH]

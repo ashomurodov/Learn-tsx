@@ -1,2 +1,2 @@
-export { default as Board } from "./board";
-export { default as Histories } from "./histories";
+export { default as Counter } from "./counter";
+export { default as Navbar } from "./navbar";
