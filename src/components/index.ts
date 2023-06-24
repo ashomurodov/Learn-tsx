@@ -1,2 +1,2 @@
-export { Navbar } from "./navbar";
-export { Counters } from "./counters";
+export { default as Navbar } from "./navbar";
+export { default as Counters } from "./counters";
