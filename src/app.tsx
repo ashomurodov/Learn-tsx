@@ -1,10 +1,13 @@
 import { Component } from "react";
+import Navbar from "./components/navbar";
+import Counters from "./components/counters";
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <h1>You can do it )</h1>
+        <Navbar />
+        <Counters />
       </div>
     );
   }
