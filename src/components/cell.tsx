@@ -1,8 +1,18 @@
 import { Component } from "react";
 import cls from "./cell.module.css";
 
-export default class Cell extends Component {
+export interface CellProps {
+  value: any;
+  onClick: any;
+}
+
+export default class Cell extends Component<CellProps> {
   render() {
-    return <button className={cls.btn}></button>;
+    const { value, onClick } = this.props;
+    return (
+      <button onClick={onClick} className={cls.btn}>
+        {value}
+      </button>
+    );
   }
 }
