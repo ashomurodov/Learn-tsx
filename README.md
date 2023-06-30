@@ -1,16 +1,39 @@
-# ---------- 23.06.23 ----------(92)
+# ---------- 30.06.23 ----------(93)
 
 ## Checking homeworks
-
-## React lifecycle
-
-         ✅ Mount   -> (constructor, render, componentDidMount)
-         ✅ Update  -> (render, componentDidUpdate)
-         ✅ Unmount -> (componentWillUnmount)
 
 ## Using backend services
 
          ✅ What is axios ?
          ✅ using axios with all methods [GET, POST, PUT, DELETE, PATCH]
 
-## [React Lifecycle](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+## 1️⃣ Using backend Service
+
+         ✅ Movies backend
+
+## 2️⃣ Create pagination component
+
+         ✅ props -> itemsCount, pageSize, onPageChange, currentPage
+         ✅ lodash range function
+         ✅ rendering  -> null or pages
+
+## Create paginate helper function
+
+         ✅ args -> itemsCount, pageSize, currentPage
+         ✅ using propTypes
+         ✅ using propTypes
+
+## Create sorting
+
+         ✅ using _.orderBy
+
+## Delete method with backend
+
+         ✅ create handleDelete method with fetch
+         ✅ create loader component
+         ✅ using react-toastify
+
+## Extracting table
+
+         ✅ create tableHeader component
+         ✅ create tableBody component
