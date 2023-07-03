@@ -1,9 +1,12 @@
 import { Component, FormEventHandler } from "react";
+
 interface LoginState {
 	username: string;
 	password: string;
 }
+
 export default class Login extends Component<{}, LoginState> {
+	
 	state: LoginState = {
 		username: "",
 		password: "",

@@ -15,7 +15,7 @@ const Navbar = ({ onNavigate, currentPathname }: NavbarProps) => {
 	};
 
 	return (
-		<nav className="navbar navbar-expand-xl bg-body-tertiary mb-3">
+		<nav className="navbar navbar-expand-sm bg-body-tertiary mb-3">
 			<div className="container justify-content-start">
 				<span className="navbar-brand" onClick={() => handleNavigate("/")}>
 					Movies App
