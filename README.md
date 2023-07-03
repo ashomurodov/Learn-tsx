@@ -1,17 +1,14 @@
-# ---------- 30.06.23 ----------(93)
+# ---------- 03.07.23 ----------(94)
 
 ## Checking homeworks
 
-## Using backend services
+## Git keep file
 
-         ✅ What is axios ?
-         ✅ using axios with all methods [GET, POST, PUT, DELETE, PATCH]
-
-## 1️⃣ Using backend Service
+## Using backend Service
 
          ✅ Movies backend
 
-## 2️⃣ Create pagination component
+## Create pagination component
 
          ✅ props -> itemsCount, pageSize, onPageChange, currentPage
          ✅ lodash range function
@@ -37,3 +34,8 @@
 
          ✅ create tableHeader component
          ✅ create tableBody component
+
+## HOMEWORK
+
+         ✅ controlled component vs uncontrolled component ?
+         ✅ React Dev Tools
