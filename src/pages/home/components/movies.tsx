@@ -5,6 +5,7 @@ interface MoviesState {
   movies: IEntity.Movie[];
   isLoading: boolean;
   searchValue: string;
+  isSortable: boolean;
 }
 
 interface MoviesProps {
@@ -16,6 +17,7 @@ export default class Movies extends Component<MoviesProps, MoviesState> {
     movies: [],
     isLoading: true,
     searchValue: "",
+    isSortable: false,
   };
 
   async componentDidMount() {
@@ -23,16 +25,21 @@ export default class Movies extends Component<MoviesProps, MoviesState> {
     this.setState({ movies, isLoading: false });
   }
   render() {
-    const { movies, isLoading, searchValue } = this.state;
+    const { movies, isLoading, searchValue, isSortable } = this.state;
     const { currentGenre } = this.props;
     const currentMoviesList =
       currentGenre === "All" ? [...movies] : [...movies].filter((item) => item.genre.name === currentGenre);
-    const searchedMovieList =
+    let searchedMovieList =
       searchValue.length > 0
         ? [...currentMoviesList].filter((item) =>
             item.title.toLowerCase().includes(searchValue.toLowerCase())
           )
         : currentMoviesList;
+
+    if (isSortable) {
+      searchedMovieList = searchedMovieList.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
     return isLoading ? (
       <div className="spinner-border text-primary" role="status">
         <span className="sr-only"></span>
@@ -53,7 +60,14 @@ export default class Movies extends Component<MoviesProps, MoviesState> {
           <thead>
             <tr>
               <th>#</th>
-              <th>Title</th>
+              <th
+                onClick={() => {
+                  const sortable = !isSortable;
+                  this.setState({ isSortable: sortable });
+                }}
+              >
+                Title
+              </th>
               <th>Genre</th>
               <th>Stock</th>
               <th>Rate</th>
