@@ -1,40 +1,77 @@
+import { count } from "console";
 import React, { Component } from "react";
 import { getMovies } from "services/fake";
 import { IEntity } from "types";
 interface MoviesState {
-  movies: IEntity.Movie[];
   isLoading: boolean;
   searchValue: string;
   isSortable: boolean;
+  moviesByPage: any;
+  currentPage: number;
+  currentMovies: any[];
+  currentGenre: string;
 }
 
 interface MoviesProps {
-  currentGenre: string;
+  movies: IEntity.Movie[];
+  genre: string;
 }
 
 export default class Movies extends Component<MoviesProps, MoviesState> {
   state: MoviesState = {
-    movies: [],
     isLoading: true,
-    searchValue: "",
     isSortable: false,
+    searchValue: "",
+    moviesByPage: {},
+    currentPage: 1,
+    currentMovies: [],
+    currentGenre: "",
   };
 
   async componentDidMount() {
-    const movies = await getMovies();
-    this.setState({ movies, isLoading: false });
+    await this.createMoviesByPage(this.props.movies);
+    const { currentPage, moviesByPage } = this.state;
+    const { genre } = this.props;
+    const currentMovies = moviesByPage[currentPage];
+    this.setState({ isLoading: false, currentMovies, currentGenre: genre });
   }
+
+  createMoviesByPage(movies: any) {
+    const moviesByPage: any = {};
+    let currentPage = 1;
+    let counter = 0;
+
+    for (let i = 0; i <= Math.floor(movies.length / 10); i++) {
+      let moviesArr: any = [];
+      for (let j = 0; j < movies.length; j++) {
+        if (j !== 10 && movies[counter]) {
+          moviesArr.push(movies[counter]);
+          counter++;
+        } else break;
+      }
+      moviesByPage[currentPage] = moviesArr;
+      currentPage++;
+    }
+
+    this.setState({ moviesByPage });
+  }
+
+  changeCurrentPage = (page: number) => {
+    const { moviesByPage } = this.state;
+    this.setState({ currentPage: page, currentMovies: moviesByPage[page] });
+  };
+
   render() {
-    const { movies, isLoading, searchValue, isSortable } = this.state;
-    const { currentGenre } = this.props;
-    const currentMoviesList =
-      currentGenre === "All" ? [...movies] : [...movies].filter((item) => item.genre.name === currentGenre);
-    let searchedMovieList =
-      searchValue.length > 0
-        ? [...currentMoviesList].filter((item) =>
-            item.title.toLowerCase().includes(searchValue.toLowerCase())
-          )
-        : currentMoviesList;
+    const { currentMovies, currentPage, moviesByPage, isLoading, searchValue, isSortable } = this.state;
+    const arrayOfMovies = [];
+    for (const key in moviesByPage) {
+      if (Object.prototype.hasOwnProperty.call(moviesByPage, key)) {
+        arrayOfMovies.push(moviesByPage[key]);
+      }
+    }
+    let searchedMovieList = searchValue.length
+      ? [...currentMovies].filter((item) => item.title.toLowerCase().includes(searchValue.toLowerCase()))
+      : currentMovies;
 
     if (isSortable) {
       searchedMovieList = searchedMovieList.sort((a, b) => a.title.localeCompare(b.title));
@@ -91,6 +128,22 @@ export default class Movies extends Component<MoviesProps, MoviesState> {
             )}
           </tbody>
         </table>
+        {arrayOfMovies.length > 1 && (
+          <nav aria-label="...">
+            <ul className="pagination pagination-sm">
+              {arrayOfMovies.map((movie, idx) => (
+                <li
+                  key={idx}
+                  className={currentPage === idx + 1 ? "page-item active" : "page-item"}
+                  aria-current="page"
+                  onClick={() => this.changeCurrentPage(idx + 1)}
+                >
+                  <span className="page-link">{idx + 1}</span>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
       </>
     );
   }
