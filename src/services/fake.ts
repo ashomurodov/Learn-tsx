@@ -11,6 +11,17 @@ const movies = [
 		username: "boburbekXX",
 	},
 	{
+		_id: "64a15418339f4396f30ff88d",
+		title: "PDP MOVIES",
+		genre: {
+			name: "Comedy",
+			_id: "64a15418339f4396f30ff999",
+		},
+		numberInStock: 20,
+		dailyRentalRate: 3,
+		username: "jamshidbekXX",
+	},
+	{
 		_id: "64a15418339f4396f30ff99d",
 		title: "The Hangover",
 		genre: {
@@ -152,11 +163,13 @@ const genres = [
 	},
 ];
 
-export const getMovies = () => {
+const delay = (time = 2000) => new Promise((res) => setTimeout(() => res(20), time));
+
+export const getMovies = async () => {
+	await delay(0);
 	return [...movies];
 };
 export const getGenres = async () => {
-	await new Promise((res) => setTimeout(() => res(""), 2000));
-
+	await delay(0);
 	return [...genres];
 };

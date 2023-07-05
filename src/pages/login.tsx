@@ -6,7 +6,6 @@ interface LoginState {
 }
 
 export default class Login extends Component<{}, LoginState> {
-	
 	state: LoginState = {
 		username: "",
 		password: "",
