@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Genres, Movies } from "./components";
 import { IEntity } from "types";
-import { getGenres, getMovies } from "services/fake";
+import { Genre, Movie } from "services";
 import { Loader } from "components";
 import { paginate } from "utils";
 import Pagination from "./components/pagination";
@@ -23,7 +23,7 @@ export default class Home extends Component<{}, HomeState> {
 		isLoading: true,
 		genreID: "all",
 		search: "",
-		pageSize: 5,
+		pageSize: 3,
 		currentPage: 1,
 	};
 
@@ -40,8 +40,10 @@ export default class Home extends Component<{}, HomeState> {
 	};
 
 	async componentDidMount() {
-		const movies = await getMovies();
-		const genres = await getGenres();
+		const { data: movies } = await Movie.List();
+		const { data: genres } = await Genre.List();
+		const { data: movie } = await Movie.Single({ movieID: movies[0]._id });
+		console.log("movie = ", movie);
 
 		this.setState({
 			movies,
