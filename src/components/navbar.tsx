@@ -1,6 +1,9 @@
+import { IEntity } from "types";
+
 interface NavbarProps {
 	onNavigate: (pathname: string) => void;
 	currentPathname: string;
+	user: IEntity.User | null;
 }
 
 const paths = [
@@ -8,7 +11,7 @@ const paths = [
 	{ pathname: "/register", title: "Register" },
 ];
 
-const Navbar = ({ onNavigate, currentPathname }: NavbarProps) => {
+const Navbar = ({ onNavigate, currentPathname, user }: NavbarProps) => {
 	const handleNavigate = (pathname: string) => {
 		window.history.pushState({}, "", pathname);
 		onNavigate(pathname);

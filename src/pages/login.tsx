@@ -1,5 +1,6 @@
 import { Component, FormEventHandler } from "react";
-
+import { toast } from "react-hot-toast";
+import { Auth } from "services";
 interface LoginState {
 	username: string;
 	password: string;
@@ -11,9 +12,24 @@ export default class Login extends Component<{}, LoginState> {
 		password: "",
 	};
 
-	handleSubmit: FormEventHandler = (e) => {
+	handleSubmit: FormEventHandler = async (e) => {
 		e.preventDefault();
-		console.log("data = ", this.state);
+
+		try {
+			const { data } = await Auth.Login({
+				email: this.state.username,
+				password: this.state.password,
+			});
+
+			const accessToken = data.data;
+
+			const { data: user } = await Auth.GetMe({ accessToken });
+
+			toast.success(`Hi 👋🏻, ${user.name}`);
+		} catch (err: any) {
+			console.log(JSON.parse(JSON.stringify(err)));
+			toast.error(err.message);
+		}
 	};
 
 	renderInput = (name: keyof LoginState, label: string, type = "text") => {

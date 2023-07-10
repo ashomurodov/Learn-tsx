@@ -12,6 +12,13 @@ export namespace IEntity {
 		dailyRentalRate: number;
 		username: string;
 	}
+
+	export interface User {
+		_id: string;
+		name: string;
+		email: string;
+		isAdmin: boolean;
+	}
 }
 
 export namespace IApi {
@@ -47,5 +54,38 @@ export namespace IApi {
 		}
 	}
 
-	export namespace Auth {}
+	export namespace Auth {
+		export namespace Login {
+			export interface Request extends Params {}
+			export interface Params {
+				email: string;
+				password: string;
+			}
+			export interface Response {
+				data: string;
+			}
+		}
+
+		export namespace Register {
+			export interface Request extends Params {}
+			export interface Params {
+				name: string;
+				email: string;
+				password: string;
+			}
+			export interface Response {
+				_id: string;
+				name: string;
+				email: string;
+			}
+		}
+
+		export namespace GetMe {
+			export interface Request extends Params {}
+			export interface Params {
+				accessToken: string;
+			}
+			export type Response = IEntity.User;
+		}
+	}
 }
