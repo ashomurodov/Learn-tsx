@@ -7,11 +7,18 @@ interface MoviesProps {
   search: string;
   onChangeSearch: (search: string) => void;
   isLogined: boolean;
+  onNavigate: (pathname: string) => void;
 }
 
-const Movies = ({ onChangeSearch, search, movies, isLogined }: MoviesProps) => (
+const Movies = ({ onChangeSearch, search, movies, isLogined, onNavigate }: MoviesProps) => (
   <div>
-    {isLogined ? <button className="btn btn-primary mb-4">New Movie</button> : ""}
+    {isLogined ? (
+      <button onClick={() => onNavigate("/movies/new")} className="btn btn-primary mb-4">
+        New Movie
+      </button>
+    ) : (
+      ""
+    )}
     <p>Showing {movies.length} movies in the database.</p>
     <input
       value={search}

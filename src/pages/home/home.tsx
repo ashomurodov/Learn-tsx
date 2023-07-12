@@ -18,6 +18,7 @@ interface HomeState {
 
 interface HomeProps {
   isLogined: boolean;
+  onNavigate: (pathname: string) => void;
 }
 
 export default class Home extends Component<HomeProps, HomeState> {
@@ -75,7 +76,13 @@ export default class Home extends Component<HomeProps, HomeState> {
           <Genres genreID={genreID} genres={genres} onSelectGenre={this.handleSelectGenre} />
         </div>
         <div className="col">
-          <Movies isLogined={isLogined} search={search} movies={paginatedMovies} onChangeSearch={this.handleChangeSearch} />
+          <Movies
+            onNavigate={this.props.onNavigate}
+            isLogined={isLogined}
+            search={search}
+            movies={paginatedMovies}
+            onChangeSearch={this.handleChangeSearch}
+          />
           <Pagination
             amount={searchedMovies.length}
             currentPage={currentPage}

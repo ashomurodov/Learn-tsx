@@ -1,10 +1,9 @@
 import { IEntity } from "types";
 
 interface NavbarProps {
-  onNavigate: (pathname: string) => void;
+  onNavigate: (pathname: string, pathtitle?: string) => void;
   currentPathname: string;
   user: IEntity.User | null;
-  logout: () => void;
 }
 
 const paths = [
@@ -12,16 +11,7 @@ const paths = [
   { pathname: "/register", title: "Register" },
 ];
 
-const Navbar = ({ onNavigate, currentPathname, user, logout }: NavbarProps) => {
-  const handleNavigate = (pathname: string, pathtitle?: string) => {
-    window.history.pushState({}, "", pathname);
-    onNavigate(pathname);
-
-    if (pathtitle === "LogOut") {
-      logout();
-    }
-  };
-
+const Navbar = ({ onNavigate, currentPathname, user }: NavbarProps) => {
   const loginedPath = [
     { pathname: "/", title: user?.name },
     { pathname: "/login", title: "LogOut" },
@@ -32,7 +22,7 @@ const Navbar = ({ onNavigate, currentPathname, user, logout }: NavbarProps) => {
   return (
     <nav className="navbar navbar-expand-sm bg-body-tertiary mb-3">
       <div className="container justify-content-start">
-        <span className="navbar-brand" onClick={() => handleNavigate("/")}>
+        <span className="navbar-brand" onClick={() => onNavigate("/")}>
           Movies App
         </span>
         <ul className="navbar-nav d-flex">
@@ -40,7 +30,7 @@ const Navbar = ({ onNavigate, currentPathname, user, logout }: NavbarProps) => {
             <li key={path.pathname} className="nav-item">
               <span
                 className={`nav-link ${path.pathname === currentPathname ? "active" : ""}`}
-                onClick={() => handleNavigate(path.pathname, path.title)}
+                onClick={() => onNavigate(path.pathname, path.title)}
               >
                 {path.title}
               </span>
