@@ -4,37 +4,60 @@ import { Navbar } from "components";
 import { IEntity } from "types";
 
 interface AppState {
-	pathname: string;
-	user: IEntity.User | null;
+  pathname: string;
+  user: IEntity.User | null;
+  isLogined: boolean;
 }
 export default class App extends Component<{}, AppState> {
-	state: AppState = {
-		pathname: window.location.pathname,
-		user: null,
-	};
+  state: AppState = {
+    pathname: window.location.pathname,
+    user: null,
+    isLogined: false,
+  };
+  
+  async componentDidMount() {
+    const userString = localStorage.getItem("user");
+    const user: null = userString ? JSON.parse(userString) : null;
+    if (user) {
+      this.setState({ user, pathname: "/", isLogined: true }, () => {
+        console.log("local user: ", this.state.user);
+      });
+    }
+  }
 
-	getPage = () => {
-		switch (this.state.pathname) {
-			case "/login":
-				return <Login />;
-			case "/register":
-				return <Register />;
-			default:
-				return <Home />;
-		}
-	};
+  setUser = (user: IEntity.User) => {
+    this.setState({ user, isLogined: true });
+    localStorage.setItem("user", JSON.stringify(user));
+  };
 
-	handleNavigate = (pathname: string) => {
-		this.setState({ pathname });
-	};
+  deleteUser = () => {
+    this.setState({ user: null, isLogined: false });
+    localStorage.removeItem("user");
+  };
 
-	render() {
-		const { pathname, user } = this.state;
-		return (
-			<>
-				<Navbar user={user} currentPathname={pathname} onNavigate={this.handleNavigate} />
-				<div className="container">{this.getPage()}</div>
-			</>
-		);
-	}
+  getPage = () => {
+    console.log(this.state.isLogined);
+    switch (this.state.pathname) {
+      case "/login":
+        return <Login onNavigate={this.handleNavigate} login={this.setUser} />;
+      case "/register":
+        return <Register />;
+      default:
+        return <Home isLogined={this.state.isLogined} />;
+    }
+  };
+
+  handleNavigate = (pathname: string) => {
+    this.setState({ pathname });
+  };
+
+  render() {
+    const { pathname, user } = this.state;
+    return (
+      <>
+        <Navbar logout={this.deleteUser} user={user} currentPathname={pathname} onNavigate={this.handleNavigate} />
+        <div className="container">{this.getPage()}</div>
+      </>
+    );
+  }
 }

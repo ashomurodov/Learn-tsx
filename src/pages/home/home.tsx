@@ -7,84 +7,83 @@ import { paginate } from "utils";
 import Pagination from "./components/pagination";
 
 interface HomeState {
-	movies: IEntity.Movie[];
-	genres: IEntity.Genre[];
-	isLoading: boolean;
-	genreID: string;
-	search: string;
-	pageSize: number;
-	currentPage: number;
+  movies: IEntity.Movie[];
+  genres: IEntity.Genre[];
+  isLoading: boolean;
+  genreID: string;
+  search: string;
+  pageSize: number;
+  currentPage: number;
 }
 
-export default class Home extends Component<{}, HomeState> {
-	state: HomeState = {
-		movies: [],
-		genres: [],
-		isLoading: true,
-		genreID: "all",
-		search: "",
-		pageSize: 3,
-		currentPage: 1,
-	};
+interface HomeProps {
+  isLogined: boolean;
+}
 
-	handleSelectGenre = (genreID: string) => {
-		this.setState({ genreID, currentPage: 1 });
-	};
+export default class Home extends Component<HomeProps, HomeState> {
+  state: HomeState = {
+    movies: [],
+    genres: [],
+    isLoading: true,
+    genreID: "all",
+    search: "",
+    pageSize: 3,
+    currentPage: 1,
+  };
 
-	handleChangeSearch = (search: string) => {
-		this.setState({ search });
-	};
+  handleSelectGenre = (genreID: string) => {
+    this.setState({ genreID, currentPage: 1 });
+  };
 
-	handleChangePage = (currentPage: number) => {
-		this.setState({ currentPage });
-	};
+  handleChangeSearch = (search: string) => {
+    this.setState({ search });
+  };
 
-	async componentDidMount() {
-		const { data: movies } = await Movie.List();
-		const { data: genres } = await Genre.List();
-		const { data: movie } = await Movie.Single({ movieID: movies[0]._id });
-		console.log("movie = ", movie);
+  handleChangePage = (currentPage: number) => {
+    this.setState({ currentPage });
+  };
 
-		this.setState({
-			movies,
-			genres: [{ _id: "all", name: "All Genres" }, ...genres],
-			isLoading: false,
-		});
-	}
+  async componentDidMount() {
+    const { data: movies } = await Movie.List();
+    const { data: genres } = await Genre.List();
+    const { data: movie } = await Movie.Single({ movieID: movies[0]._id });
+    console.log("movie = ", movie);
 
-	render() {
-		if (this.state.isLoading) return <Loader />;
+    this.setState({
+      movies,
+      genres: [{ _id: "all", name: "All Genres" }, ...genres],
+      isLoading: false,
+    });
+  }
 
-		const { movies, genres, genreID, search, currentPage, pageSize } = this.state;
+  render() {
+    if (this.state.isLoading) return <Loader />;
 
-		const filteredMovies =
-			genreID === "all" ? movies : movies.filter((movie) => movie.genre._id === genreID);
+    const { movies, genres, genreID, search, currentPage, pageSize } = this.state;
 
-		const searchedMovies = filteredMovies.filter((movie) =>
-			movie.title.toLowerCase().includes(search.toLowerCase())
-		);
+    const filteredMovies = genreID === "all" ? movies : movies.filter((movie) => movie.genre._id === genreID);
 
-		const paginatedMovies = paginate(searchedMovies, currentPage, pageSize);
+    const searchedMovies = filteredMovies.filter((movie) => movie.title.toLowerCase().includes(search.toLowerCase()));
 
-		return (
-			<div className="row">
-				<div className="col-2">
-					<Genres genreID={genreID} genres={genres} onSelectGenre={this.handleSelectGenre} />
-				</div>
-				<div className="col">
-					<Movies
-						search={search}
-						movies={paginatedMovies}
-						onChangeSearch={this.handleChangeSearch}
-					/>
-					<Pagination
-						amount={searchedMovies.length}
-						currentPage={currentPage}
-						pageSize={pageSize}
-						onChangePage={this.handleChangePage}
-					/>
-				</div>
-			</div>
-		);
-	}
+    const paginatedMovies = paginate(searchedMovies, currentPage, pageSize);
+
+    const { isLogined } = this.props;
+
+    return (
+      <div className="row">
+        <div className="col-2">
+          <Genres genreID={genreID} genres={genres} onSelectGenre={this.handleSelectGenre} />
+        </div>
+        <div className="col">
+          <Movies isLogined={isLogined} search={search} movies={paginatedMovies} onChangeSearch={this.handleChangeSearch} />
+          <Pagination
+            amount={searchedMovies.length}
+            currentPage={currentPage}
+            pageSize={pageSize}
+            onChangePage={this.handleChangePage}
+          />
+        </div>
+      </div>
+    );
+  }
 }
