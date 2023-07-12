@@ -1,12 +1,18 @@
+import { config } from "config";
 import { Component, FormEventHandler } from "react";
 import { toast } from "react-hot-toast";
 import { Auth } from "services";
+import { IEntity } from "types";
 interface LoginState {
 	username: string;
 	password: string;
 }
 
-export default class Login extends Component<{}, LoginState> {
+interface LoginProps {
+	onLogin: (user: IEntity.User) => void;
+}
+
+export default class Login extends Component<LoginProps, LoginState> {
 	state: LoginState = {
 		username: "",
 		password: "",
@@ -22,10 +28,12 @@ export default class Login extends Component<{}, LoginState> {
 			});
 
 			const accessToken = data.data;
-
 			const { data: user } = await Auth.GetMe({ accessToken });
 
-			toast.success(`Hi 👋🏻, ${user.name}`);
+			localStorage.setItem(config.tokenKEY, accessToken);
+
+			toast.success(`Hi 👋🏻, ${user?.name}`);
+			this.props.onLogin(user);
 		} catch (err: any) {
 			console.log(JSON.parse(JSON.stringify(err)));
 			toast.error(err.message);

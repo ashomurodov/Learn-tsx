@@ -13,12 +13,12 @@ export namespace IEntity {
 		username: string;
 	}
 
-	export interface User {
+	export type User = {
 		_id: string;
 		name: string;
 		email: string;
 		isAdmin: boolean;
-	}
+	} | null;
 }
 
 export namespace IApi {
