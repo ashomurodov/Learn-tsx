@@ -2,24 +2,6 @@
 
 ## Checking homeworks
 
-## Git keep file
-
-## Using backend Service
-
-         ✅ Movies backend
-
-## Create pagination component
-
-         ✅ props -> itemsCount, pageSize, onPageChange, currentPage
-         ✅ lodash range function
-         ✅ rendering  -> null or pages
-
-## Create paginate helper function
-
-         ✅ args -> itemsCount, pageSize, currentPage
-         ✅ using propTypes
-         ✅ using propTypes
-
 ## Create sorting
 
          ✅ using _.orderBy
