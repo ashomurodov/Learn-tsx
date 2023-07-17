@@ -1,57 +1,100 @@
-import { Component, FormEventHandler } from "react";
+import React, { Component, FormEventHandler } from "react";
+import { Auth } from "services";
 
 interface RegisterState {
-	username: string;
-	password: string;
-	name: string;
+  email: string;
+  password: string;
+  name: string;
 }
 
-export default class Register extends Component<{}, RegisterState> {
-	state: RegisterState = {
-		username: "",
-		password: "",
-		name: "",
-	};
+interface RegProps {
+  onNavigate: (pathname: string) => void;
+}
 
-	handleSubmit: FormEventHandler = (e) => {
-		e.preventDefault();
-		console.log("data = ", this.state);
-	};
+// interface ErrorMessage {
+//   data: string;
+//   status: number;
+// }
 
-	renderInput = (name: keyof RegisterState, label: string, type = "text") => {
-		const value = this.state[name];
+// interface ErrorType {
+//   message: string;
+//   response: ErrorMessage;
+// }
 
-		return (
-			<div className="form-group">
-				<label htmlFor={name}>{label}</label>
-				<input
-					type={type}
-					id={name}
-					name={name}
-					className="form-control"
-					value={value}
-					onChange={(e) => {
-						const state = {} as RegisterState;
-						state[name] = e.target.value;
+export default class Register extends Component<RegProps, RegisterState> {
+  state: RegisterState = {
+    email: "",
+    password: "",
+    name: "",
+  };
 
-						this.setState(state);
-					}}
-				/>
-			</div>
-		);
-	};
+  handleSubmit: FormEventHandler = async (e) => {
+    e.preventDefault();
+    const { email, password, name } = this.state;
+    const { onNavigate } = this.props;
 
-	render() {
-		return (
-			<>
-				<h1>Register</h1>
-				<form onSubmit={this.handleSubmit}>
-					{this.renderInput("username", "Username")}
-					{this.renderInput("name", "Name")}
-					{this.renderInput("password", "Password", "password")}
-					<button className="btn btn-primary">Register</button>
-				</form>
-			</>
-		);
-	}
+    try {
+      const data = await Auth.Register({
+        email,
+        password,
+        name,
+      });
+      if (data.status === 200) {
+        onNavigate("/login");
+      }
+    } catch (error: any) {
+      console.log(error.response.data);
+    }
+  };
+
+  render() {
+    const { email, name, password } = this.state;
+    return (
+      <div>
+        <h1 className="mb-4">Register</h1>
+        <form onSubmit={this.handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="username">Username: </label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              className="form-control my-2"
+              value={email}
+              onChange={(e) => {
+                this.setState({ email: e.target.value });
+              }}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="name">Name: </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="form-control my-2"
+              value={name}
+              onChange={(e) => {
+                this.setState({ name: e.target.value });
+              }}
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password: </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              className="form-control my-2"
+              value={password}
+              onChange={(e) => {
+                this.setState({ password: e.target.value });
+              }}
+            />
+          </div>
+          <button className="btn btn-primary">Login</button>
+        </form>
+      </div>
+    );
+  }
 }
