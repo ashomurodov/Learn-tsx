@@ -1,11 +1,12 @@
-import { Component, FormEventHandler } from "react";
 import { config } from "config";
 import { toast } from "react-hot-toast";
 import { Auth } from "services";
 import { IEntity } from "types";
 
+import { Form } from "components";
+
 interface LoginState {
-	username: string;
+	email: string;
 	password: string;
 }
 
@@ -13,56 +14,26 @@ interface LoginProps {
 	onLogin: (user: IEntity.User) => void;
 }
 
-export default class Login extends Component<LoginProps, LoginState> {
+export default class Login extends Form<LoginProps, LoginState> {
 	state: LoginState = {
-		username: "",
+		email: "",
 		password: "",
 	};
 
-	handleSubmit: FormEventHandler = async (e) => {
-		e.preventDefault();
-
+	onSubmit = async ({ email, password }: LoginState) => {
 		try {
-			const { data } = await Auth.Login({
-				email: this.state.username,
-				password: this.state.password,
-			});
+			const { data } = await Auth.Login({ email, password });
 
 			const accessToken = data.data;
-			const { data: user } = await Auth.GetMe({ accessToken });
 
 			localStorage.setItem(config.tokenKEY, accessToken);
+			const { data: user } = await Auth.GetMe();
 
 			toast.success(`Hi 👋🏻, ${user?.name}`);
 			this.props.onLogin(user);
 		} catch (err: any) {
-			console.log(JSON.parse(JSON.stringify(err)));
 			toast.error(err?.response?.data);
 		}
-	};
-
-	renderInput = (name: keyof LoginState, label: string, type = "text") => {
-		const value = this.state[name];
-
-		return (
-			<div className="form-group">
-				<label htmlFor={name}>{label}</label>
-				<input
-					type={type}
-					id={name}
-					name={name}
-					className="form-control"
-					value={value}
-					onChange={(e) => {
-						const state = {} as LoginState;
-
-						state[name] = e.target.value;
-
-						this.setState(state);
-					}}
-				/>
-			</div>
-		);
 	};
 
 	render() {
@@ -70,9 +41,9 @@ export default class Login extends Component<LoginProps, LoginState> {
 			<>
 				<h1>Login</h1>
 				<form onSubmit={this.handleSubmit}>
-					{this.renderInput("username", "Username")}
+					{this.renderInput("email", "Email")}
 					{this.renderInput("password", "Password", "password")}
-					<button className="btn btn-primary">Login</button>
+					{this.renderSubmit("Login")}
 				</form>
 			</>
 		);
