@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Home, Login, NewMovie, Register } from "pages";
 import { Loader, Navbar } from "components";
+
 import { IEntity } from "types";
 import { config } from "config";
 import { Auth } from "services";
