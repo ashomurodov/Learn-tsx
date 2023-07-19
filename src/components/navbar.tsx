@@ -1,8 +1,8 @@
+import { Link, NavLink } from "react-router-dom";
+import cx from "classnames";
 import { IEntity } from "types";
 
 interface NavbarProps {
-	onNavigate: (pathname: string) => void;
-	currentPathname: string;
 	user: IEntity.User;
 	onLogout: () => void;
 }
@@ -12,12 +12,12 @@ const paths = [
 	{ pathname: "/register", title: "Register" },
 ];
 
-const Navbar = ({ onNavigate, currentPathname, user, onLogout }: NavbarProps) => (
+const Navbar = ({ user, onLogout }: NavbarProps) => (
 	<nav className="navbar navbar-expand-sm bg-body-tertiary mb-3">
 		<div className="container justify-content-start">
-			<span className="navbar-brand" onClick={() => onNavigate("/")}>
+			<Link className="navbar-brand" to="/">
 				Movies App
-			</span>
+			</Link>
 			{user ? (
 				<ul className="navbar-nav d-flex">
 					<li className="nav-item">
@@ -31,14 +31,13 @@ const Navbar = ({ onNavigate, currentPathname, user, onLogout }: NavbarProps) =>
 				</ul>
 			) : (
 				<ul className="navbar-nav d-flex">
-					{paths.map((path) => (
-						<li key={path.pathname} className="nav-item">
-							<span
-								className={`nav-link ${path.pathname === currentPathname ? "active" : ""}`}
-								onClick={() => onNavigate(path.pathname)}
-							>
-								{path.title}
-							</span>
+					{paths.map(({ pathname, title }) => (
+						<li key={pathname} className="nav-item">
+							<NavLink
+								to={pathname}
+								className={({ isActive }) => cx("nav-link", isActive && "active")}
+								children={title}
+							/>
 						</li>
 					))}
 				</ul>

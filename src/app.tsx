@@ -1,28 +1,29 @@
 import { Component } from "react";
 import { config } from "config";
-import { Home, Login, NewMovie, Register } from "pages";
 import { toast } from "react-hot-toast";
+import Routes from "routes";
 import { Auth } from "services";
 import { IEntity } from "types";
-import { delay } from "utils";
 
 import { Loader, Navbar } from "components";
 
 interface AppState {
-	pathname: string;
 	user: IEntity.User;
 	isLoading: boolean;
 }
+
 export default class App extends Component<{}, AppState> {
-	state: AppState = {
-		pathname: window.location.pathname,
-		user: null,
-		isLoading: true,
-	};
+	constructor(props: {}) {
+		super(props);
+
+		this.state = {
+			user: null,
+			isLoading: true,
+		};
+	}
 
 	handleLogin = (user: IEntity.User) => {
 		this.setState({ user });
-		this.handleNavigate("/");
 	};
 
 	handleLogout = () => {
@@ -30,50 +31,10 @@ export default class App extends Component<{}, AppState> {
 		this.setState({ user: null });
 	};
 
-	handleNavigate = (pathname: string) => {
-		window.history.pushState({}, "", pathname);
-		this.setState({ pathname });
-	};
-
-	getPage = () => {
-		const { user, pathname } = this.state;
-
-		switch (pathname) {
-			case "/login":
-				if (user) {
-					this.handleNavigate("/");
-					return null;
-				}
-				return <Login onLogin={this.handleLogin} />;
-
-			case "/register":
-				if (user) {
-					this.handleNavigate("/");
-					return null;
-				}
-				return <Register onNavigate={this.handleNavigate} />;
-
-			case "/new-movie":
-				if (!user) {
-					this.handleNavigate("/");
-					return null;
-				}
-				return <NewMovie onNavigate={this.handleNavigate} />;
-
-			case "/":
-				return <Home onNavigate={this.handleNavigate} user={user} />;
-
-			default:
-				this.handleNavigate("/");
-				return null;
-		}
-	};
-
 	async componentDidMount() {
 		const accessToken = localStorage.getItem(config.tokenKEY)!;
 
 		try {
-			await delay();
 			if (accessToken) {
 				const { data: user } = await Auth.GetMe({ accessToken });
 
@@ -88,19 +49,16 @@ export default class App extends Component<{}, AppState> {
 	}
 
 	render() {
-		const { pathname, user, isLoading } = this.state;
+		const { user, isLoading } = this.state;
 
 		if (isLoading) return <Loader />;
 
 		return (
 			<>
-				<Navbar
-					onLogout={this.handleLogout}
-					user={user}
-					currentPathname={pathname}
-					onNavigate={this.handleNavigate}
-				/>
-				<div className="container">{this.getPage()}</div>
+				<Navbar onLogout={this.handleLogout} user={user} />
+				<div className="container">
+					<Routes onLogin={this.handleLogin} user={user} />
+				</div>
 			</>
 		);
 	}

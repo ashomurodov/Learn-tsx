@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import { Genre, Movie } from "services";
 import { IEntity } from "types";
 import { paginate } from "utils";
@@ -20,7 +21,6 @@ interface HomeState {
 
 interface HomeProps {
 	user: IEntity.User;
-	onNavigate: (pathname: string) => void;
 }
 
 export default class Home extends Component<HomeProps, HomeState> {
@@ -49,7 +49,7 @@ export default class Home extends Component<HomeProps, HomeState> {
 	async componentDidMount() {
 		const { data: movies } = await Movie.List();
 		const { data: genres } = await Genre.List();
-		const { data: movie } = await Movie.Single({ movieID: movies[0]._id });
+		// const { data: movie } = await Movie.Single({ movieID: movies[0]._id });
 
 		this.setState({
 			movies,
@@ -77,7 +77,7 @@ export default class Home extends Component<HomeProps, HomeState> {
 		if (this.state.isLoading) return <Loader />;
 
 		const { genres, genreID, search, currentPage, pageSize } = this.state;
-		const { user, onNavigate } = this.props;
+		const { user } = this.props;
 
 		const { paginatedMovies, searchedMovies } = this.filteredItems();
 
@@ -88,9 +88,9 @@ export default class Home extends Component<HomeProps, HomeState> {
 				</div>
 				<div className="col">
 					{user && (
-						<button className="btn btn-primary mb-4" onClick={() => onNavigate("/new-movie")}>
+						<Link to="/new-movie" className="btn btn-primary mb-4">
 							New Movie
-						</button>
+						</Link>
 					)}
 					<Movies
 						search={search}

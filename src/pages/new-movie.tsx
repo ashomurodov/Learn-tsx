@@ -3,7 +3,6 @@ import { config } from "config";
 import { toast } from "react-hot-toast";
 import { Genre, Movie } from "services";
 import { IEntity } from "types";
-import { delay } from "utils";
 
 import { Input, Loader } from "components";
 import Select from "components/select";
@@ -18,9 +17,7 @@ interface NewMovieState {
 	isCreating: boolean;
 }
 
-interface NewMovieProps {
-	onNavigate: (pathname: string) => void;
-}
+interface NewMovieProps {}
 
 export default class NewMovie extends Component<NewMovieProps, NewMovieState> {
 	state: NewMovieState = {
@@ -49,7 +46,6 @@ export default class NewMovie extends Component<NewMovieProps, NewMovieState> {
 				numberInStock: +stock,
 				accessToken,
 			});
-			this.props.onNavigate("/");
 		} catch (err: any) {
 			toast.error(err?.response?.data);
 		} finally {
@@ -84,7 +80,6 @@ export default class NewMovie extends Component<NewMovieProps, NewMovieState> {
 	async componentDidMount() {
 		const { data: genres } = await Genre.List();
 
-		await delay();
 		this.setState({ genres, isLoading: false });
 	}
 

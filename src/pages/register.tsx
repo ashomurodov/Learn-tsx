@@ -8,9 +8,7 @@ interface RegisterState {
 	name: string;
 }
 
-interface RegisterProps {
-	onNavigate: (pathname: string) => void;
-}
+interface RegisterProps {}
 
 export default class Register extends Component<RegisterProps, RegisterState> {
 	state: RegisterState = {
@@ -29,7 +27,6 @@ export default class Register extends Component<RegisterProps, RegisterState> {
 			});
 
 			toast.success("Successfully registered");
-			this.props.onNavigate("/login");
 		} catch (err: any) {
 			toast.error(err?.response?.data);
 		}
