@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Genres, Movies } from "components";
 import Loader from "components/loader";
-import { Genre, Movie, http } from "services";
+import { Genre, Movie } from "services";
 import { iEntity } from "types";
 import Pagination from "components/pagination";
 
@@ -15,7 +15,11 @@ interface HomeState {
   currentPage: number;
 }
 
-export default class Home extends Component<{}, HomeState> {
+interface HomeProps {
+  user: iEntity.User;
+}
+
+export default class Home extends Component<HomeProps, HomeState> {
   state: HomeState = {
     movies: [],
     genres: [],
@@ -29,6 +33,8 @@ export default class Home extends Component<{}, HomeState> {
   async componentDidMount() {
     const { data: movies } = await Movie.List();
     const { data: genres } = await Genre.List();
+    const { data: movie } = await Movie.Single({ movieId: movies[0]._id });
+    console.log("movie: ", movie);
     this.setState({ movies, genres: [{ _id: "all", name: "All" }, ...genres], isLoading: false }, () => {
       console.log(this.state);
     });
@@ -72,7 +78,7 @@ export default class Home extends Component<{}, HomeState> {
           <Genres onSelectGenre={this.handleSelectGenre} currentGenreID={currentGenreID} genres={genres} />
         </div>
         <div className="col">
-          <Movies onChangeSearch={this.handleChangeSearch} movies={paginatedMovies} />
+          <Movies user={this.props.user} onChangeSearch={this.handleChangeSearch} movies={paginatedMovies} />
           {searchedMovies.length > pageSize ? (
             <Pagination
               onChangeCurrentPagee={this.handleChangeCurrentPage}

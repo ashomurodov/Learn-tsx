@@ -1,4 +1,5 @@
 import React, { Component, FormEventHandler } from "react";
+import { toast } from "react-hot-toast";
 import { Auth } from "services";
 import { iEntity } from "types";
 
@@ -28,9 +29,10 @@ export default class Login extends Component<LoginProps, LoginState> {
       localStorage.setItem("tokenKey", accessToken);
 
       const { data: user } = await Auth.GetMe({ accessToken });
+      toast.success(`Hi ${user.name}`);
       onLogin(user);
     } catch (error: any) {
-      console.log(error.response.data);
+      toast.error(error.response.data);
     }
   };
   render() {

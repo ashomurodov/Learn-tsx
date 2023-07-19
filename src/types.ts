@@ -27,7 +27,7 @@ export namespace iApi {
     }
     export namespace Single {
       export interface RequestParams {
-        _id: string;
+        movieId: string;
       }
       export type Response = iEntity.Movies;
     }
@@ -81,6 +81,7 @@ export namespace iApi {
         name: string;
         email: string;
       }
+         
     }
   }
 }

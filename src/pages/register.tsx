@@ -1,4 +1,5 @@
 import React, { Component, FormEventHandler } from "react";
+import { toast } from "react-hot-toast";
 import { Auth } from "services";
 
 interface RegisterState {
@@ -39,11 +40,12 @@ export default class Register extends Component<RegProps, RegisterState> {
         password,
         name,
       });
+      toast.success("Success Registered");
       if (data.status === 200) {
         onNavigate("/login");
       }
     } catch (error: any) {
-      console.log(error.response.data);
+      toast.error(error.response.data);
     }
   };
 
@@ -92,7 +94,7 @@ export default class Register extends Component<RegProps, RegisterState> {
               }}
             />
           </div>
-          <button className="btn btn-primary">Login</button>
+          <button className="btn btn-primary">Register</button>
         </form>
       </div>
     );

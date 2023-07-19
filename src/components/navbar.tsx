@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { iEntity } from "types";
 
 interface NavbarProps {
@@ -26,26 +27,26 @@ export default class Navbar extends Component<NavbarProps> {
     return (
       <nav className="navbar navbar-expand-lg bg-body-tertiary mb-3">
         <div className="container">
-          <span className="navbar-brand" onClick={() => onNavigate("/")}>
+          <Link to={"/"} className="navbar-brand">
             Movies
-          </span>
+          </Link>
 
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               {currentPath.map((path) => (
                 <li key={path.title} className="nav-item">
-                  <span
+                  <Link
+                    to={`${path.pathname}`}
                     className="nav-link active"
                     aria-current="page"
                     onClick={() => {
-                      onNavigate(path.pathname);
                       if (path.title === "logout") {
                         onLogOut();
                       }
                     }}
                   >
                     {path.title}
-                  </span>
+                  </Link>
                 </li>
               ))}
             </ul>

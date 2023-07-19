@@ -3,6 +3,7 @@ import { Navbar } from "components";
 import { Home, Login, Register } from "pages";
 import { iEntity } from "types";
 import { Auth } from "services";
+import { Route, Routes } from "react-router-dom";
 
 interface AppState {
   pathname: string;
@@ -32,38 +33,17 @@ export default class App extends Component<{}, AppState> {
     localStorage.removeItem("tokenKey");
   };
 
-  getPage = () => {
-    const { user } = this.state;
-    switch (this.state.pathname) {
-      case "/":
-        return <Home />;
-      case "/register":
-        if (user) {
-          this.handleNavigate("/");
-          return null;
-        }
-        return <Register onNavigate={this.handleNavigate} />;
-      case "/login":
-        if (user) {
-          this.handleNavigate("/");
-          return null;
-        }
-        return <Login onLogin={this.handleLogin} />;
-      default:
-        return <Home />;
-    }
-  };
-
   async componentDidMount() {
     const accessToken = localStorage.getItem("tokenKey");
     console.log("hello", accessToken);
     try {
       if (accessToken) {
-        const { data } = await Auth.GetMe({ accessToken });
-        this.setState({ user: data, isLoading: false });
+        const { data: user } = await Auth.GetMe({ accessToken });
+        this.setState({ user, isLoading: false });
       }
     } catch (error: any) {
       console.log(error.response.data);
+      this.setState({ isLoading: false });
     } finally {
       this.setState({ isLoading: false });
     }
@@ -76,7 +56,13 @@ export default class App extends Component<{}, AppState> {
     return (
       <>
         <Navbar onLogOut={this.handleLogOut} user={user} onNavigate={this.handleNavigate} />
-        <div className="container">{this.getPage()}</div>
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home user={user} />} />
+            <Route path="/register" element={user ? <Home user={user} /> : <Register onNavigate={this.handleNavigate} />} />
+            <Route path="/login" element={user ? <Home user={user} /> : <Login onLogin={this.handleLogin} />} />
+          </Routes>
+        </div>
       </>
     );
   }
