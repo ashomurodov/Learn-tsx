@@ -1,6 +1,7 @@
-import { IApi } from "types";
-import { http } from "./http";
 import { config } from "config";
+import { IApi } from "types";
+
+import { http } from "./http";
 
 export const List = (params?: IApi.Movie.List.Request) =>
 	http.get<IApi.Movie.List.Response>("/movies");

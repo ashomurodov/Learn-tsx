@@ -1,11 +1,12 @@
-import { Input, Loader } from "components";
-import Select from "components/select";
-import { config } from "config";
 import { ChangeEventHandler, Component, FormEventHandler, HTMLInputTypeAttribute } from "react";
+import { config } from "config";
 import { toast } from "react-hot-toast";
 import { Genre, Movie } from "services";
 import { IEntity } from "types";
 import { delay } from "utils";
+
+import { Input, Loader } from "components";
+import Select from "components/select";
 
 interface NewMovieState {
 	title: string;
@@ -37,8 +38,10 @@ export default class NewMovie extends Component<NewMovieProps, NewMovieState> {
 		this.setState({ isCreating: true });
 
 		const { title, genreId, rate, stock } = this.state;
+
 		try {
 			const accessToken = localStorage.getItem(config.tokenKEY)!;
+
 			await Movie.Create({
 				title,
 				genreId,
@@ -87,6 +90,7 @@ export default class NewMovie extends Component<NewMovieProps, NewMovieState> {
 
 	render() {
 		const { isLoading, genres, isCreating } = this.state;
+
 		if (isLoading) return <Loader />;
 
 		return (

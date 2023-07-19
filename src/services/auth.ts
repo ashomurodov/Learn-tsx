@@ -1,4 +1,5 @@
 import { IApi } from "types";
+
 import { http } from "./http";
 
 export const Login = ({ email, password }: IApi.Auth.Login.Request) =>

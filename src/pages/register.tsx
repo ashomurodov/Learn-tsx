@@ -49,6 +49,7 @@ export default class Register extends Component<RegisterProps, RegisterState> {
 					value={value}
 					onChange={(e) => {
 						const state = {} as RegisterState;
+
 						state[name] = e.target.value;
 
 						this.setState(state);

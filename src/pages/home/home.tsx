@@ -1,10 +1,12 @@
 import { Component } from "react";
-import { Genres, Movies } from "./components";
-import { IEntity } from "types";
 import { Genre, Movie } from "services";
-import { Loader } from "components";
+import { IEntity } from "types";
 import { paginate } from "utils";
+
+import { Loader } from "components";
+
 import Pagination from "./components/pagination";
+import { Genres, Movies } from "./components";
 
 interface HomeState {
 	movies: IEntity.Movie[];
@@ -48,7 +50,6 @@ export default class Home extends Component<HomeProps, HomeState> {
 		const { data: movies } = await Movie.List();
 		const { data: genres } = await Genre.List();
 		const { data: movie } = await Movie.Single({ movieID: movies[0]._id });
-		console.log("movie = ", movie);
 
 		this.setState({
 			movies,
@@ -68,6 +69,7 @@ export default class Home extends Component<HomeProps, HomeState> {
 		);
 
 		const paginatedMovies = paginate(searchedMovies, currentPage, pageSize);
+
 		return { paginatedMovies, searchedMovies };
 	};
 

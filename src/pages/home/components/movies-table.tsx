@@ -13,8 +13,8 @@ const MoviesTable = ({ movies }: MoviesTableProps) => (
 				<th>Owner</th>
 				<th>Stock</th>
 				<th>Rate</th>
-				<th></th>
-				<th></th>
+				<th />
+				<th />
 			</tr>
 		</thead>
 		<tbody>

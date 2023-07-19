@@ -1,4 +1,5 @@
 import { IEntity } from "types";
+
 import MoviesTable from "./movies-table";
 
 interface MoviesProps {

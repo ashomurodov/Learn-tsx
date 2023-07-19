@@ -1,12 +1,12 @@
 import { Component } from "react";
-import { Home, Login, NewMovie, Register } from "pages";
-import { Loader, Navbar } from "components";
-
-import { IEntity } from "types";
 import { config } from "config";
-import { Auth } from "services";
+import { Home, Login, NewMovie, Register } from "pages";
 import { toast } from "react-hot-toast";
+import { Auth } from "services";
+import { IEntity } from "types";
 import { delay } from "utils";
+
+import { Loader, Navbar } from "components";
 
 interface AppState {
 	pathname: string;
@@ -37,6 +37,7 @@ export default class App extends Component<{}, AppState> {
 
 	getPage = () => {
 		const { user, pathname } = this.state;
+
 		switch (pathname) {
 			case "/login":
 				if (user) {
@@ -70,10 +71,12 @@ export default class App extends Component<{}, AppState> {
 
 	async componentDidMount() {
 		const accessToken = localStorage.getItem(config.tokenKEY)!;
+
 		try {
 			await delay();
 			if (accessToken) {
 				const { data: user } = await Auth.GetMe({ accessToken });
+
 				this.setState({ user, isLoading: false });
 			}
 		} catch (err: any) {

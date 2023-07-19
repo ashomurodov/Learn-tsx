@@ -1,8 +1,9 @@
-import { config } from "config";
 import { Component, FormEventHandler } from "react";
+import { config } from "config";
 import { toast } from "react-hot-toast";
 import { Auth } from "services";
 import { IEntity } from "types";
+
 interface LoginState {
 	username: string;
 	password: string;
@@ -54,6 +55,7 @@ export default class Login extends Component<LoginProps, LoginState> {
 					value={value}
 					onChange={(e) => {
 						const state = {} as LoginState;
+
 						state[name] = e.target.value;
 
 						this.setState(state);
