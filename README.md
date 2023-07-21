@@ -2,6 +2,8 @@
 
 ## Form validations
 
+         ✅ catch error handling with instanceof keyword
+
 ## Create sorting
 
          ✅ using _.orderBy

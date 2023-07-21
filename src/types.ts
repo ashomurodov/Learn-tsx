@@ -24,14 +24,12 @@ export namespace IEntity {
 export namespace IApi {
 	export namespace Genre {
 		export namespace List {
-			export interface Request extends Params {}
-			export interface Params {}
+			export interface Request {}
 			export type Response = IEntity.Genre[];
 		}
 
 		export namespace Single {
-			export interface Request extends Params {}
-			export interface Params {
+			export interface Request {
 				genreID: string;
 			}
 			export type Response = IEntity.Genre;

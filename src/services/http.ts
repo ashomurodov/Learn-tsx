@@ -3,6 +3,8 @@ import { config } from "config";
 
 import { getSession } from "./storage";
 
+export { AxiosError } from "axios";
+
 const http = axios.create({ baseURL: config.baseURL });
 
 http.interceptors.request.use(
