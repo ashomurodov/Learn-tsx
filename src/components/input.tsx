@@ -13,6 +13,7 @@ const Input = ({ name, label, type, value, onChange, error }: InputProps) => (
 	<div className="form-group">
 		<label htmlFor={name}>{label}</label>
 		<input
+			placeholder={`Enter ${name}`}
 			required
 			className="form-control"
 			id={name}

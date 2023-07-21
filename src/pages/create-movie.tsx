@@ -1,27 +1,34 @@
+import { NavigateFunction } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { Genre, Movie } from "services";
-import { IEntity } from "types";
+import { IApi, IEntity } from "types";
+import * as yup from "yup";
 
 import { Form, Loader } from "components";
 
-interface CreateMovieState {
-	title: string;
-	genreId: string;
-	stock: string;
-	rate: string;
+interface CreateMovieState extends IApi.Movie.Create.Request {
 	genres: IEntity.Genre[];
 	isLoading: boolean;
 	isCreating: boolean;
 }
 
-interface CreateMovieProps {}
+interface CreateMovieProps {
+	navigate: NavigateFunction;
+}
 
 export default class CreateMovie extends Form<CreateMovieProps, CreateMovieState> {
+	schema = yup.object({
+		title: yup.string().min(5).trim().label("Title").required(),
+		genreId: yup.string().label("Genre").required(),
+		stock: yup.number().max(255).label("Stock").required(),
+		rate: yup.number().max(255).label("Rate").required(),
+	});
+
 	state: CreateMovieState = {
 		title: "",
 		genreId: "",
-		stock: "",
-		rate: "",
+		stock: 0,
+		rate: 0,
 		genres: [],
 		isLoading: true,
 		isCreating: false,
@@ -31,12 +38,9 @@ export default class CreateMovie extends Form<CreateMovieProps, CreateMovieState
 		this.setState({ isCreating: true });
 
 		try {
-			await Movie.Create({
-				title,
-				genreId,
-				dailyRentalRate: +rate,
-				numberInStock: +stock,
-			});
+			await Movie.Create({ title, genreId, rate, stock });
+
+			this.props.navigate("/movies");
 		} catch (err: any) {
 			toast.error(err?.response?.data);
 		} finally {

@@ -30,7 +30,7 @@ export default class Form<FormProps, FormState> extends Component<FormProps, For
 
 	renderInput = (name: keyof FormState, label: string, type?: HTMLInputTypeAttribute) => (
 		<Input
-			value={this.state[name] as string}
+			value={(this.state[name] as string) || ""}
 			onChange={this.handleChange}
 			name={name as string}
 			label={label}
@@ -42,11 +42,10 @@ export default class Form<FormProps, FormState> extends Component<FormProps, For
 	handleSubmit: FormEventHandler = async (e) => {
 		e.preventDefault();
 		try {
-			const result = await this.schema.validate(this.state, { abortEarly: false });
+			const result = this.schema.validateSync(this.state, { abortEarly: false });
 
 			(this as any)?.onSubmit(result);
 		} catch (error: any) {
-			console.log(error);
 			const errors = {} as any;
 
 			if (error instanceof yup.ValidationError) {

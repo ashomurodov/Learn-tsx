@@ -64,8 +64,10 @@ export default class Home extends Component<HomeProps, HomeState> {
 		const filteredMovies =
 			genreID === "all" ? movies : movies.filter((movie) => movie.genre._id === genreID);
 
-		const searchedMovies = filteredMovies.filter((movie) =>
-			movie.title.toLowerCase().includes(search.toLowerCase())
+		const searchedMovies = filteredMovies.filter(
+			(movie) =>
+				movie.title.toLowerCase().includes(search.toLowerCase()) ||
+				movie.username.toLowerCase().includes(search.toLowerCase())
 		);
 
 		const paginatedMovies = paginate(searchedMovies, currentPage, pageSize);

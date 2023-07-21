@@ -53,8 +53,8 @@ export namespace IApi {
 			export interface Request {
 				title: string;
 				genreId: string;
-				numberInStock: number;
-				dailyRentalRate: number;
+				stock: number;
+				rate: number;
 			}
 
 			export type Response = IEntity.Movie;
